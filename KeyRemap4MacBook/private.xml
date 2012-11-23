@@ -34,6 +34,12 @@
       <identifier>remap.commandW2controlW</identifier>
       <autogen>--KeyToKey-- KeyCode::W, VK_CONTROL, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
     </item>
+
+    <item>
+      <name>Change Control+O to Command+O (all apps)</name>
+      <identifier>remap.commandO2controlO </identifier>
+      <autogen>--KeyToKey-- KeyCode::O, VK_CONTROL, KeyCode::O, ModifierFlag::COMMAND_L</autogen>
+    </item>
   </list>
 </root>
   
