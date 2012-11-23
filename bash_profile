@@ -17,3 +17,8 @@ export LANG=${LANG/sv_SE/en_US}
 export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 export EDITOR=nano
+
+# I tend to prefer a GNU userland, because it's more flexible in terms of parameters... You can write 
+# 'ls /foo/bar -la' for example, whereas you *must* write it as 'ls -la /foo/bar' in the BSD userland, 
+# which OS X uses by default.
+alias ls='gls --color=auto'
