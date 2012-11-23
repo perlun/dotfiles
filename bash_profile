@@ -4,11 +4,7 @@
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-# MacPorts Installer addition on 2012-11-11_at_09:35:08: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
 
-# Load the Fink initialization, which sets up the path etc. Fink is highly recommended (around 6000 
 # packages available). http://sourceforge.net/projects/fink/
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
 
