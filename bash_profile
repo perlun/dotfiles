@@ -19,3 +19,5 @@ export LANG=${LANG/sv_SE/en_US}
 
 # Add some color to the default prompt. Shamelessly copied from a Debian default profile.
 export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+export EDITOR=nano
