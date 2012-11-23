@@ -37,8 +37,14 @@
 
     <item>
       <name>Change Control+O to Command+O (all apps)</name>
-      <identifier>remap.commandO2controlO </identifier>
+      <identifier>remap.commandO2controlO</identifier>
       <autogen>--KeyToKey-- KeyCode::O, VK_CONTROL, KeyCode::O, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>Change Control+R to Command+R (all apps)</name>
+      <identifier>remap.commandR2controlR</identifier>
+      <autogen>--KeyToKey-- KeyCode::R, VK_CONTROL, KeyCode::R, ModifierFlag::COMMAND_L</autogen>
     </item>
   </list>
 </root>
