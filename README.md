@@ -6,4 +6,5 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 Some higly recommended tools:
 
 - [Fink](http://sourceforge.net/projects/fink/): Gives you easy access to the necessary stuff, like GNU userland (findutils, coreutils etc), Mercurial, etc.
-- [KeyRemap4MacBook](http://www.gurka.se[KeyRemap4MacBook]): This is an incredibly useful tool if you're coming from a PC background, used to a "traditional" PC laptop keyboard. The Apple choices for the key placements are simply quite horrible, if you ask me. Not one single modifier key (Control, Fn, Option, Cmd etc) is on the same place as on my other PC keyboard, so some remapping is simply necessary to retain my mental health.
+- [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/): This is an incredibly useful tool if you're coming from a PC background, used to a "traditional" PC laptop keyboard. The Apple choices for the key placements are simply quite horrible, if you ask me. Not one single modifier key (Control, Fn, Option, Cmd etc) is on the same place as on my other PC keyboard, so some remapping is simply necessary to retain my mental health.
+- [Mou](http://mouapp.com/): Markdown-editor which works quite well, and has a nice preview pane also.
