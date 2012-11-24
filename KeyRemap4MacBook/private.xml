@@ -14,15 +14,18 @@
     - Option_R to Command_R
     - Use PC-style Home/End
     - Use PC-style Copy/Paste
+    - Use PC-style Undo
+    - Use PC-style Select All
     - Use PC-style Save
     - Use PC-style New tab
-    - Use PC-style Find    
+    - Use PC-style Find
 
     -->
     <!-- This one was found at http://myhomenet.blogspot.fi/2011/06/restoring-backslash-and-pipe-to-where.html -->
     <item>
       <name>Fix PC-like Pipe and Backslash on Swedish keyboard</name>
       <identifier>private.fix_pc_backslash_and_pipe_swe</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
       <autogen>--KeyToKey-- KeyCode::MINUS, VK_OPTION, KeyCode::KEY_7, VK_SHIFT | VK_OPTION</autogen>
       <autogen>--KeyToKey-- KeyCode::KEY_7, VK_SHIFT | VK_OPTION, KeyCode::MINUS, VK_OPTION</autogen>
       <autogen>--KeyToKey-- KeyCode::SWEDISH_LESS_THAN, VK_OPTION, KeyCode::KEY_7, VK_OPTION</autogen>
@@ -33,26 +36,29 @@
     <item>
       <name>Change Control+W to Command+W (all apps)</name>
       <identifier>remap.commandW2controlW</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
       <autogen>--KeyToKey-- KeyCode::W, VK_CONTROL, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
     </item>
 
     <item>
       <name>Change Control+O to Command+O (all apps)</name>
       <identifier>remap.commandO2controlO</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
       <autogen>--KeyToKey-- KeyCode::O, VK_CONTROL, KeyCode::O, ModifierFlag::COMMAND_L</autogen>
     </item>
 
     <item>
       <name>Change Control+R to Command+R (all apps)</name>
       <identifier>remap.commandR2controlR</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
       <autogen>--KeyToKey-- KeyCode::R, VK_CONTROL, KeyCode::R, ModifierFlag::COMMAND_L</autogen>
     </item>
 
     <item>
       <name>Change Control+Q to Command+Q (all apps)</name>
       <identifier>remap.commandQ2controlQ</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
       <autogen>--KeyToKey-- KeyCode::Q, VK_CONTROL, KeyCode::Q, ModifierFlag::COMMAND_L</autogen>
     </item>
   </list>
 </root>
-  
