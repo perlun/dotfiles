@@ -12,6 +12,7 @@
     - Fn to Control_L
     - Option_L to Command_L
     - Option_R to Command_R
+    - Use PC-style Home/End
     - Use PC-style Copy/Paste
     - Use PC-style Save
     - Use PC-style New tab
@@ -45,6 +46,12 @@
       <name>Change Control+R to Command+R (all apps)</name>
       <identifier>remap.commandR2controlR</identifier>
       <autogen>--KeyToKey-- KeyCode::R, VK_CONTROL, KeyCode::R, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>Change Control+Q to Command+Q (all apps)</name>
+      <identifier>remap.commandQ2controlQ</identifier>
+      <autogen>--KeyToKey-- KeyCode::Q, VK_CONTROL, KeyCode::Q, ModifierFlag::COMMAND_L</autogen>
     </item>
   </list>
 </root>
