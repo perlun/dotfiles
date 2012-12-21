@@ -16,6 +16,15 @@ export LANG=${LANG/sv_SE/en_US}
 # Add some color to the default prompt. Shamelessly copied from a Debian default profile.
 export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
+# If this is an xterm set the title to user@host:dir. Also copied from Debian.
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
 export EDITOR=nano
 
 # I tend to prefer a GNU userland, because it's more flexible in terms of parameters... You can write 
