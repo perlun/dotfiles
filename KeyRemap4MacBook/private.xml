@@ -3,7 +3,7 @@
   <list>
     <!-- 
      
-    In addition to these, I have the following options enabled for a truly PC-similar experience:
+    In addition to the re-mappings below, I have the following options enabled for a truly PC-similar experience:
 
     - Don't remap external keyboard
     - Command_L to Option_L
@@ -40,19 +40,18 @@
       <autogen>--KeyToKey-- KeyCode::KEY_0, VK_OPTION, KeyCode::KEY_9, VK_SHIFT | VK_OPTION</autogen>
     </item>
 
-    <!-- There is an option in the KeyRemap4MacBook defaults that let you remap Control+W, but only in Firefox... I want it in other apps also, like Chrome and Terminal. -->
-    <item>
-      <name>Change Control+W to Command+W (except virtual machine, RDC, terminal)</name>
-      <identifier>remap.commandW2controlW</identifier>
-      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, TERMINAL</not>
-      <autogen>--KeyToKey-- KeyCode::W, VK_CONTROL, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
-    </item>
-
     <item>
       <name>Change Control+O to Command+O (except virtual machine, RDC, terminal)</name>
       <identifier>remap.commandO2controlO</identifier>
       <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, TERMINAL</not>
       <autogen>--KeyToKey-- KeyCode::O, VK_CONTROL, KeyCode::O, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>Change Control+Q to Command+Q (except virtual machine, RDC)</name>
+      <identifier>remap.commandQ2controlQ</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
+      <autogen>--KeyToKey-- KeyCode::Q, VK_CONTROL, KeyCode::Q, ModifierFlag::COMMAND_L</autogen>
     </item>
 
     <item>
@@ -62,11 +61,12 @@
       <autogen>--KeyToKey-- KeyCode::R, VK_CONTROL, KeyCode::R, ModifierFlag::COMMAND_L</autogen>
     </item>
 
+    <!-- There is an option in the KeyRemap4MacBook defaults that let you remap Control+W, but only in Firefox... I want it in other apps also, like Chrome and Terminal. -->
     <item>
-      <name>Change Control+Q to Command+Q (except virtual machine, RDC)</name>
-      <identifier>remap.commandQ2controlQ</identifier>
-      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
-      <autogen>--KeyToKey-- KeyCode::Q, VK_CONTROL, KeyCode::Q, ModifierFlag::COMMAND_L</autogen>
+      <name>Change Control+W to Command+W (except virtual machine, RDC, terminal)</name>
+      <identifier>remap.commandW2controlW</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, TERMINAL</not>
+      <autogen>--KeyToKey-- KeyCode::W, VK_CONTROL, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
     </item>
 
     <!-- Found at https://github.com/tekezo/Files/blob/master/KeyRemap4MacBook/private.control_functional_to_control_fkeys/private.xml -->
