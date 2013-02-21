@@ -41,6 +41,13 @@
     </item>
 
     <item>
+      <name>Change Control+A to Command+A (except virtual machine, RDC, terminal)</name>
+      <identifier>remap.commandA2controlA</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, TERMINAL</not>
+      <autogen>--KeyToKey-- KeyCode::A, VK_CONTROL, KeyCode::A, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
       <name>Change Control+O to Command+O (except virtual machine, RDC, terminal)</name>
       <identifier>remap.commandO2controlO</identifier>
       <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, TERMINAL</not>
