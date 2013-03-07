@@ -12,3 +12,4 @@ Some highly recommended tools:
 - [Parallels](http://www.parallels.com): A great virtualization app, to be able to run Windows 7, Visual Studio, Microsoft Office etc.
 - [SourceTree](http://www.sourcetreeapp.com/): Graphical Mercurial and Git-client. Developed by Atlassian, the company who provides the [Bitbucket](http://www.bitbucket.org) hosted Mercurial/Git services.
 - [Sublime Text](http://www.sublimetext.com): Powerful text editor for pose users.
+- [XtraFinder](http://www.trankynam.com/xtrafinder/): Adds some incredibly nice features to the OSX Finder, like tab support, automatic column widths and so forth. Highly recommended if you come from a PC/Windows background.
