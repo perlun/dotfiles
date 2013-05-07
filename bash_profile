@@ -31,6 +31,7 @@ export EDITOR=nano
 # 'ls /foo/bar -la' for example, whereas you *must* write it as 'ls -la /foo/bar' in the BSD userland, 
 # which OS X uses by default.
 alias ls='gls --color=auto'
+alias chown=gchown
 
 sublime()
 {
