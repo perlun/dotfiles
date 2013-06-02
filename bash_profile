@@ -38,3 +38,12 @@ sublime()
 {
   open $1 -a "Sublime Text 2"
 }
+
+fix_src()
+{
+  TEMPFILE=`tempfile`
+  recomment $1 $TEMPFILE
+  mv $TEMPFILE $1
+
+  uncrustify --replace $1
+}
