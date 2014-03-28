@@ -16,6 +16,8 @@ export LANG=${LANG/sv_SE/en_US}
 # Add some color to the default prompt. Shamelessly copied from a Debian default profile.
 export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
+export UNCRUSTIFY_CONFIG=~/hg/dotfiles/uncrustify.cfg
+
 # If this is an xterm set the title to user@host:dir. Also copied from Debian.
 case "$TERM" in
 xterm*|rxvt*)
@@ -33,8 +35,18 @@ export PATH=$PATH:~/bin:~/git/uxf/ecraft.uxfactory.bin
 # 'ls /foo/bar -la' for example, whereas you *must* write it as 'ls -la /foo/bar' in the BSD userland, 
 # which OS X uses by default.
 alias ls='gls --color=auto'
+alias chown=gchown
 
 sublime()
 {
   open $1 -a "Sublime Text 2"
+}
+
+fix_src()
+{
+  TEMPFILE=`tempfile`
+  recomment $1 $TEMPFILE
+  mv $TEMPFILE $1
+
+  uncrustify --replace $1
 }
