@@ -30,6 +30,7 @@ esac
 export EDITOR=nano
 export PYTHONPATH=$BREW_PREFIX/lib/python2.7/site-packages:$PYTHONPATH
 export PATH=$PATH:~/bin:~/git/uxf/ecraft.uxfactory.bin
+export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
 
 # I tend to prefer a GNU userland, because it's more flexible in terms of parameters... You can write 
 # 'ls /foo/bar -la' for example, whereas you *must* write it as 'ls -la /foo/bar' in the BSD userland, 
