@@ -2,6 +2,8 @@
 # (obviously replacing the path to where your cloned copy resides)
 # . ~/Work/Source/hg/dotfiles
 
+source $HOME/hg/dotfiles/git-prompt.sh
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Load the Fink initialization, which sets up the path etc. Fink is highly recommended (around 6000 
@@ -14,7 +16,7 @@ test -r /sw/bin/init.sh && . /sw/bin/init.sh
 export LANG=${LANG/sv_SE/en_US}
 
 # Add some color to the default prompt. Shamelessly copied from a Debian default profile.
-export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+export PS1='\033[32m[\t]\033[0m \[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\033[36m$(__git_ps1)\033[0m\n\$ '
 
 export UNCRUSTIFY_CONFIG=~/hg/dotfiles/uncrustify.cfg
 
