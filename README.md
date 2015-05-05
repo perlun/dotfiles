@@ -14,3 +14,61 @@ Some highly recommended tools:
 - [ScrollReverser](http://www.macupdate.com/app/mac/37872/scroll-reverser): "Natural scrolling" is already supported by OS X, but if you only want to use it for the trackpad but not external mice, this is a great help.
 - [SourceTree](http://www.sourcetreeapp.com/): Graphical `git` and `hg` (Mercurial) client. Developed by Atlassian, the company who provides the [Bitbucket](http://www.bitbucket.org) hosted Mercurial/Git services.
 - [Sublime Text](http://www.sublimetext.com): Powerful text editor for power users.
+
+## Recommended Sublime Text 2 packages
+
+	"installed_packages":
+	[
+		"3024 Color Scheme",
+		"CoffeeScript",
+		"Color Schemes by carlcalderon",
+		"Git",
+		"GitGutter",
+		"Handlebars",
+		"Indent XML",
+		"JSON Reindent",
+		"LESS",
+		"Markdown Preview",
+		"Package Control",
+		"PowerShell",
+		"Pretty JSON",
+		"RuboCop",
+		"RubyFormat",
+		"Sign",
+		"SublimeLinter",
+		"Tomorrow Color Schemes",
+		"TypeScript"
+	]
+
+## Recommended Sublime Text 2 settings
+
+```
+{
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": false,
+	"auto_match_enabled": false,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Color Schemes by carlcalderon/Tyrann/Tyrann Alex.tmTheme",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 14.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignore_inodes": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
+	"open_files_in_new_window": false,
+	"rulers":
+	[
+		132
+	],
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true
+}
+```
