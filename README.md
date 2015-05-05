@@ -1,7 +1,7 @@
 README
 ======
 
-This is a collection of my personal OS X settings. Feel free to use them in any way you like.
+This is a collection of my personal OS X settings. Feel free to use them in any way you like. The `git-prompt.sh` is under the [viral](http://en.wikipedia.org/wiki/GNU_General_Public_License#.22Viral.22_nature) GNU GPL license, but the rest of this stuff can be used more freely than that. You don't have to contribute your changes back to me if you don't like, but you are certainly welcome to submit PR:s if you find things you can improve on here.
 
 Some highly recommended tools:
 
