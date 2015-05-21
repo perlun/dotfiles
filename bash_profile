@@ -2,7 +2,7 @@
 # (obviously replacing the path to where your cloned copy resides)
 # . ~/Work/Source/hg/dotfiles
 
-source $HOME/hg/dotfiles/git-prompt.sh
+source $HOME/git/dotfiles/git-prompt.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
