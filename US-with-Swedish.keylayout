@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.8 on 2015-06-27 at 01:08 (EEST)-->
-<!--Last edited by Ukelele version 2.2.8 on 2015-06-27 at 01:09 (EEST)-->
-<keyboard group="0" id="14899" name="U.S." maxout="1">
+<!--Last edited by Ukelele version 2.2.8 on 2015-06-27 at 01:14 (EEST)-->
+<keyboard group="0" id="14899" name="US with Swedish" maxout="1">
     <layouts>
         <layout first="0" last="17" modifiers="f4" mapSet="16c"/>
         <layout first="18" last="18" modifiers="f4" mapSet="984"/>
