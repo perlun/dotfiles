@@ -75,6 +75,8 @@ Some highly recommended tools:
 
 ## Not for the faint-hearted
 
-If you are like me, you sometimes feel like trying out new things. As a little experiment, I decided to do my own keyboard map using a nice tool kalled [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele). You can find it in this repo, in the `US-with-Swedish.keylayout` file. For detailed instructions on how to use it, please refer to [this](http://superuser.com/a/665726/59111) link.
+If you are like me, you sometimes feel like trying out new things. Because of a need I've seen at work, and as a little learning experiment as well, I decided to do my own keyboard map using a nice tool kalled [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele). It is basically a "US layout but with support for åäö" (characters commonly used when communicating in Swedish or Finnish). The keymap aims to provide the best of both worlds: US layout for programming stuff (like []{};':"`) but still being able to communicate with people in my native language, without resorting to feeble options like aao.
 
-(Note: I didn't copy the file to either of the recommended locations; instead, I symlinked it to `/Library/Keyboard Layouts`.)
+You can find the keymap in this repo, in the `US-with-Swedish.keylayout` file. For detailed instructions on how to use it, please refer to [this](http://superuser.com/a/665726/59111) link.
+
+(*Note*: I didn't copy the file to either of the recommended locations; instead, I symlinked it to `/Library/Keyboard Layouts`.)
