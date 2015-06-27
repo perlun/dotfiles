@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.8 on 2015-06-27 at 01:08 (EEST)-->
-<!--Last edited by Ukelele version 2.2.8 on 2015-06-27 at 22:28 (EEST)-->
+<!--Last edited by Ukelele version 2.2.8 on 2015-06-27 at 22:43 (EEST)-->
 <keyboard group="0" id="14899" name="US with Swedish" maxout="1">
     <layouts>
         <layout first="0" last="17" modifiers="f4" mapSet="16c"/>
@@ -525,15 +525,15 @@
             <key code="30" output="’"/>
             <key code="31" output="Ø"/>
             <key code="32" output="¨"/>
-            <key code="33" output="”"/>
+            <key code="33" output="Å"/>
             <key code="34" output="ˆ"/>
             <key code="35" output="∏"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="Ò"/>
             <key code="38" output="Ô"/>
-            <key code="39" output="Æ"/>
+            <key code="39" output="Ä"/>
             <key code="40" output=""/>
-            <key code="41" output="Ú"/>
+            <key code="41" output="Ö"/>
             <key code="42" output="»"/>
             <key code="43" output="¯"/>
             <key code="44" output="¿"/>
