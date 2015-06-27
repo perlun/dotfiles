@@ -72,3 +72,9 @@ Some highly recommended tools:
 	"use_tab_stops": true
 }
 ```
+
+## Not for the faint-hearted
+
+If you are like me, you sometimes feel like trying out new things. As a little experiment, I decided to do my own keyboard map using a nice tool kalled [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele). You can find it in this repo, in the `US-with-Swedish.keylayout` file. For detailed instructions on how to use it, please refer to [this](http://superuser.com/a/665726/59111) link.
+
+(Note: I didn't copy the file to either of the recommended locations; instead, I symlinked it to `/Library/Keyboard Layouts`.)
