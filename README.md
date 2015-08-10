@@ -6,10 +6,13 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 ## Quick-start to get some of this running.
 
 1. Install [iTerm 2](http://www.iterm2.com) (a good terminal app for OS X)
-2. Install Homebrew: http://brew.sh/ (a package manager that easily lets go you get command-line stuff you need)
-3. `brew install git` (to get a more recent one than Apple provides)
-4. `brew install coreutils` (to get a more GNUish userland)
-5. `brew install nodejs`
+1. `mkdir git && cd git`
+1. `git clone git@github.com:perlun/dotfiles.git`
+1. Edit/create `~/.bash_profile` to include `~ /git/dotfiles/bash_profile`. Restart the shell to make changes take effect.
+1. Install Homebrew: http://brew.sh/ (a package manager that easily lets go you get command-line stuff you need)
+1. `brew install git` (to get a more recent one than Apple provides)
+1. `brew install coreutils` (to get a more GNUish userland)
+1. `brew install nodejs`
 
 ## Some highly recommended tools
 
