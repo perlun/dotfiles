@@ -13,6 +13,7 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 1. `brew install git` (to get a more recent one than Apple provides)
 1. `brew install coreutils findutils` (to get a more GNUish userland)
 1. `brew install nodejs`
+1. `brew install rbenv ruby-build` (to be able to not have to touch the system-wide Ruby)
 1. `npm install -g ember-cli`
 1. `npm install -g bower`
 
