@@ -43,6 +43,8 @@ alias reload='curl -4 http://localhost:42000/_reload'
 
 set +H
 
+umask 0002
+
 sublime()
 {
   open $1 -a "Sublime Text 2"
