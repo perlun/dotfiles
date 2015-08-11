@@ -32,7 +32,6 @@ esac
 export EDITOR=nano
 export PYTHONPATH=$BREW_PREFIX/lib/python2.7/site-packages:$PYTHONPATH
 export PATH=$PATH:~/bin:~/git/uxfactory.bin
-export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
 export ECRAFT_HUB_URI=mongodb://hub:5otWtmEcP9@ds043950-a0.mongolab.com:43950,ds043950-a1.mongolab.com:43950/hub
 
 # I tend to prefer a GNU userland, because it's more flexible in terms of parameters... You can write 
