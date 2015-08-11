@@ -11,7 +11,7 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 1. Edit/create `~/.bash_profile` to include `. ~/git/dotfiles/bash_profile`. Restart the shell to make changes take effect.
 1. Install Homebrew: http://brew.sh/ (a package manager that easily lets go you get command-line stuff you need)
 1. `brew install git` (to get a more recent one than Apple provides)
-1. `brew install coreutils` (to get a more GNUish userland)
+1. `brew install coreutils findutils` (to get a more GNUish userland)
 1. `brew install nodejs`
 
 ## Some highly recommended tools
