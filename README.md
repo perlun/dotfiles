@@ -3,7 +3,7 @@ README
 
 This is a collection of my personal OS X settings. Feel free to use them in any way you like. The `git-prompt.sh` is under the [viral](http://en.wikipedia.org/wiki/GNU_General_Public_License#.22Viral.22_nature) GNU GPL license, but the rest of this stuff can be used more freely than that. You don't have to contribute your changes back to me if you don't like, but you are certainly welcome to submit PR:s if you find things you can improve on here.
 
-## Quick-start to get some of this running.
+## Quick-start to get some of the important stuff running.
 
 1. Install [iTerm 2](http://www.iterm2.com) (a good terminal app for OS X)
 1. `mkdir git && cd git`
@@ -13,6 +13,7 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 1. `brew install git` (to get a more recent one than Apple provides)
 1. `brew install coreutils findutils` (to get a more GNUish userland)
 1. `brew install nodejs`
+1. `brew install ember-cli`
 
 ## Some highly recommended tools
 
