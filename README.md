@@ -14,6 +14,7 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 1. `brew install coreutils findutils` (to get a more GNUish userland)
 1. `brew install nodejs`
 1. `npm install -g ember-cli`
+1. `npm install -g bower`
 
 ## Some highly recommended tools
 
