@@ -1,22 +1,24 @@
 <?xml version="1.0"?>
 <root>
   <list>
-    <!-- 
-     
+    <!--
+
+    To use:
+
+      cd ~/Library/Application Support/Karabiner
+      ln -sf ~/git/dotfiles/karabiner/private.xml
+
+    Then reload private.xml in the Karabiner preferences.
+
     In addition to the re-mappings below, I have the following options enabled for a truly PC-similar experience:
 
-    - Don't remap external keyboard
-    - Command_L to Option_L
-    - Command_R to Option_R
-    - Control_L to Fn
+    - Control_L to Fn (disabled for now, will parameterize to only run on internal keyboard)
     - Fn to Control_L
-    - Option_L to Command_L
-    - Option_R to Command_R
+    - Command-left/right arrow to option-left/right arrow
     - Use PC-style Home/End
     - Use PC-style Copy/Paste
     - Use PC-style Undo
-    - Use PC-style Select All (this one is a bit since it breaks Ctrl-A/Ctrl-E semantics... Thinking about re-mapping this to perhaps Ctlr-Shift-A or something along the lines.)
-    - Use PC-style Save 
+    - Use PC-style Save
     - Use PC-style New tab
     - Use PC-style Find
 
