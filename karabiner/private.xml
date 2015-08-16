@@ -21,6 +21,15 @@
     - Use PC-style New tab
     - Use PC-style Find
 
+    There are also some important defaults in OS X that are annoying, which should also be changed to get a reasonable keyboard
+    experience:
+
+    - Use all F1, F2 etc. keys as standard function keys (disabled by default). Should be enabled.
+    - Shortcuts -> Mission Control -> Move left a space (Ctrl-left arrow by default). Conflicts with Windows shortcut for word-left, so I prefer to disable this.
+    - Shortcuts -> Mission Control -> Move right a space (Ctrl-right arrow). Likewise.
+    - Shortcuts -> Mission Control -> Show Desktop (F11 by default). Well duh, I prefer to let apps use the F11 key for keyboard shortcuts.
+    - Shortcuts -> Mission Control -> Show Dashboard (F12 by default). Likewise.
+
     -->
     <!-- This one was found at http://myhomenet.blogspot.fi/2011/06/restoring-backslash-and-pipe-to-where.html, tweaked to not conflict with the braces. -->
     <item>
