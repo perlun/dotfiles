@@ -78,6 +78,7 @@
       <autogen>--KeyToKey-- KeyCode::CONTROL_L, KeyCode::FN</autogen>
     </item>
 
+    <!-- TODO: Fix this one; it's no longer functioning with my latest tweaks. -->
     <!-- Found at https://github.com/tekezo/Files/blob/master/KeyRemap4MacBook/private.control_functional_to_control_fkeys/private.xml -->
     <item>
       <name>Control+Functional to Control+Fkeys</name>
