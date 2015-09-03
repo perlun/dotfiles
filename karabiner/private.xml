@@ -78,9 +78,7 @@
     <item>
       <name>Change Control_L to Fn (internal keyboard only)</name>
       <identifier>remap.control2fn</identifier>
-      <device_only>
-        DeviceVendor::APPLE_COMPUTER, DeviceProduct::APPLE_INTERNAL_KEYBOARD_TRACKPAD_0x021a,
-      </device_only>
+      <device_only>DeviceVendor::APPLE_COMPUTER, DeviceProduct::APPLE_INTERNAL_KEYBOARD_TRACKPAD_0x0274</device_only>
       <autogen>--KeyToKey-- KeyCode::CONTROL_L, KeyCode::FN</autogen>
     </item>
 
