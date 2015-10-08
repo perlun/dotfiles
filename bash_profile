@@ -44,8 +44,6 @@ set +H
 
 umask 0002
 
-bind '"\ed": backward-kill-word'
-
 sublime()
 {
   open $1 -a "Sublime Text 2"
