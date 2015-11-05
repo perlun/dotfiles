@@ -34,6 +34,7 @@ export EDITOR=nano
 export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
 export PYTHONPATH=$BREW_PREFIX/lib/python2.7/site-packages:$PYTHONPATH
 export PATH=$PATH:~/bin:~/git/ecraft/ecraft.uxfactory.bin:/usr/local/mongodb/bin
+export PYTHONWARNINGS="ignore:Unverified HTTPS request"
 
 eval $(docker-machine env ecraft-bep)
 
