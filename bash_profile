@@ -1,6 +1,11 @@
 # To use this from your profile, either copy it to ~/.bash_profile or add a line like this into it 
 # (obviously replacing the path to where your cloned copy resides)
-# . ~/Work/Source/hg/dotfiles
+# . ~/git/dotfiles
+
+if [ -f ~/.docker.aliases ] ; then
+  echo "loading ~/.docker.aliases"
+  . ~/.docker.aliases
+fi
 
 source $HOME/git/dotfiles/git-prompt.sh
 
@@ -28,6 +33,8 @@ esac
 export EDITOR=nano
 export PYTHONPATH=$BREW_PREFIX/lib/python2.7/site-packages:$PYTHONPATH
 export PATH=$PATH:~/bin:~/git/uxfactory.bin:/usr/local/mongodb/bin
+
+eval $(docker-machine env ecraft-bep)
 
 # I tend to prefer a GNU userland, because it's more flexible in terms of parameters... You can write 
 # 'ls /foo/bar -la' for example, whereas you *must* write it as 'ls -la /foo/bar' in the BSD userland, 
