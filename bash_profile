@@ -67,3 +67,7 @@ fix_src()
 
   uncrustify --replace $1
 }
+
+mmv() {
+  mkdir -p $2 && mv $1 $2
+}
