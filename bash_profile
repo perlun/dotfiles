@@ -47,6 +47,7 @@ eval $(docker-machine env ecraft-bep)
 # which OS X uses by default.
 alias ls='gls --color=auto'
 alias chown=gchown
+alias find=gfind
 alias reload='curl -4 http://localhost:42000/_reload'
 
 set +H
