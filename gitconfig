@@ -1,0 +1,26 @@
+[core]
+	excludesfile = /Users/plundberg/.gitignore_global
+	ignorecase = false
+
+[alias]
+        st = status --short
+	stat = status
+	co = checkout
+	addall = add --all
+        st = status -sb
+        ci = commit
+        dc = diff --cached
+        fetch = fetch --prune
+        merge = merge --ff-only
+        tree = log --graph --oneline --all --decorate --tags
+        push-branch = push -u origin HEAD
+
+[push]
+	default = simple
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+
+[mergetool]
+	keepBackup = true
