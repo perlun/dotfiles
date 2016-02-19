@@ -14,6 +14,7 @@
         merge = merge --ff-only
         tree = log --graph --oneline --all --decorate --tags
         push-branch = push -u origin HEAD
+        pull = pull -r
 
 [push]
 	default = simple
