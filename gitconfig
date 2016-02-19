@@ -3,18 +3,18 @@
         ignorecase = false
 
 [alias]
-        st = status --short
-        stat = status
-        co = checkout
         addall = add --all
-        st = status -sb
         ci = commit
+        co = checkout
         dc = diff --cached
         fetch = fetch --prune
         merge = merge --ff-only
-        tree = log --graph --oneline --all --decorate --tags
-        push-branch = push -u origin HEAD
         pull = pull -r
+        push-branch = push -u origin HEAD
+        st = status --short
+        st = status -sb
+        stat = status
+        tree = log --graph --oneline --all --decorate --tags
 
 [push]
         default = simple
