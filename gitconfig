@@ -1,12 +1,12 @@
 [core]
-	excludesfile = /Users/plundberg/.gitignore_global
-	ignorecase = false
+        excludesfile = /Users/plundberg/.gitignore_global
+        ignorecase = false
 
 [alias]
         st = status --short
-	stat = status
-	co = checkout
-	addall = add --all
+        stat = status
+        co = checkout
+        addall = add --all
         st = status -sb
         ci = commit
         dc = diff --cached
@@ -17,11 +17,11 @@
         pull = pull -r
 
 [push]
-	default = simple
+        default = simple
 
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+        clean = git-media-clean %f
+        smudge = git-media-smudge %f
 
 [mergetool]
-	keepBackup = true
+        keepBackup = true
