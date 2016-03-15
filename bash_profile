@@ -10,9 +10,9 @@ has_homebrew() {
   return 1
 }
 
-if [ -f ~/.docker.aliases ] ; then
-  echo "loading ~/.docker.aliases"
-  . ~/.docker.aliases
+if [ -f ~/git/ecraft/business-execution-platform/docker.aliases ] ; then
+  echo "loading docker.aliases"
+  . ~/git/ecraft/business-execution-platform/docker.aliases
 fi
 
 if has_homebrew ; then
