@@ -31,7 +31,8 @@ source $HOME/git/dotfiles/git-prompt.sh
 export LANG=${LANG/sv_SE/en_US}
 
 # Add some color to the default prompt. Shamelessly copied from a Debian default profile.
-export PS1='\033[32m[\t]\033[0m \[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\033[36m$(__git_ps1)\033[0m\n\$ '
+PROMPT_HOST_COLOR=${PROMPT_HOST_COLOR:-1;32}
+export PS1='\033[32m[\t]\033[0m \[\033[${PROMPT_HOST_COLOR}m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\033[36m$(__git_ps1)\033[0m\n\$ '
 
 export UNCRUSTIFY_CONFIG=~/hg/dotfiles/uncrustify.cfg
 
