@@ -2,13 +2,23 @@
 # (obviously replacing the path to where your cloned copy resides)
 # . ~/git/dotfiles
 
+has_homebrew() {
+  if [ $(which brew | wc -l ) -gt 0 ] ; then
+    return 0
+  fi
+
+  return 1
+}
+
 if [ -f ~/.docker.aliases ] ; then
   echo "loading ~/.docker.aliases"
   . ~/.docker.aliases
 fi
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+if has_homebrew ; then
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+  fi
 fi
 
 source $HOME/git/dotfiles/git-prompt.sh
@@ -41,14 +51,20 @@ export PATH=$PATH:~/bin:~/git/ecraft/ecraft.uxfactory.bin:/usr/local/mongodb/bin
 export UXFACTORY_LICENSE_FILE="~/Dropbox/Tre Kronor/Licenses/eCraft Developer Licenses/Per.Lundberg.-.eCraft.appfactory.license"
 export PYTHONWARNINGS="ignore:Unverified HTTPS request"
 
-eval $(docker-machine env ecraft-bep)
+if [ $(which docker-machine | wc -l ) -gt 0 ] ; then
+  eval $(docker-machine env ecraft-bep)
+fi
 
-# I tend to prefer a GNU userland, because it's more flexible in terms of parameters... You can write
-# 'ls /foo/bar -la' for example, whereas you *must* write it as 'ls -la /foo/bar' in the BSD userland,
-# which OS X uses by default.
-alias ls='gls --color=auto'
-alias chown=gchown
-alias find=gfind
+if [ $(which gls | wc -l ) -gt 0 ] ; then
+  # OS X with GNU userland detected. I tend to prefer this because it's more flexible in terms of parameters... You can write
+  # 'ls /foo/bar -la' for example, whereas you *must* write it as 'ls -la /foo/bar' in the BSD userland, which OS X uses by default.
+  alias ls='gls --color=auto'
+  alias chown=gchown
+  alias find=gfind
+else
+  alias ls='ls --color=auto'
+fi
+
 alias reload='curl -4 http://localhost:42000/_reload'
 
 set +H
