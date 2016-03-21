@@ -67,6 +67,7 @@ else
 fi
 
 alias reload='curl -4 http://localhost:42000/_reload'
+alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 set +H
 
