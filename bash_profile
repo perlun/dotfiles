@@ -73,6 +73,7 @@ fi
 
 alias reload='curl -4 http://localhost:42000/_reload'
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+alias travis='rvm 2.3 do travis'
 
 set +H
 
