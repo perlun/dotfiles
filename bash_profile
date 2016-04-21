@@ -71,9 +71,11 @@ else
   alias ls='ls --color=auto'
 fi
 
-alias reload='curl -4 http://localhost:42000/_reload'
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+alias github_changelog_generator='rvm 2.3 do github_changelog_generator'
+alias reload='curl -4 http://localhost:42000/_reload'
 alias travis='rvm 2.3 do travis'
+alias yard='rvm 2.3 do yard'
 
 set +H
 
