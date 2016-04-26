@@ -29,14 +29,41 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 ## Stuff I don't use so much any more
 
 - [SourceTree](http://www.sourcetreeapp.com/): Graphical `git` and `hg` (Mercurial) client. Developed by Atlassian, the company who provides the [Bitbucket](http://www.bitbucket.org) hosted Mercurial/Git services. I'm using this less and less now, preferring command line instead.
-- [Sublime Text](http://www.sublimetext.com): Text editor. Use Atom instead these days.
+- [Sublime Text](http://www.sublimetext.com): Text editor. Use Atom instead these days, unless you get fed up with its slowness etc.
 
-## Not for the faint-hearted
+## Sublime Text 3 settings
 
-If you are like me, you sometimes feel like trying out new things. Because of a need I've seen at work, and as a little learning experiment as well, I decided to do my own keyboard map using a nice tool kalled [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele). It is basically a "US layout but with support for åäö" (characters commonly used when communicating in Swedish or Finnish). The keymap aims to provide the best of both worlds: US layout for programming stuff (like []{};':"`) but still being able to communicate with people in my native language, without resorting to feeble options like aao.
-
-You can find the keymap in this repo, in the `US-with-Swedish.keylayout` file. For detailed instructions on how to use it, please refer to [this](http://superuser.com/a/665726/59111) link.
-
-(*Note*: I didn't copy the file to either of the recommended locations; instead, I symlinked it to `/Library/Keyboard Layouts`.)
-
-*Eventually, I skipped this one and use a plain US layout instead. I've set up my Caps Lock key as a fast-switcher between US and Swedish keyboard*
+```json
+{
+  "color_scheme": "Packages/Theme - Asphalt/Asphalt.tmTheme",
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "auto_complete": true,
+  "auto_complete_commit_on_tab": false,
+  "auto_match_enabled": false,
+  "bold_folder_labels": true,
+  "draw_white_space": "all",
+  "ensure_newline_at_eof_on_save": true,
+  "font_size": 14.0,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "ignore_inodes": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "line_padding_bottom": 0,
+  "line_padding_top": 0,
+  "open_files_in_new_window": false,
+  "rulers":
+  [
+    132
+  ],
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "use_tab_stops": true
+}
+```
