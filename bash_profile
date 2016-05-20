@@ -77,6 +77,11 @@ alias reload='curl -4 http://localhost:42000/_reload'
 alias travis='rvm 2.3 do travis'
 alias yard='rvm 2.3 do yard'
 
+# History expansion is enabled by default. It causes problems when your git commit messages contains exclamation marks, like this:
+#
+#     git commit foo.txt -m "I had to change this! Really?"
+#
+# Therefore, I prefer to disable history expansion.
 set +H
 
 umask 0002
