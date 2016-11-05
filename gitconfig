@@ -1,0 +1,31 @@
+# To use, copy the following to your ~/.gitconfig
+# [include]
+#         path = ~/git/dotfiles/gitconfig
+
+[core]
+        excludesfile = /Users/plundberg/.gitignore_global
+        ignorecase = false
+
+[alias]
+        addall = add --all
+        ci = commit
+        co = checkout
+        dc = diff --cached
+        fetch = fetch --prune --all
+        merge = merge --ff-only
+        pull = pull -r
+        push-branch = push -u origin HEAD
+        st = status --short
+        st = status -sb
+        stat = status
+        tree = log --graph --oneline --all --decorate --tags
+
+[push]
+        default = simple
+
+[filter "media"]
+        clean = git-media-clean %f
+        smudge = git-media-smudge %f
+
+[mergetool]
+        keepBackup = true

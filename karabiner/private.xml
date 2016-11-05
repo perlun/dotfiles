@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<root>
+  <list>
+    <!--
+
+    To use:
+
+      cd ~/Library/Application Support/Karabiner
+      ln -sf ~/git/dotfiles/karabiner/private.xml
+
+    Then reload private.xml in the Karabiner preferences.
+
+    In addition to the re-mappings below, I have the following options enabled for a truly PC-similar experience:
+
+    - Fn to Control_L
+    - Command-left/right arrow to option-left/right arrow (conflicts a bit with Spectacle, have to be resolved)
+    - Use PC-style Home/End
+    - Use PC-style Copy/Paste
+    - Use PC-style Undo
+    - Use PC-style Save
+    - Use PC-style New tab
+    - Use PC-style Find
+
+    There are also some important defaults in OS X that are annoying, which should also be changed to get a reasonable keyboard
+    experience:
+
+    - Use all F1, F2 etc. keys as standard function keys (disabled by default). Should be enabled.
+    - Shortcuts -> Mission Control -> Move left a space (Ctrl-left arrow by default). Conflicts with Windows shortcut for word-left, so I prefer to disable this.
+    - Shortcuts -> Mission Control -> Move right a space (Ctrl-right arrow). Likewise.
+    - Shortcuts -> Mission Control -> Show Desktop (F11 by default). Well duh, I prefer to let apps use the F11 key for keyboard shortcuts.
+    - Shortcuts -> Mission Control -> Show Dashboard (F12 by default). Likewise.
+
+    -->
+    <item>
+      <name>Change Control+A to Command+A (except virtual machine, RDC, terminal)</name>
+      <identifier>remap.commandA2controlA</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, TERMINAL</not>
+      <autogen>--KeyToKey-- KeyCode::A, VK_CONTROL, KeyCode::A, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>Change Control+F to Command+F (except virtual machine, RDC, terminal)</name>
+      <identifier>remap.commandF2controlF</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, TERMINAL</not>
+      <autogen>--KeyToKey-- KeyCode::F, VK_CONTROL, KeyCode::F, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>Change Control+O to Command+O (except virtual machine, RDC, terminal)</name>
+      <identifier>remap.commandO2controlO</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, TERMINAL</not>
+      <autogen>--KeyToKey-- KeyCode::O, VK_CONTROL, KeyCode::O, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>Change Control+Q to Command+Q (except virtual machine, RDC)</name>
+      <identifier>remap.commandQ2controlQ</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
+      <autogen>--KeyToKey-- KeyCode::Q, VK_CONTROL, KeyCode::Q, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>Change Control+R to Command+R (except virtual machine, RDC, terminal)</name>
+      <identifier>remap.commandR2controlR</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, TERMINAL</not>
+      <autogen>--KeyToKey-- KeyCode::R, VK_CONTROL, KeyCode::R, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <!-- There is an option in the Karabiner defaults that let you remap Control+W, but only in Firefox... I want it in other apps also, like Chrome and Terminal. -->
+    <item>
+      <name>Change Control+W to Command+W (except virtual machine, RDC, terminal)</name>
+      <identifier>remap.commandW2controlW</identifier>
+      <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, TERMINAL</not>
+      <autogen>--KeyToKey-- KeyCode::W, VK_CONTROL, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <!-- This one is similar to "Control_L to Fn" in the Karabiner defaults, but I only want that on the internal MacBook Pro keyboard. -->
+    <item>
+      <name>Change Control_L to Fn (internal keyboard only)</name>
+      <identifier>remap.control2fn</identifier>
+      <device_only>DeviceVendor::APPLE_COMPUTER, DeviceProduct::APPLE_INTERNAL_KEYBOARD_TRACKPAD_0x0274</device_only>
+      <autogen>--KeyToKey-- KeyCode::CONTROL_L, KeyCode::FN</autogen>
+    </item>
+
+    <!-- TODO: Fix this one; it's no longer functioning with my latest tweaks. -->
+    <!-- Found at https://github.com/tekezo/Files/blob/master/KeyRemap4MacBook/private.control_functional_to_control_fkeys/private.xml -->
+    <item>
+      <name>Control+Functional to Control+Fkeys</name>
+      <identifier>private.control_functional_to_control_fkeys</identifier>
+      <autogen>--ConsumerToKey-- ConsumerKeyCode::BRIGHTNESS_DOWN,    VK_CONTROL, KeyCode::F1,  VK_CONTROL</autogen>
+      <autogen>--ConsumerToKey-- ConsumerKeyCode::BRIGHTNESS_UP,      VK_CONTROL, KeyCode::F2,  VK_CONTROL</autogen>
+      <autogen>--KeyToKey--      KeyCode::EXPOSE_ALL,                 VK_CONTROL, KeyCode::F3,  VK_CONTROL</autogen>
+      <autogen>--KeyToKey--      KeyCode::DASHBOARD,                  VK_CONTROL, KeyCode::F4,  VK_CONTROL</autogen>
+      <autogen>--KeyToKey--      KeyCode::LAUNCHPAD,                  VK_CONTROL, KeyCode::F4,  VK_CONTROL</autogen>
+      <autogen>--ConsumerToKey-- ConsumerKeyCode::KEYBOARDLIGHT_LOW,  VK_CONTROL, KeyCode::F5,  VK_CONTROL</autogen>
+      <autogen>--ConsumerToKey-- ConsumerKeyCode::KEYBOARDLIGHT_HIGH, VK_CONTROL, KeyCode::F6,  VK_CONTROL</autogen>
+      <autogen>--ConsumerToKey-- ConsumerKeyCode::MUSIC_PREV,         VK_CONTROL, KeyCode::F7,  VK_CONTROL</autogen>
+      <autogen>--ConsumerToKey-- ConsumerKeyCode::MUSIC_PLAY,         VK_CONTROL, KeyCode::F8,  VK_CONTROL</autogen>
+      <autogen>--ConsumerToKey-- ConsumerKeyCode::MUSIC_NEXT,         VK_CONTROL, KeyCode::F9,  VK_CONTROL</autogen>
+      <autogen>--ConsumerToKey-- ConsumerKeyCode::VOLUME_MUTE,        VK_CONTROL, KeyCode::F10, VK_CONTROL</autogen>
+      <autogen>--ConsumerToKey-- ConsumerKeyCode::VOLUME_DOWN,        VK_CONTROL, KeyCode::F11, VK_CONTROL</autogen>
+      <autogen>--ConsumerToKey-- ConsumerKeyCode::VOLUME_UP,          VK_CONTROL, KeyCode::F12, VK_CONTROL</autogen>
+    </item>
+  </list>
+</root>
