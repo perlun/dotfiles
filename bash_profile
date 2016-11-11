@@ -56,7 +56,6 @@ export PATH=$PATH:~/bin:~/.cargo/bin:~/git/ecraft/ecraft.uxfactory.bin:/usr/loca
 export PYTHONPATH=$BREW_PREFIX/lib/python2.7/site-packages:$PYTHONPATH
 export PYTHONWARNINGS="ignore:Unverified HTTPS request"
 export RUST_SRC_PATH=~/git/rust/src
-export UXFACTORY_LICENSE_FILE="~/Dropbox/Tre Kronor/Licenses/eCraft Developer Licenses/Per.Lundberg.-.eCraft.appfactory.license"
 
 if [ $(which docker-machine | wc -l ) -gt 0 ] ; then
   eval $(docker-machine env ecraft-bep)
