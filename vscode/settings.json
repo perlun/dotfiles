@@ -1,0 +1,33 @@
+// Place your settings in this file to overwrite the default settings for Visual Studio Code
+{
+    // Controls if the editor should automatically close brackets after opening them
+    "editor.autoClosingBrackets": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.codeLens": false,
+
+    // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+    "editor.tabSize": 2,
+    "editor.rulers": [132],
+
+    "files.exclude": {
+        "**/*.js": { "when": "$(basename).ts" },
+        "**/*.js.map": true
+    },
+
+    "window.zoomLevel": 1,
+
+    "editor.formatOnSave": false,
+    "gitProjectManager.baseProjectsFolders": [
+        "~/git/ecraft",
+        "~/git/mio",
+        "~/git/spendrups"
+    ],
+    "gitProjectManager.maxDepthRecursion": 1,
+
+    "trailing-spaces.trimOnSave": true,
+    "files.associations": {
+      "*.local": "json",
+      "*.config": "json",
+      "*.src": "json"
+    }
+  }
