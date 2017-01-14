@@ -13,6 +13,7 @@
         "**/*.js": { "when": "$(basename).ts" },
         "**/*.js.map": true
     },
+    "files.insertFinalNewline": true,
 
     "window.zoomLevel": 1,
 
@@ -28,6 +29,9 @@
     "files.associations": {
       "*.local": "json",
       "*.config": "json",
-      "*.src": "json"
+      "*.src": "json",
+      "cli": "ruby",
+      "*.appfactory": "json",
+      "*.manifest": "json"
     }
   }
