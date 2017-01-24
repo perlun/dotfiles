@@ -15,7 +15,7 @@
     },
     "files.insertFinalNewline": true,
 
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
 
     "editor.formatOnSave": false,
     "gitProjectManager.baseProjectsFolders": [
