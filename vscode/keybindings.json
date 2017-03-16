@@ -5,5 +5,6 @@
   { "key": "shift+ctrl+up", "command": "editor.action.insertCursorAbove",
                           "when": "editorTextFocus" },
   { "key": "shift+ctrl+down", "command": "editor.action.insertCursorBelow",
-                             "when": "editorTextFocus" }
+                             "when": "editorTextFocus" },
+  { "key": "cmd+ctrl+n", "command": "extension.advancedNewFile" }
 ]
