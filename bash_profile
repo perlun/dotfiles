@@ -79,6 +79,7 @@ alias travis='rvm 2.3 do travis'
 alias yard='rvm 2.3 do yard'
 alias k='bundle exec knife'
 alias prune_branches='git branch -l | xargs git branch -d ; git fetch --prune'
+alias yard_server='bundle exec yard server --reload'
 
 # History expansion is enabled by default. It causes problems when your git commit messages contains exclamation marks, like this:
 #
