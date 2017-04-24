@@ -6,7 +6,7 @@
     "editor.codeLens": false,
 
     // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.rulers": [132],
 
     "[ruby]": {
@@ -14,12 +14,14 @@
     },
 
     "files.exclude": {
+        "client/tmp/**/*": true,
+        "tmp/**/*": true,
         "**/*.js": { "when": "$(basename).ts" },
         "**/*.js.map": true
     },
     "files.insertFinalNewline": true,
 
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
 
     "editor.formatOnSave": false,
     "gitProjectManager.baseProjectsFolders": [
@@ -40,16 +42,36 @@
       "*.prd": "json"
     },
     "editor.wordWrap": true,
-    "workbench.iconTheme": "vscode-great-icons",
     "cSpell.userWords": [
-        "autoinject",
-        "transpiler",
-        "intellisense",
-        "Silverlight",
-        "Matz",
-        "Arcieri",
-        "postgresql",
-        "Owin",
-        "unmanaged"
-    ]
+      "virtualized",
+      "babysteps",
+      "favourite",
+      "virtio",
+      "struct",
+      "changelog",
+      "Silverlight",
+      "uxfactory",
+      "backend",
+      "fieldops",
+      "nginx",
+      "ecraft",
+      "spendrups",
+      "appfactory",
+      "workerd",
+      "prepended",
+      "crontab",
+      "passthrough",
+      "Testem",
+      "mixins",
+      "jsonapi",
+      "Postgres",
+      "Gemfile",
+      "JDBC",
+      "htmlbars",
+      "qunit",
+      "precompile"
+    ],
+    "search.useRipgrep": true,
+    "workbench.iconTheme": "file-icons",
+    "workbench.colorTheme": "Pastels_on_Dark"
 }
