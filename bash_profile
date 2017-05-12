@@ -58,10 +58,6 @@ export PYTHONPATH=$BREW_PREFIX/lib/python2.7/site-packages:$PYTHONPATH
 export PYTHONWARNINGS="ignore:Unverified HTTPS request"
 export RUST_SRC_PATH=~/git/rust/src
 
-if [ $(which docker-machine | wc -l ) -gt 0 ] ; then
-  eval $(docker-machine env ecraft-bep)
-fi
-
 if [ $(which gls | wc -l ) -gt 0 ] ; then
   # OS X with GNU userland detected. I tend to prefer this because it's more flexible in terms of parameters... You can write
   # 'ls /foo/bar -la' for example, whereas you *must* write it as 'ls -la /foo/bar' in the BSD userland, which OS X uses by default.
@@ -74,7 +70,7 @@ fi
 
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 alias github_changelog_generator='rvm 2.3 do github_changelog_generator'
-alias reload='curl -4 http://localhost:42000/_reload'
+alias reload='curl -4 http://localhost:8000/_reload'
 alias travis='rvm 2.3 do travis'
 alias yard='rvm 2.3 do yard'
 alias k='bundle exec knife'
