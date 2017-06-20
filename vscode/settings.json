@@ -40,5 +40,16 @@
       "*.prd": "json"
     },
     "editor.wordWrap": true,
-    "workbench.colorTheme": "One Monokai"
+    "workbench.iconTheme": "vscode-great-icons",
+    "cSpell.userWords": [
+        "autoinject",
+        "transpiler",
+        "intellisense",
+        "Silverlight",
+        "Matz",
+        "Arcieri",
+        "postgresql",
+        "Owin",
+        "unmanaged"
+    ]
 }
