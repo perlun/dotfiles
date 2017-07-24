@@ -1,6 +1,6 @@
 // Place your key bindings in this file to overwrite the defaults
 [
- { "key": "f5",  "command": "editor.action.sortLinesAscending",
+  { "key": "cmd+shift+s",  "command": "editor.action.sortLinesAscending",
                  "when": "editorTextFocus" },
   { "key": "shift+ctrl+up", "command": "editor.action.insertCursorAbove",
                           "when": "editorTextFocus" },

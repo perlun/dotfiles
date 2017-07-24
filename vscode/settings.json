@@ -4,6 +4,7 @@
     "editor.autoClosingBrackets": false,
     "files.trimTrailingWhitespace": true,
     "editor.codeLens": false,
+    "editor.multiCursorModifier": "ctrlCmd",
 
     // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
     "editor.tabSize": 2,
@@ -15,10 +16,20 @@
 
     "files.exclude": {
         "client/tmp/**/*": true,
+        "dist/**/*": true,
         "tmp/**/*": true,
         "**/*.js": { "when": "$(basename).ts" },
         "**/*.js.map": true
     },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "client/tmp/**/*": true,
+        "dist/**/*": true,
+        "tmp/**/*": true
+    },
+
     "files.insertFinalNewline": true,
 
     "window.zoomLevel": 1,
@@ -75,5 +86,6 @@
     "search.useRipgrep": true,
     "workbench.iconTheme": "file-icons",
     "workbench.colorTheme": "Pastels_on_Dark",
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "ruby.rubocop.executePath": "/Users/plundberg/.rvm/gems/ruby-2.4.1/bin/"
 }
