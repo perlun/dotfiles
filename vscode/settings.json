@@ -13,6 +13,9 @@
     "[ruby]": {
         "editor.tabSize": 2
     },
+    "[csharp]": {
+        "editor.tabSize": 4
+    },
 
     "files.exclude": {
         "client/tmp/**/*": true,
@@ -41,6 +44,7 @@
         "~/git/spendrups"
     ],
     "gitProjectManager.maxDepthRecursion": 1,
+    "haskell.ghcMod.executablePath": "~/Library/Haskell/bin/ghc-mod",
 
     "trailing-spaces.trimOnSave": true,
     "files.associations": {
