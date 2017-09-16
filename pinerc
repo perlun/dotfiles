@@ -49,7 +49,7 @@ default-fcc=
 # Over-rides default path for saved-msg folder, e.g. =saved-messages (using 1st
 # folder collection dir) or ={host2}saved-mail or ="" (to suppress saving).
 # Default: saved-messages (Unix) or SAVEMAIL.MTX (PC) in default collection.
-default-saved-msg-folder=
+default-saved-msg-folder=[Gmail]/All Mail
 
 # Over-rides default path for postponed messages folder, e.g. =pm (which uses
 # first folder collection dir) or ={host4}pm (using home dir on host4).
@@ -355,8 +355,7 @@ incoming-folders=
 # List of directories where saved-message folders may be. First one is
 # the default for Saves. Example: Main {host1}mail/[], Desktop mail\[]
 # Syntax: optnl-label {optnl-imap-hostname}optnl-directory-path[]
-folder-collections=mail/[],
-	perlun@gmail.com {imap.gmail.com:993/ssl/user=perlun@gmail.com}[]
+folder-collections=perlun@gmail.com {imap.gmail.com:993/ssl/user=perlun@gmail.com}[]
 
 # List, only needed if nntp-server not set, or news is on a different host
 # than used for NNTP posting. Examples: News *[] or News *{host3/nntp}[]
@@ -435,7 +434,6 @@ rsh-path=
 # Sets the time in seconds that Alpine will attempt to open a UNIX remote
 # shell connection.  The default is 15, min is 5, and max is unlimited.
 # Zero disables rsh altogether.
-rsh-open-timeout=
 
 # Sets the format of the command used to open a UNIX secure
 # shell connection.  The default is "%s %s -l %s exec /etc/r%sd"
@@ -462,7 +460,6 @@ new-version-threshold=
 disable-these-drivers=
 
 # List of SASL authenticators to disable.
-disable-these-authenticators=
 
 # Set by Alpine; contains data for caching remote address books.
 remote-abook-metafile=
@@ -610,7 +607,7 @@ smime-private-key-directory=
 # private-key-directory. The value can be a remote or local folder
 # specification like for a non-standard pinerc value. The default
 # is that it is not set.
-smime-private-key-container=
+smime-private-key-container=""
 
 # Certificate Authority certificates (in addition to the normal CACerts for the
 # system) are kept in files in this directory. The files are in PEM format.
@@ -647,3 +644,6 @@ wp-state=
 
 # Web Alpine preferred width for message display in characters
 wp-columns=
+
+rsh-open-timeout=0
+disable-these-authenticators=GSSAPI
