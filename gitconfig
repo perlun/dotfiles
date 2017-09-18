@@ -2,6 +2,9 @@
 # [include]
 #         path = ~/git/dotfiles/gitconfig
 
+[user]
+	name = Per Lundberg
+
 [core]
         excludesfile = /Users/plundberg/.gitignore_global
         ignorecase = false
