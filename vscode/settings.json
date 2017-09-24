@@ -4,11 +4,14 @@
     "editor.autoClosingBrackets": false,
     "files.trimTrailingWhitespace": true,
     "editor.codeLens": false,
+    "editor.formatOnSave": false,
     "editor.multiCursorModifier": "ctrlCmd",
 
     // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
     "editor.tabSize": 2,
     "editor.rulers": [132],
+
+    "html.autoClosingTags": false,
 
     "[ruby]": {
         "editor.tabSize": 2
@@ -37,7 +40,6 @@
 
     "window.zoomLevel": 1,
 
-    "editor.formatOnSave": false,
     "gitProjectManager.baseProjectsFolders": [
         "~/git/ecraft",
         "~/git/mio",
@@ -58,6 +60,14 @@
     },
     "editor.wordWrap": true,
     "cSpell.userWords": [
+        "Arcieri",
+        "Dashevskii",
+        "Gemfile",
+        "JDBC",
+        "Matz",
+        "Oleg",
+        "Owin",
+        "Postgres",
         "Silverlight",
         "Testem",
         "appfactory",
@@ -96,5 +106,6 @@
     "workbench.iconTheme": "file-icons",
     "workbench.colorTheme": "Pastels_on_Dark",
     "workbench.activityBar.visible": true,
-    "ruby.rubocop.executePath": "/Users/plundberg/.rvm/gems/ruby-2.4.1/bin/"
+    "ruby.rubocop.executePath": "/Users/plundberg/.rvm/gems/ruby-2.4.1/bin/",
+    "editor.renderWhitespace": "all"
 }
