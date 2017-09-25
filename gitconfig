@@ -6,7 +6,7 @@
 	name = Per Lundberg
 
 [core]
-        excludesfile = /Users/plundberg/.gitignore_global
+        excludesfile = ~/.gitignore_global
         ignorecase = false
 
 [alias]
