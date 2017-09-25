@@ -22,7 +22,7 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 1. `npm install -g ember-cli`
 1. `npm install -g bower`
 
-## Some highly recommended tools
+## Recommended tools (macOS)
 
 - ~[Atom](https://atom.io/): One of the better text editors nowadays. Has matured quite a lot recently and is ready for broad usage.~ Have switched over to [Visual Studio Code](https://code.visualstudio.com/) since, which provides a great IDE-like experience for C#, JavaScript and other languages. The Ruby experience is also decent.
 - [Spectacle](http://spectacleapp.com/): This one is nice since it will give you shortcuts for moving a window to use the "left half" or "right half" of the screen, and similar. I use this all the time to be able to run four programs on two monitors, giving them 50% each. :)
@@ -30,6 +30,11 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 - [Mou](http://mouapp.com/): Markdown-editor which works quite well, and has a nice preview pane also.
 - [Parallels](http://www.parallels.com): A great virtualization app, to be able to run Windows 10, Visual Studio, etc.
 - [ScrollReverser](http://www.macupdate.com/app/mac/37872/scroll-reverser): "Natural scrolling" is already supported by OS X, but if you only want to use it for the trackpad but not external mice, this is a great help.
+
+## Recommended tools (Debian)
+
+- [pg_hba.ctl](pg_hba.ctl) settings, to make URLs like `postgres://localhost/foo_database` work for any local user. **Caveat**: not secure for customer/multi-user environments.
+- Reconfigure Klipper to sync clipboards (to avoid letting Ctrl-C and mouse-selection in Konsole copy to different clipboards, which can be annoying if mentally switching between macOS and Debian often, which have different semantics in this area.)
 
 ## Stuff I don't use so much any more
 
