@@ -33,6 +33,8 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 
 ## Recommended tools (Debian)
 
+- Debian Unstable, to get good, recent versions of the software I need for work.
+- KDE Plasma as the desktop environment of choice. Well polished, pretty much on-par in terms of usability with Windows 10 or macOS.
 - [pg_hba.ctl](pg_hba.ctl) settings, to make URLs like `postgres://localhost/foo_database` work for any local user. **Caveat**: not secure for customer/multi-user environments.
 - Reconfigure Klipper to sync clipboards (to avoid letting Ctrl-C and mouse-selection in Konsole copy to different clipboards, which can be annoying if mentally switching between macOS and Debian often, which have different semantics in this area.)
 
