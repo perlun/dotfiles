@@ -51,6 +51,7 @@ if has_homebrew ; then
   . $(brew --prefix nvm)/nvm.sh
 fi
 
+export BUNDLER_EDITOR=code
 export EDITOR=nano
 export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
 export PATH=$PATH:~/bin:~/.cargo/bin:~/git/ecraft/ecraft.uxfactory.bin:/usr/local/mongodb/bin
