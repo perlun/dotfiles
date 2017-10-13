@@ -65,15 +65,11 @@
     "editor.wordWrap": true,
     "cSpell.userWords": [
         "Arcieri",
-        "Dashevskii",
         "Gemfile",
-        "Handson",
         "JDBC",
         "Matz",
-        "Oleg",
         "Owin",
         "Postgres",
-        "Rubygems",
         "Silverlight",
         "Testem",
         "appfactory",
@@ -88,16 +84,12 @@
         "fieldops",
         "htmlbars",
         "intellisense",
-        "jhat",
         "jsonapi",
-        "jvisualvm",
-        "microservice",
         "mixins",
         "nginx",
         "passthrough",
         "postgresql",
         "precompile",
-        "prepend",
         "prepended",
         "qunit",
         "retryable",
@@ -106,6 +98,7 @@
         "textblock",
         "textblocks",
         "transpiler",
+        "uncommented",
         "unmanaged",
         "uxfactory",
         "virtio",
@@ -119,5 +112,6 @@
     "ruby.rubocop.executePath": "bin/",
     "editor.renderWhitespace": "all",
     "[java]": {
-    }
+    },
+    "C_Cpp.intelliSenseEngine": "Default"
 }
