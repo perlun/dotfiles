@@ -20,6 +20,10 @@
         "editor.tabSize": 4
     },
 
+    "[typescript]": {
+        "editor.tabSize": 4
+    },
+
     "files.exclude": {
         "client/tmp/**/*": true,
         "dist/**/*": true,
@@ -63,6 +67,7 @@
         "Arcieri",
         "Dashevskii",
         "Gemfile",
+        "Handson",
         "JDBC",
         "Matz",
         "Oleg",
@@ -111,6 +116,8 @@
     "workbench.iconTheme": "file-icons",
     "workbench.colorTheme": "Pastels_on_Dark",
     "workbench.activityBar.visible": true,
-    "ruby.rubocop.executePath": "/Users/plundberg/.rvm/gems/ruby-2.4.1/bin/",
-    "editor.renderWhitespace": "all"
+    "ruby.rubocop.executePath": "bin/",
+    "editor.renderWhitespace": "all",
+    "[java]": {
+    }
 }
