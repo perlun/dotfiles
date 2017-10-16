@@ -1,6 +1,11 @@
 # To use, copy the following to your ~/.gitconfig
 # [include]
 #         path = ~/git/dotfiles/gitconfig
+#
+# You will also want this setting:
+#
+# [user]
+#        email = perlun@gmail.com
 
 [user]
 	name = Per Lundberg
