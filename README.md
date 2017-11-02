@@ -15,7 +15,7 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
    You can even use [8-bit (256) colors](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) if you like:
    
        PROMPT_HOST_COLOR="38;5;209"
-       PROMPT_TIME_COLOR="38;5;212"        
+       PROMPT_TIME_COLOR="38;5;212"
 
 ## Quick-start to get some of the important stuff running when setting up a new Mac
 
