@@ -1,7 +1,7 @@
 #
 # Based on https://github.com/nanorc/nanorc/blob/master/nginx.nanorc
 #
-# To use, include the following in your ~/.nanorc: 
+# To use, include the following in your ~/.nanorc:
 #
 #   include ~/.nano/syntax/nginx.nanorc
 #
