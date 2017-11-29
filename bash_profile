@@ -53,6 +53,7 @@ fi
 
 export BUNDLER_EDITOR=code
 export EDITOR=nano
+export JAVA_OPTS='--add-opens java.base/java.util.zip=ALL-UNNAMED --add-opens java.base/java.security.cert=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED'
 export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
 export PATH=$PATH:~/bin:~/.cargo/bin:~/git/ecraft/ecraft.uxfactory.bin:/usr/local/mongodb/bin
 export PYTHONPATH=$BREW_PREFIX/lib/python2.7/site-packages:$PYTHONPATH
