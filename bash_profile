@@ -67,6 +67,7 @@ if [ $(which gls | wc -l ) -gt 0 ] ; then
   alias chown=gchown
   alias find=gfind
 else
+  # TODO: Only works on Linux, NOT on macOS.
   alias ls='ls --color=auto'
 fi
 
