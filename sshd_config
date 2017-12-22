@@ -1,7 +1,9 @@
 # Useful sshd snippets, because copy-pasting is easier than having to remember.
 
 #
-# To create an SFTP-only user (tested on Ubuntu 16.04 LTS):
+# To create an SFTP-only user (tested on Ubuntu 16.04 LTS), use the snippet below. REMEMBER to follow the advice provided at
+# https://serverfault.com/questions/584986/bad-ownership-or-modes-for-chroot-directory-component (i.e. make the user's home
+# root-owned with perms 755, and create a user-owned folder inside that folder.)
 #
 Subsystem sftp /usr/lib/openssh/sftp-server
 
