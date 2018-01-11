@@ -1,3 +1,7 @@
+# Note: this is a bit deprecated in favor of the `profile` file in this folder, where we try to do things more correctly
+# (use different behavior for login and non-login shells, to avoid running things when starting up scripts that is not relevant
+# for them, and just slows things down.)
+
 # To use this from your profile, either copy it to ~/.bash_profile or add a line like this into it
 # (obviously replacing the path to where your cloned copy resides)
 # . ~/git/dotfiles/bash_profile
