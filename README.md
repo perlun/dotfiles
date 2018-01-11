@@ -24,8 +24,8 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 1. `git clone git@github.com:perlun/dotfiles.git`
 1. Edit/create `~/.bash_profile` to include `. ~/git/dotfiles/bash_profile`. Restart the shell to make changes take effect.
 1. Install Homebrew: http://brew.sh/ (a package manager that easily lets go you get command-line stuff you need)
-1. `brew install git` (to get a more recent one than Apple provides)
 1. `brew install bash-completion` (to get branch/etc completion in `git` - can't live without this once you've tried it.)
+1. `brew install git` (to get a more recent one than Apple provides + bash completion files for the above)
 1. `brew install coreutils findutils` (to get a more GNUish userland)
 1. `brew install nodejs`
 1. `\curl -sSL https://get.rvm.io | bash -s stable` (to be able to not have to touch the system-wide Ruby, but use RVM instead)
