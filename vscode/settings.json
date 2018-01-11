@@ -110,11 +110,11 @@
     ],
     "search.useRipgrep": true,
     "workbench.iconTheme": "file-icons",
-    "workbench.colorTheme": "Pastels_on_Dark",
     "workbench.activityBar.visible": true,
     "ruby.rubocop.executePath": "bin/",
     "editor.renderWhitespace": "all",
     "[java]": {
     },
-    "C_Cpp.intelliSenseEngine": "Default"
+    "C_Cpp.intelliSenseEngine": "Default",
+    "workbench.colorTheme": "Hopscotch"
 }
