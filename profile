@@ -37,6 +37,9 @@ xterm*|rxvt*)
     ;;
 esac
 
+# Various ENV variable settings
+export EDITOR='code -w'
+
 # Rust/Cargo support.
 export PATH="$HOME/.cargo/bin:$PATH"
 
