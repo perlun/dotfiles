@@ -11,13 +11,13 @@
     "command": "extension.advancedNewFile"
   },
   {
-    "key": "up",
-    "command": "cursorUp",
-    "when": "editorTextFocus"
+    "key": "cmd+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "up",
-    "command": "-cursorUp",
-    "when": "editorTextFocus"
+    "key": "cmd+.",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   }
 ]
