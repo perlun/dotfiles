@@ -16,6 +16,9 @@
     "[ruby]": {
         "editor.tabSize": 2
     },
+    "[c]": {
+        "editor.tabSize": 4
+    },
     "[csharp]": {
         "editor.tabSize": 4
     },
@@ -67,8 +70,9 @@
         "Arcieri",
         "Gemfile",
         "JDBC",
-        "MSYS",
+        "Lundberg",
         "Matz",
+        "MSYS",
         "NOTIME",
         "Owin",
         "Postgres",
@@ -81,13 +85,17 @@
         "changelog",
         "couchdb",
         "crontab",
+        "deallocation",
+        "dylib",
         "ecraft",
         "favourite",
         "fieldops",
+        "getpid",
         "htmlbars",
         "intellisense",
         "jsonapi",
         "mixins",
+        "mutex",
         "nginx",
         "pacman",
         "passthrough",
