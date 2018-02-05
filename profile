@@ -43,6 +43,10 @@ export EDITOR='code -w'
 # Rust/Cargo support.
 export PATH="$HOME/.cargo/bin:$PATH"
 
+if [ -d /usr/local/opt/postgresql@9.6 ] ; then
+  export PATH=$PATH:/usr/local/opt/postgresql@9.6/bin
+fi
+
 has_homebrew() {
   if [ $(which brew | wc -l ) -gt 0 ] ; then
     return 0
