@@ -9,7 +9,7 @@
 
     // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
     "editor.tabSize": 2,
-    "editor.rulers": [132],
+    "editor.rulers": [75, 132],
 
     "html.autoClosingTags": false,
 
@@ -124,5 +124,6 @@
     "[java]": {
     },
     "C_Cpp.intelliSenseEngine": "Default",
-    "workbench.colorTheme": "Hopscotch"
+    "workbench.colorTheme": "Hopscotch",
+    "workbench.editor.showTabs": true
 }
