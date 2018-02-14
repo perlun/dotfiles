@@ -65,7 +65,7 @@ has_homebrew() {
 # Simply put: if you are used to the GNU userland, going to a BSD userland is a pain. The setting below makes it less so.
 
 if has_homebrew ; then
-  export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/findutils/libexec/gnubin:$PATH"
+  export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/findutils/libexec/gnubin:/usr/local/opt/curl/bin:$PATH"
 fi
 
 # RVM setup.
