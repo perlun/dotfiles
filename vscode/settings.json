@@ -47,12 +47,8 @@
 
     "window.zoomLevel": 1,
 
-    "gitProjectManager.baseProjectsFolders": [
-        "~/git/ecraft",
-        "~/git/mio",
-        "~/git/spendrups"
-    ],
-    "gitProjectManager.maxDepthRecursion": 1,
+    "gitlens.currentLine.enabled": false,
+
     "haskell.ghcMod.executablePath": "~/Library/Haskell/bin/ghc-mod",
 
     "trailing-spaces.trimOnSave": true,
