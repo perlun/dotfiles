@@ -43,6 +43,9 @@ export EDITOR='code -w'
 # Rust/Cargo support.
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# OCaml/opam support
+. ~/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
 if [ -d /usr/local/opt/postgresql@9.6 ] ; then
   export PATH=$PATH:/usr/local/opt/postgresql@9.6/bin
 fi
