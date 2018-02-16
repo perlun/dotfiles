@@ -19,5 +19,15 @@
     "key": "cmd+.",
     "command": "-editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "extension.reflowMarkdown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q",
+    "command": "-extension.reflowMarkdown",
+    "when": "editorTextFocus"
   }
 ]
