@@ -29,5 +29,15 @@
     "key": "alt+q",
     "command": "-extension.reflowMarkdown",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k cmd+d",
+    "command": "editor.action.formatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
