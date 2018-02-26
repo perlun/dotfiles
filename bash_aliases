@@ -11,3 +11,5 @@ alias prune_branches='git branch -l | xargs git branch -d ; git fetch --prune'
 # We don't start these services on system startup, but only run it in the foreground on demand.
 alias postgres96='/usr/local/Cellar/postgresql@9.6/9.6.6/bin/postgres -D /usr/local/var/postgresql@9.6'
 alias redis='redis-server /usr/local/etc/redis.conf'
+
+alias yard_server='bundle exec yard server --reload'
