@@ -76,6 +76,7 @@
         "Postgres",
         "Silverlight",
         "Testem",
+        "Uncomment",
         "appfactory",
         "autoinject",
         "babysteps",
@@ -124,5 +125,14 @@
     },
     "C_Cpp.intelliSenseEngine": "Default",
     "workbench.colorTheme": "Hopscotch",
-    "workbench.editor.showTabs": true
+    "workbench.editor.showTabs": true,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": true,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false
+    }
 }
