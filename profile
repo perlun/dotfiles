@@ -37,8 +37,18 @@ xterm*|rxvt*)
     ;;
 esac
 
+# History expansion is enabled by default. It causes problems when your git commit messages contains exclamation marks, like this:
+#
+#     git commit foo.txt -m "I had to change this! Really?"
+#
+# Therefore, I prefer to disable history expansion.
+set +H
+
 # Various ENV variable settings
 export EDITOR='code -w'
+
+# This is needed to avoid warnings with JRuby on Java 9+.
+export JAVA_OPTS='--add-opens java.base/java.util.zip=ALL-UNNAMED --add-opens java.base/java.security.cert=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED'
 
 # Rust/Cargo support.
 export PATH="$HOME/.cargo/bin:$PATH"
