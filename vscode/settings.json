@@ -16,10 +16,16 @@
     "[ruby]": {
         "editor.tabSize": 2
     },
+
     "[c]": {
         "editor.tabSize": 4
     },
+
     "[csharp]": {
+        "editor.tabSize": 4
+    },
+
+    "[javascript]": {
         "editor.tabSize": 4
     },
 
@@ -49,9 +55,6 @@
 
     "gitlens.currentLine.enabled": false,
 
-    "haskell.ghcMod.executablePath": "~/Library/Haskell/bin/ghc-mod",
-
-    "trailing-spaces.trimOnSave": true,
     "files.associations": {
       "*.local": "json",
       "*.config": "json",
@@ -134,5 +137,8 @@
         "suppressLineUncommittedWarning": true,
         "suppressNoRepositoryWarning": false,
         "suppressResultsExplorerNotice": false
-    }
+    },
+    "gitlens.keymap": "alternate",
+    "workbench.editor.enablePreview": false,
+    "workbench.statusBar.visible": true
 }
