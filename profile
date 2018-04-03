@@ -61,7 +61,7 @@ if [ -d /usr/local/opt/postgresql@9.6 ] ; then
 fi
 
 has_homebrew() {
-  if [ $(which brew | wc -l ) -gt 0 ] ; then
+  if [ $(which brew 2> /dev/null | wc -l ) -gt 0 ] ; then
     return 0
   fi
 
