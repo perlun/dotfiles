@@ -6,8 +6,8 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 ## How to use
 
 1. `cd ~/git && git clone git@github.com:perlun/dotfiles.git`
-2. Add `. ~/git/dotfiles/bash_profile` to your `~/.bashrc`
-3. If desired, add the following and customize to your liking (put them right before the `.` line):
+1. `rm -f ~/.profile && ln -sf ~/git/dotfiles/profile ~/.profile`
+1. If desired, add the following to `~/.bash_profile` and customize to your liking:
 
        PROMPT_HOST_COLOR="1;34"
        PROMPT_TIME_COLOR="34"
