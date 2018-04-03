@@ -15,6 +15,6 @@ alias redis='redis-server /usr/local/etc/redis.conf'
 alias yard_server='bundle exec yard server --reload'
 
 # I use Java 10 by default, but some applications only work correctly on Java 8/9.
-alias java8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
-alias java9='export JAVA_HOME=$(/usr/libexec/java_home -v 9)'
-alias java10='export JAVA_HOME=$(/usr/libexec/java_home -v 10)'
+alias java8='unset JAVA_OPTS; export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
+alias java9='export JAVA_HOME=$(/usr/libexec/java_home -v 9); set_java_opts'
+alias java10='export JAVA_HOME=$(/usr/libexec/java_home -v 10); set_java_opts'

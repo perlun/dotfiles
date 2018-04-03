@@ -48,7 +48,11 @@ set +H
 export EDITOR='code -w'
 
 # This is needed to avoid warnings with JRuby on Java 9+.
-export JAVA_OPTS='--add-opens java.base/java.util.zip=ALL-UNNAMED --add-opens java.base/java.security.cert=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED'
+set_java_opts() {
+  export JAVA_OPTS='--add-opens java.base/java.util.zip=ALL-UNNAMED --add-opens java.base/java.security.cert=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED'
+}
+
+set_java_opts
 
 # Rust/Cargo support.
 export PATH="$HOME/.cargo/bin:$PATH"
