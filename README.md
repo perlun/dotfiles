@@ -7,6 +7,10 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 
 1. `cd ~/git && git clone git@github.com:perlun/dotfiles.git`
 1. `rm -f ~/.profile && ln -sf ~/git/dotfiles/profile ~/.profile`
+1. Add to `~/.bash_profile`:
+
+       [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+  
 1. If desired, add the following to `~/.bash_profile` and customize to your liking:
 
        PROMPT_HOST_COLOR="1;34"
@@ -22,7 +26,7 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 1. Install [iTerm 2](http://www.iterm2.com) (a good terminal app for OS X)
 1. `mkdir git && cd git`
 1. `git clone git@github.com:perlun/dotfiles.git`
-1. Edit/create `~/.bash_profile` to include `. ~/git/dotfiles/bash_profile`. Restart the shell to make changes take effect.
+1. Follow the instructions above to get started.
 1. Install Homebrew: http://brew.sh/ (a package manager that easily lets go you get command-line stuff you need)
 1. `brew install bash-completion` (to get branch/etc completion in `git` - can't live without this once you've tried it.)
 1. `brew install git` (to get a more recent one than Apple provides + bash completion files for the above)
@@ -39,7 +43,7 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 - [Spectacle](http://spectacleapp.com/): This one is nice since it will give you shortcuts for moving a window to use the "left half" or "right half" of the screen, and similar. I use this all the time to be able to run four programs on two monitors, giving them 50% each. :)
 - [Karabiner](http://pqrs.org/macosx/keyremap4macbook/): This is an incredibly useful tool if you're coming from a PC background, used to a "traditional" PC laptop keyboard. The Apple choices for the key placements are simply quite horrible, if you ask me. Not one single modifier key (Control, Fn, Option, Cmd etc) is on the same place as on my other PC keyboard, so some remapping is simply necessary to retain my mental health. From the same author you can also install [Seil](https://pqrs.org/osx/karabiner/seil.html.en) if you wanto use Caps Lock for e.g. [switching from one keyboard layout to another](http://dae.me/blog/593/select-input-language-by-caps-lock-in-mac-os-x/).
 - ~[Mou](http://mouapp.com/): Markdown-editor which works quite well, and has a nice preview pane also.~ Use VSCode instead, which also supports preview if you like/need it.
-- [Parallels](http://www.parallels.com): A great virtualization app, to be able to run Windows 10, Debian, Visual Studio, etc.
+- [Parallels](http://www.parallels.com): A great virtualization app, to be able to run Windows 10, Debian, Visual Studio, etc. 
 - [ScrollReverser](http://www.macupdate.com/app/mac/37872/scroll-reverser): "Natural scrolling" is already supported by OS X, but if you only want to use it for the trackpad but not external mice, this is a great help.
 
 ## Recommended tools (Debian)
