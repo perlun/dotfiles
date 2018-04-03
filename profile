@@ -26,7 +26,7 @@ fi
 # The __git_ps1 part is important for the git-prompt.sh above to function correctly.
 PROMPT_HOST_COLOR=${PROMPT_HOST_COLOR:-1;32}
 PROMPT_TIME_COLOR=${PROMPT_TIME_COLOR:-32}
-export PS1='\033[${PROMPT_TIME_COLOR}m[\t]\033[0m \[\033[${PROMPT_HOST_COLOR}m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\033[36m$(__git_ps1)\033[0m\n\$ '
+export PS1='\033[${PROMPT_TIME_COLOR}m[\t]\033[0m \[\033[${PROMPT_HOST_COLOR}m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\033[36m$(__git_ps1)'$'\033[0m\n\$ '
 
 # If this is an xterm set the title to user@host:dir. Also copied from Debian.
 case "$TERM" in
