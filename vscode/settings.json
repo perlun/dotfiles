@@ -56,13 +56,16 @@
     "gitlens.currentLine.enabled": false,
 
     "files.associations": {
-      "*.local": "json",
-      "*.config": "json",
-      "*.src": "json",
+      ".env.*": "dotenv",
+      "*.local": "jsonc",
+      "app.config*": "jsonc",
       "cli": "ruby",
       "*.appfactory": "json",
       "*.manifest": "json",
-      "*.prd": "json"
+      "*.prd": "json",
+      "Dockerfile*": "dockerfile",
+      "workerd.*": "erb",
+      "workerd.rb": "ruby"
     },
     "editor.wordWrap": true,
 
