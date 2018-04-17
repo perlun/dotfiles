@@ -11,6 +11,9 @@
     "editor.tabSize": 2,
     "editor.rulers": [75, 132],
 
+    // This is a pretty useless feature that we disable.
+    "explorer.openEditors.visible": 0,
+
     "html.autoClosingTags": false,
 
     "[ruby]": {
@@ -218,7 +221,7 @@
     "[java]": {
     },
     "C_Cpp.intelliSenseEngine": "Default",
-    "workbench.colorTheme": "Adapta Nokto",
+    "workbench.colorTheme": "Pastels_on_Dark",
     "workbench.editor.showTabs": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -233,5 +236,12 @@
     "gitlens.keymap": "chorded",
     "workbench.editor.enablePreview": false,
     "workbench.statusBar.visible": true,
-    "git.ignoreMissingGitWarning": true
+    "git.ignoreMissingGitWarning": true,
+    "workbench.startupEditor": "newUntitledFile",
+
+    "ruby.lint": {
+        "rubocop": true
+    },
+
+    "ruby.lintDebounceTime": 500,
 }
