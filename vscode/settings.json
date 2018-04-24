@@ -2,38 +2,28 @@
 {
     // Controls if the editor should automatically close brackets after opening them
     "editor.autoClosingBrackets": false,
-    "files.trimTrailingWhitespace": true,
+    "editor.detectIndentation": false,
     "editor.codeLens": false,
     "editor.formatOnSave": false,
     "editor.multiCursorModifier": "ctrlCmd",
 
     // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
     "editor.rulers": [75, 132],
 
     // This is a pretty useless feature that we disable.
     "explorer.openEditors.visible": 0,
 
+    "files.trimTrailingWhitespace": true,
+
     "html.autoClosingTags": false,
 
-    "[ruby]": {
+    "[gemfile]": {
         "editor.tabSize": 2
     },
 
-    "[c]": {
-        "editor.tabSize": 4
-    },
-
-    "[csharp]": {
-        "editor.tabSize": 4
-    },
-
-    "[javascript]": {
-        "editor.tabSize": 4
-    },
-
-    "[typescript]": {
-        "editor.tabSize": 4
+    "[ruby]": {
+        "editor.tabSize": 2
     },
 
     "files.exclude": {
@@ -107,13 +97,16 @@
 
     "cSpell.language": "en,sv",
     "cSpell.userWords": [
+        "ALPN",
         "Arcieri",
         "BSON",
         "CHLD",
         "Cors",
         "Dashevskii's",
         "EADDRINUSE",
+        "ECDHE",
         "ECONNREFUSED",
+        "EEST",
         "ENVVARSDOCS",
         "ESRCH",
         "Errno",
@@ -132,12 +125,15 @@
         "Npgsql",
         "Oleg",
         "Owin",
+        "PEBKAC",
+        "PKCS",
         "PREPEND",
         "Postgre",
         "Postgres",
         "Rubo",
         "SIGKILL",
         "SIGTERM",
+        "SYSCALL",
         "Silverlight",
         "Sverige",
         "Testem",
@@ -150,13 +146,21 @@
         "backend",
         "backtrace",
         "besökelsetid",
+        "cacert",
         "camelize",
+        "caname",
+        "changeit",
         "changelog",
         "chdir",
         "conditionalize",
         "couchdb",
         "crontab",
         "deallocation",
+        "destkeypass",
+        "destkeystore",
+        "deststorepass",
+        "deststoretype",
+        "devcert",
         "downcase",
         "dylib",
         "ecraft",
@@ -164,27 +168,37 @@
         "executables",
         "favourite",
         "fieldops",
+        "genrsa",
         "getpgid",
         "getpid",
         "graphql",
         "hjärtesorg",
         "htmlbars",
+        "inkey",
         "intellisense",
         "ironmq",
         "javax",
         "jcmd",
         "jsonapi",
+        "keyalg",
+        "keypasswd",
         "klass",
         "lakto",
         "mixins",
+        "mkdir",
         "mtime",
         "mutex",
+        "mydomain",
+        "nada",
         "nginx",
+        "noprompt",
+        "openssl",
         "ostruct",
         "pacman",
         "passthrough",
         "pids",
         "pescetarian",
+        "plundberg",
         "postgresql",
         "precompile",
         "prepended",
@@ -201,15 +215,20 @@
         "rubocop",
         "sigchild",
         "spendrups",
+        "srckeystore",
+        "srcstorepass",
+        "srcstoretype",
         "strftime",
         "struct",
         "syslog",
+        "tada",
         "textblock",
         "textblocks",
         "timestamps",
         "transpiler",
         "trello",
         "uncommented",
+        "unencrypted",
         "unmanaged",
         "unshift",
         "uxfactory",
@@ -249,4 +268,6 @@
     },
 
     "ruby.lintDebounceTime": 500,
+
+    "yaml.format.enable": true
 }
