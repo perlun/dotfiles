@@ -62,7 +62,7 @@
       "app.config*": "jsonc",
       "cli": "ruby",
       "*.appfactory": "json",
-      "*.manifest": "json",
+      "*.manifest": "jsonc",
       "*.prd": "json",
       "Dockerfile*": "dockerfile",
       "workerd.*": "erb",
