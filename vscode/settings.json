@@ -239,15 +239,11 @@
         "workerd"
     ],
     "search.useRipgrep": true,
-    "workbench.iconTheme": "file-icons",
-    "workbench.activityBar.visible": true,
     "ruby.rubocop.executePath": "bin/",
     "editor.renderWhitespace": "all",
     "[java]": {
     },
     "C_Cpp.intelliSenseEngine": "Default",
-    "workbench.colorTheme": "Pastels_on_Dark",
-    "workbench.editor.showTabs": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -262,13 +258,18 @@
     "workbench.editor.enablePreview": false,
     "workbench.statusBar.visible": true,
     "git.ignoreMissingGitWarning": true,
-    "workbench.startupEditor": "newUntitledFile",
 
     "ruby.lint": {
         "rubocop": true
     },
 
     "ruby.lintDebounceTime": 500,
+
+    "workbench.activityBar.visible": true,
+    "workbench.colorTheme": "Pastels_on_Dark",
+    "workbench.editor.showTabs": true,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "newUntitledFile",
 
     "yaml.format.enable": true
 }
