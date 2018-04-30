@@ -18,11 +18,19 @@
 
     "html.autoClosingTags": false,
 
+    "[coffeescript]": {
+        "editor.tabSize": 2
+    },
+
     "[gemfile]": {
         "editor.tabSize": 2
     },
 
     "[ruby]": {
+        "editor.tabSize": 2
+    },
+
+    "[shellscript]": {
         "editor.tabSize": 2
     },
 
