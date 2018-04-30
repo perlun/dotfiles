@@ -107,6 +107,7 @@
     "cSpell.userWords": [
         "ALPN",
         "Arcieri",
+        "Asynchrony",
         "BSON",
         "CHLD",
         "Cors",
@@ -192,6 +193,7 @@
         "keypasswd",
         "klass",
         "lakto",
+        "leveldb",
         "mixins",
         "mkdir",
         "mtime",
