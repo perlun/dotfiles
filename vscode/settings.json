@@ -34,10 +34,6 @@
         "editor.tabSize": 2
     },
 
-    "[shellscript]": {
-        "editor.tabSize": 2
-    },
-
     "files.exclude": {
         "client/tmp/**/*": true,
         "dist/**/*": true,
