@@ -26,6 +26,10 @@
         "editor.tabSize": 2
     },
 
+    "[handlebars]": {
+        "editor.tabSize": 2
+    },
+
     "[ruby]": {
         "editor.tabSize": 2
     },
@@ -184,6 +188,7 @@
         "getpgid",
         "getpid",
         "graphql",
+        "gsub",
         "hjärtesorg",
         "htmlbars",
         "inkey",
@@ -244,6 +249,7 @@
         "unencrypted",
         "unmanaged",
         "unshift",
+        "upcase",
         "uuid",
         "uxfactory",
         "virtio",
@@ -284,5 +290,6 @@
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "newUntitledFile",
 
-    "yaml.format.enable": true
+    "yaml.format.enable": true,
+    "gitlens.historyExplorer.enabled": true
 }
