@@ -45,7 +45,9 @@ esac
 set +H
 
 # Various ENV variable settings
-export EDITOR='code -w'
+if [ $(which code 2> /dev/null | wc -l ) -gt 0 ] ; then
+    export EDITOR='code -w'
+fi
 
 # This is needed to avoid warnings with JRuby on Java 9+.
 set_java_opts() {
