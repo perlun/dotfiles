@@ -7,11 +7,11 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
 
 1. `cd ~/git && git clone git@github.com:perlun/dotfiles.git`
 1. `rm -f ~/.profile && ln -sf ~/git/dotfiles/profile ~/.profile`
-1. Add to `~/.bash_profile`:
+1. `cat > ~/.bash_profile`, paste this content and press Ctrl-D:
 
        [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
   
-1. If desired, add the following to `~/.bash_profile` and customize to your liking:
+1. If desired, add the following to `~/.bash_profile` (before the loading of `$HOME/.profile`) and customize to your liking:
 
        PROMPT_HOST_COLOR="1;34"
        PROMPT_TIME_COLOR="34"
@@ -20,6 +20,10 @@ This is a collection of my personal OS X settings. Feel free to use them in any 
    
        PROMPT_HOST_COLOR="38;5;209"
        PROMPT_TIME_COLOR="38;5;212"
+       
+1. If you have secrets in your profile that you do not wish to revision-control (e.g. environment variables with passwords
+   or API keys), place them in a separate file named `~/.profile_secrets`. It will be automatically picked up and loaded 
+   if it exists.
 
 ## Quick-start to get some of the important stuff running when setting up a new Mac
 
