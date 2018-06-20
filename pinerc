@@ -20,7 +20,7 @@
 personal-name=Per Lundberg
 
 # Sets domain part of From: and local addresses in outgoing mail.
-user-domain=
+user-domain=gmail.com
 
 # List of SMTP servers for sending mail. If blank: Unix Alpine uses sendmail.
 smtp-server=smtp.gmail.com:587/tls/user=perlun@gmail.com
@@ -44,7 +44,7 @@ pruned-folders=
 # Over-rides default path for sent-mail folder, e.g. =old-mail (using first
 # folder collection dir) or ={host2}sent-mail or ="" (to suppress saving).
 # Default: sent-mail (Unix) or SENTMAIL.MTX (PC) in default folder collection.
-default-fcc=
+default-fcc=""
 
 # Over-rides default path for saved-msg folder, e.g. =saved-messages (using 1st
 # folder collection dir) or ={host2}saved-mail or ="" (to suppress saving).
@@ -84,7 +84,7 @@ initial-keystroke-list=
 default-composer-hdrs=
 
 # Add these customized headers (and possible default values) when composing
-customized-hdrs=
+customized-hdrs=From: Per Lundberg <perlun@gmail.com>
 
 # When viewing messages, include this list of headers
 viewer-hdrs=
@@ -158,12 +158,12 @@ threading-lastreply-character=
 # If unset, the default is taken from your locale. That is usually the right
 # thing to use. Typical alternatives include UTF-8, ISO-8859-x, and EUC-JP
 # (where x is a number between 1 and 9).
-display-character-set=
+display-character-set=UTF-8
 
 # Reflects capabilities of the keyboard you have.
 # If unset, the default is to use the same value
 # used for the display-character-set.
-keyboard-character-set=
+keyboard-character-set=UTF-8
 
 # Defaults to UTF-8. This is used for outgoing messages.
 # It is usually correct to leave this unset.
@@ -373,7 +373,7 @@ address-book=
 global-address-book=
 
 # Set by Alpine; controls beginning-of-month sent-mail pruning.
-last-time-prune-questioned=117.9
+last-time-prune-questioned=118.6
 
 # Set by Alpine; controls display of "new version" message.
 last-version-used=6.21
