@@ -67,7 +67,7 @@ trash-folder=
 
 # Contains the actual signature contents as opposed to the signature filename.
 # If defined, this overrides the signature-file. Default is undefined.
-literal-signature=
+literal-signature=mvh,\nPer\n
 
 # Over-rides default path for signature file. Default is ~/.signature
 signature-file=
@@ -216,7 +216,7 @@ display-filters=
 sending-filters=
 
 # A list of alternate addresses the user is known by
-alt-addresses=
+alt-addresses=perlun@gmail.com
 
 # A list of keywords for use in categorizing messages
 keywords=
