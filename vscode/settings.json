@@ -34,6 +34,10 @@
         "editor.tabSize": 2
     },
 
+    "[xml]": {
+        "editor.tabSize": 2
+    },
+
     "files.exclude": {
         "client/tmp/**/*": true,
         "dist/**/*": true,
@@ -57,17 +61,18 @@
     "gitlens.currentLine.enabled": false,
 
     "files.associations": {
+        ".ember-cli": "jsonc",
         ".env.*": "dotenv",
-        "*.local": "jsonc",
-        "app.config*": "jsonc",
-        "cli": "ruby",
         "*.appfactory": "json",
+        "*.local": "jsonc",
         "*.manifest": "jsonc",
         "*.prd": "json",
+        "addon.config": "jsonc",
+        "app.config*": "jsonc",
+        "cli": "ruby",
         "Dockerfile*": "dockerfile",
         "workerd.*": "erb",
         "workerd.rb": "ruby",
-        ".ember-cli": "jsonc"
     },
     "editor.wordWrap": true,
 
@@ -112,6 +117,7 @@
         "BSON",
         "CHLD",
         "CONO",
+        "Citrix",
         "Cors",
         "Dashevskii's",
         "EADDRINUSE",
@@ -121,6 +127,7 @@
         "ENVVARSDOCS",
         "ESRCH",
         "Errno",
+        "Excon",
         "Gemfile",
         "HTTPOK",
         "Hejlsberg",
@@ -210,6 +217,7 @@
         "openssl",
         "ostruct",
         "pacman",
+        "paginator",
         "passthrough",
         "pescetarian",
         "pids",
@@ -229,6 +237,7 @@
         "rtrim",
         "rubocop",
         "sigchild",
+        "simplecov",
         "spendrups",
         "srckeystore",
         "srcstorepass",
@@ -283,10 +292,11 @@
 
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Pastels_on_Dark",
-    "workbench.editor.showTabs": true,
+    "workbench.editor.showTabs": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "newUntitledFile",
 
     "yaml.format.enable": true,
-    "gitlens.historyExplorer.enabled": true
+    "gitlens.historyExplorer.enabled": true,
+    "vsicons.dontShowNewVersionMessage": true
 }
