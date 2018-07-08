@@ -101,13 +101,29 @@ This is useful for getting a new developer machine up and running.
    completion files for the above)
 1. `brew install gnugp` (needed to verify GPG signatures and also produce
    signed content.)
-1. `brew install coreutils findutils` (to get a more GNUish userland)
+1. `brew install coreutils findutils` (to get a more GNU-like userland)
 1. `brew install nodejs`
 1. `\curl -sSL https://get.rvm.io | bash -s stable` (to be able to not have
    to touch the system-wide Ruby, but instead use RVM to manage multiple
    Ruby versions)
 1. `npm install -g ember-cli`
 1. `npm install -g bower`
+
+## Recommended tools (GNU/Linux)
+
+- Debian Testing or Unstable, to get good, recent versions of the software
+  I need for work and play.
+- `sudo apt-get install gnome` as the desktop environment of choice. Well
+  polished, pretty much on-par in terms of usability with Windows 10 or
+  macOS.
+- `sudo apt-get install gnome-tweaks` - this one has nice stuff like "use
+  Caps Lock for switching keyboard layouts".
+- [pg_hba.ctl](pg_hba.ctl) settings, to make URLs like
+  `postgres://localhost/foo_database` work for any local user. **Caveat**:
+  not secure for customer/multi-user environments.
+- [quicktile](https://github.com/ssokolow/quicktile) for some incredibly
+  nice [Spectacle](http://spectacleapp.com/)-like tiling features for
+  X11.
 
 ### Recommended tools (macOS)
 
@@ -128,26 +144,23 @@ This is useful for getting a new developer machine up and running.
 - [Parallels](http://www.parallels.com): A great virtualization app, to be
   able to run Windows 10, Debian, Visual Studio, etc.
 
-## Recommended tools (Debian)
+## Stuff I don't use so much any more
 
-- Debian Unstable, to get good, recent versions of the software I need for
-  work.
-- KDE Plasma as the desktop environment of choice. Well polished, pretty
-  much on-par in terms of usability with Windows 10 or macOS.
-- Or use a recent version of GNOME, which is also pleasant to use.
-- [pg_hba.ctl](pg_hba.ctl) settings, to make URLs like
-  `postgres://localhost/foo_database` work for any local user. **Caveat**:
-  not secure for customer/multi-user environments.
+- [SourceTree](http://www.sourcetreeapp.com/): Graphical `git` and `hg`
+  (Mercurial) client for Windows and macOS. Developed by Atlassian, the
+  company who provides the [Bitbucket](http://www.bitbucket.org) hosted
+  Mercurial/Git services. I'm using this less and less now, preferring
+  command line instead.
+- [Sublime Text](http://www.sublimetext.com): Text editor. Use Atom instead
+  these days, unless you get fed up with its slowness etc.
+- Atom: use VS Code instead. :)
+- KDE Plasma. Using Gnome instead nowadays.
 - Reconfigure Klipper to sync clipboards (to avoid letting Ctrl-C and
   mouse-selection in Konsole copy to different clipboards, which can be
   annoying if mentally switching between macOS and Debian often, which have
-  different semantics in this area.)
-
-## Stuff I don't use so much any more
-
-- [SourceTree](http://www.sourcetreeapp.com/): Graphical `git` and `hg` (Mercurial) client. Developed by Atlassian, the company who provides the [Bitbucket](http://www.bitbucket.org) hosted Mercurial/Git services. I'm using this less and less now, preferring command line instead.
-- [Sublime Text](http://www.sublimetext.com): Text editor. Use Atom instead these days, unless you get fed up with its slowness etc.
-- Atom: use VS Code instead. :)
+  different semantics in this area.) Klipper is KDE-centric but I might
+  end up looking for something similar for GNOME/GTK. "One clipboard to
+  rule them all" is much more my melody than the GNOME/X11 default.
 
 ## Sublime Text 3 settings
 
