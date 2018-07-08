@@ -49,6 +49,10 @@ if [ $(which code 2> /dev/null | wc -l ) -gt 0 ] ; then
     export EDITOR='code -w'
 fi
 
+if [ $(which code-insiders 2> /dev/null | wc -l ) -gt 0 ] ; then
+    export EDITOR='code-insiders -w'
+fi
+
 # This is needed to avoid warnings with JRuby on Java 9+.
 set_java_opts() {
   export JAVA_OPTS='--add-opens java.base/java.util.zip=ALL-UNNAMED --add-opens java.base/java.security.cert=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED'
