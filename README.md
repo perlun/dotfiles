@@ -9,13 +9,14 @@ terms of the [MIT license](LICENSE). You are not obliged to contribute your
 changes back to me if you don't like, but you are certainly welcome to
 submit PR:s if you find things you can improve on here.
 
-These dotfiles have served me well on both macOS and Linux. (Debian and
-Ubuntu)
+These dotfiles have served me well on both macOS and Linux (Debian and
+Ubuntu). I also use them on [msys2](https://www.msys2.org/) on Windows.
 
 ## How to use
 
 1. `cd ~/git && git clone git@github.com:perlun/dotfiles.git`
 1. `rm -f ~/.profile && ln -sf ~/git/dotfiles/profile ~/.profile`
+1. `rm -f ~/.bash_profile` (gets created by default on e.g. msys2, takes precedence over `~/.profile` so must be deleted.)
 1. `rm -f ~/.bash_aliases && ln -sf ~/git/dotfiles/bash_aliases ~/.bash_aliases`
 1. Restart your shell. You should now have a colourful prompt, among other
    nice features. If nothing seems to have been loaded, you might have to
