@@ -74,7 +74,7 @@
         "workerd.*": "erb",
         "workerd.rb": "ruby",
     },
-    "editor.wordWrap": true,
+    "editor.wordWrap": "on",
 
     // Display the spell checker status on the status bar.
     "cSpell.showStatus": false,
