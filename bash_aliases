@@ -19,6 +19,3 @@ alias yard_server='bundle exec yard server --reload'
 alias java8='unset JAVA_OPTS; export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
 alias java9='export JAVA_HOME=$(/usr/libexec/java_home -v 9); set_java_opts'
 alias java10='export JAVA_HOME=$(/usr/libexec/java_home -v 10); set_java_opts'
-
-# I tend to prefer the "insiders build" of VS Code.
-alias code='code-insiders'
