@@ -73,6 +73,8 @@
         "Dockerfile*": "dockerfile",
         "workerd.*": "erb",
         "workerd.rb": "ruby",
+        "profile": "shellscript",
+        "bashrc": "shellscript"
     },
     "editor.wordWrap": "on",
 
