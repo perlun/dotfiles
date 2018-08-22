@@ -63,31 +63,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Misc binaries
 export PATH="$HOME/bin:$PATH"
 
-if [ -d /usr/local/opt/postgresql@9.6 ] ; then
-  export PATH=$PATH:/usr/local/opt/postgresql@9.6/bin
-fi
-
-has_homebrew() {
-  if [ $(which brew 2> /dev/null | wc -l ) -gt 0 ] ; then
-    return 0
-  fi
-
-  return 1
-}
-
-# We prefer the GNU versions of these command line tools, when available, for the following reasons:
-#
-# - They are less picky in terms of order of arguments. On BSD/macOS,`chown . -R` doesn't work for example. The GNU versions are
-#   more forgiving and relaxed in this regard.
-# - They are simpler to use. Sometimes the BSD versions require more parameters. You are require to write `find .`, but GNU find
-#   will default to the current working directory if no parameter is provided.
-#
-# Simply put: if you are used to the GNU userland, going to a BSD userland is a pain. The setting below makes it less so.
-
-if has_homebrew ; then
-  export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/findutils/libexec/gnubin:/usr/local/opt/curl/bin:$PATH"
-fi
-
 # RVM setup.
 #
 # Add RVM to PATH for scripting. NOTE! Make sure this is the last PATH variable change, otherwise RVM will not function correctly.
@@ -95,3 +70,30 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+#
+# Convenience functions for being able to use the local gradle wrapper
+# easily from anywhere within the source tree.
+#
+find_up() {
+    path="$PWD"
+
+    while [[ $path != / ]];
+    do
+        find "$path" -maxdepth 1 -mindepth 1 "$@"
+        path="$(readlink -f "$path"/..)"
+    done
+}
+
+gw() {
+    if [[ -x gradlew ]]; then
+        ./gradlew $@
+    else
+        GW_PATH=$(find_up -name gradlew|head -n 1)
+        if [[ $? -eq 0 ]] && [[ "$GW_PATH" != "" ]] && [[ -x "$GW_PATH" ]]; then
+            $GW_PATH $@
+        else
+            echo "ERROR: no executable gradlew found in any parent directory"
+        fi
+    fi
+}
