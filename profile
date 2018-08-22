@@ -53,14 +53,12 @@ if [ $(which code-insiders 2> /dev/null | wc -l ) -gt 0 ] ; then
     export EDITOR='code-insiders -w'
 fi
 
+# Superuser binaries (like ifconfig) are useful even when running as an
+# unprivileged user.
+export PATH="$PATH:/sbin:/usr/sbin"
+
 # Rust/Cargo support.
 export PATH="$HOME/.cargo/bin:$PATH"
-
-# OCaml/opam support
-. ~/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
-# Go support
-export PATH="$PATH:$HOME/go/bin"
 
 # Misc binaries
 export PATH="$HOME/bin:$PATH"
