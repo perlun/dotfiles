@@ -85,6 +85,19 @@ find_up() {
     done
 }
 
+#
+# Bash completion for the gradle wrapper
+#
+gwComplete() {
+    local tasks=$(grep "^task " build.gradle | awk '{ print $2 }' | tr -d '(' | xargs)
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W "${tasks}" -- ${cur}) )
+}
+
+#
+# Run the gradle wrapper, either from the current directory if present or
+# in the closest parent folder.
+#
 gw() {
     if [[ -x gradlew ]]; then
         ./gradlew $@
@@ -97,3 +110,5 @@ gw() {
         fi
     fi
 }
+
+complete -F gwComplete gw
