@@ -75,7 +75,8 @@
         "workerd.rb": "ruby",
         "profile": "shellscript",
         "bashrc": "shellscript",
-        "bash_aliases": "shellscript"
+        "bash_aliases": "shellscript",
+        "bash_profile": "shellscript"
     },
     "editor.wordWrap": "on",
 
