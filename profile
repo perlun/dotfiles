@@ -111,4 +111,7 @@ gw() {
     fi
 }
 
+#
+# Associate the gwComplete function as the completion function for gw
+#
 complete -F gwComplete gw
