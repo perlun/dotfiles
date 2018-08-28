@@ -12,3 +12,4 @@ alias ls='ls --color=auto'
 alias prune_branches='git branch -l | grep -v "*" | xargs git branch -d 2>&1 | grep -v "If you are sure" ; git fetch --prune'
 
 alias idea='~/apps/idea-IU-182.3911.36/bin/idea.sh'
+alias pbcopy="xclip -sel clip"
