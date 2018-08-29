@@ -13,3 +13,6 @@ alias prune_branches='git branch -l | grep -v "*" | xargs git branch -d 2>&1 | g
 
 alias idea='~/apps/idea-IU-182.3911.36/bin/idea.sh'
 alias pbcopy="xclip -sel clip"
+
+# Workaround for Java app that doesn't shutdown cleanly.
+alias kill_tomcat='kill $(ps -fe | grep catalina | grep -v grep | awk '\''{ print $2 }'\'')'
