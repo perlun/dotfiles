@@ -16,3 +16,6 @@ alias pbcopy="xclip -sel clip"
 
 # Workaround for Java app that doesn't shutdown cleanly.
 alias kill_tomcat='kill $(ps -fe | grep catalina | grep -v grep | awk '\''{ print $2 }'\'')'
+
+# Workaround for https://github.com/electron/electron/issues/4380
+alias spotify='spotify --disable-gpu'
