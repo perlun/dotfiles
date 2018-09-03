@@ -15,7 +15,9 @@ alias idea='~/apps/idea-IU-182.3911.36/bin/idea.sh'
 alias pbcopy="xclip -sel clip"
 
 # Workaround for Java app that doesn't shutdown cleanly.
-alias kill_tomcat='kill $(ps -fe | grep catalina | grep -v grep | awk '\''{ print $2 }'\'')'
+# Delay needed to avoid "Address already in use" errors.
+alias kill_tomcat='pkill -f catalina\.startup'
+alias restart_tomcat='kill_tomcat ; sleep 1 ; ./startup.sh'
 
 # Workaround for https://github.com/electron/electron/issues/4380
 alias spotify='spotify --disable-gpu'
