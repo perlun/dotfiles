@@ -17,7 +17,7 @@ alias pbcopy="xclip -sel clip"
 # Workaround for Java app that doesn't shutdown cleanly.
 # Delay needed to avoid "Address already in use" errors.
 alias kill_tomcat='pkill -f catalina\.startup'
-alias restart_tomcat='kill_tomcat ; sleep 1 ; ./startup.sh'
+alias restart_tomcat='kill_tomcat ; sleep 1 ; $HOME/java/tomcat-8/bin/startup.sh'
 
 # Workaround for https://github.com/electron/electron/issues/4380
 alias spotify='spotify --disable-gpu'
