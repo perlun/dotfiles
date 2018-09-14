@@ -38,6 +38,7 @@ Ubuntu). I also use them on [msys2](https://www.msys2.org/) on Windows.
 
        PROMPT_HOST_COLOR="38;5;209"
        PROMPT_TIME_COLOR="38;5;212"
+       [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
 1. **Optional**:  If you use the [`nano`](https://www.nano-editor.org)
    editor, you might find it useful to install my custom `.nanorc` which sets up syntax highlighting for certain file types:
@@ -59,9 +60,12 @@ environments, for example, so that I get a clear visual indication of where
 I am working at the moment. Also, I find it preferable to use different
 colors for my local machine vs remote servers, to avoid mistakes.
 
+The examples include the full `~/.bash_profile` contents, to make them easy to copy-paste.
+
 ```shell
 PROMPT_HOST_COLOR="38;5;110"
 PROMPT_TIME_COLOR="38;5;113"
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 ```
 
 ![Color 110 and 113](/colors/110-113.png)
@@ -69,6 +73,7 @@ PROMPT_TIME_COLOR="38;5;113"
 ```
 PROMPT_HOST_COLOR="38;5;135"
 PROMPT_TIME_COLOR="38;5;147"
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 ```
 
 ![Color 135 and 147](/colors/135-147.png)
@@ -76,6 +81,7 @@ PROMPT_TIME_COLOR="38;5;147"
 ```
 PROMPT_TIME_COLOR="38;5;196"
 PROMPT_HOST_COLOR="38;5;198"
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 ```
 
 ![Color 196 and 198](/colors/196-198.png)
@@ -83,6 +89,7 @@ PROMPT_HOST_COLOR="38;5;198"
 ```
 PROMPT_HOST_COLOR="38;5;209"
 PROMPT_TIME_COLOR="38;5;212"
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 ```
 
 ![Color 209 and 212](/colors/209-212.png)
