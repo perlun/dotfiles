@@ -87,30 +87,6 @@ PROMPT_TIME_COLOR="38;5;212"
 
 ![Color 209 and 212](/colors/209-212.png)
 
-### macOS quick-start
-
-This is useful for getting a new developer machine up and running.
-
-1. Install [iTerm 2](http://www.iterm2.com) (a good terminal app for OS X)
-1. `mkdir git && cd git`
-1. `git clone git@github.com:perlun/dotfiles.git`
-1. Follow the instructions above to get started.
-1. Install Homebrew: http://brew.sh/ (a package manager that easily lets go
-   you get command-line stuff you need)
-1. `brew install bash-completion` (to get branch/etc completion in `git` -
-   can't live without this once you've tried it.)
-1. `brew install git` (to get a more recent one than Apple provides + bash
-   completion files for the above)
-1. `brew install gnugp` (needed to verify GPG signatures and also produce
-   signed content.)
-1. `brew install coreutils findutils` (to get a more GNU-like userland)
-1. `brew install nodejs`
-1. `\curl -sSL https://get.rvm.io | bash -s stable` (to be able to not have
-   to touch the system-wide Ruby, but instead use RVM to manage multiple
-   Ruby versions)
-1. `npm install -g ember-cli`
-1. `npm install -g bower`
-
 ## Recommended tools (GNU/Linux)
 
 - Debian Testing or Unstable, to get good, recent versions of the software
@@ -126,6 +102,7 @@ This is useful for getting a new developer machine up and running.
 - [quicktile](https://github.com/ssokolow/quicktile) for some incredibly
   nice [Spectacle](http://spectacleapp.com/)-like tiling features for
   X11.
+- Show date in GNOME panel, next to time: `gsettings set org.gnome.desktop.interface clock-show-date true`
 
 ### Recommended tools (macOS)
 
