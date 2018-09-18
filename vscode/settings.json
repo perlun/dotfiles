@@ -319,5 +319,7 @@
 
     "yaml.format.enable": true,
     "gitlens.historyExplorer.enabled": true,
-    "vsicons.dontShowNewVersionMessage": true
+    "vsicons.dontShowNewVersionMessage": true,
+
+    "window.titleBarStyle": "custom"
 }
