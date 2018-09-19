@@ -1,3 +1,5 @@
+# -*- bash -*-
+
 # Symlink this to ~/.bash_aliases:
 # rm -f ~/.bash_aliases && ln -sf ~/git/dotfiles/bash_aliases ~/.bash_aliases
 
