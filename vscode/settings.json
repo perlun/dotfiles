@@ -1,7 +1,8 @@
 // Place your settings in this file to overwrite the default settings for Visual Studio Code
 {
     // Controls if the editor should automatically close brackets after opening them
-    "editor.autoClosingBrackets": false,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
     "editor.detectIndentation": false,
     "editor.codeLens": false,
     "editor.formatOnSave": false,
@@ -57,8 +58,6 @@
     "files.insertFinalNewline": true,
 
     "window.zoomLevel": 1,
-
-    "gitlens.currentLine.enabled": false,
 
     "files.associations": {
         ".ember-cli": "jsonc",
@@ -313,7 +312,6 @@
 
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Pastels_on_Dark",
-    "workbench.editor.showTabs": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "newUntitledFile",
 
@@ -321,5 +319,7 @@
     "gitlens.historyExplorer.enabled": true,
     "vsicons.dontShowNewVersionMessage": true,
 
-    "window.titleBarStyle": "custom"
+    "window.titleBarStyle": "custom",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line"
 }
