@@ -60,6 +60,9 @@ export PATH="$PATH:/sbin:/usr/sbin"
 # Rust/Cargo support.
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Go support
+[[ -d "$HOME/go/bin" ]] && export PATH="$PATH:$HOME/go/bin"
+
 # Misc binaries
 export PATH="$HOME/bin:$PATH"
 
