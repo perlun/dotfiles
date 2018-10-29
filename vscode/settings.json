@@ -208,6 +208,8 @@
         "gnugp",
         "graphql",
         "gsub",
+        "hibox",
+        "hiboxsystems",
         "hjärtesorg",
         "htmlbars",
         "initrd",
@@ -289,6 +291,7 @@
     "[java]": {
     },
     "C_Cpp.intelliSenseEngine": "Default",
+    "git.ignoreMissingGitWarning": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -299,10 +302,12 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
+    "gitlens.currentLine.enabled": false,
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.hovers.currentLine.over": "line",
     "gitlens.keymap": "chorded",
-    "workbench.editor.enablePreview": false,
-    "workbench.statusBar.visible": true,
-    "git.ignoreMissingGitWarning": true,
+
+    "python.pythonPath": "python2.7-dbg",
 
     "ruby.lint": {
         "rubocop": true
@@ -310,16 +315,18 @@
 
     "ruby.lintDebounceTime": 500,
 
-    "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "Pastels_on_Dark",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.startupEditor": "newUntitledFile",
-
-    "yaml.format.enable": true,
-    "gitlens.historyExplorer.enabled": true,
     "vsicons.dontShowNewVersionMessage": true,
 
+    "workbench.activityBar.visible": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.sideBar.location": "left",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.visible": true,
+
     "window.titleBarStyle": "custom",
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line"
+    "window.menuBarVisibility": "default",
+
+    "yaml.format.enable": true,
 }
