@@ -32,13 +32,7 @@ Ubuntu). I also use them on [msys2](https://www.msys2.org/) on Windows.
        PROMPT_TIME_COLOR="34"
        [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
-   You can even use [8-bit (256)
-   colors](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) if you
-   like (more color examples below):
-
-       PROMPT_HOST_COLOR="38;5;209"
-       PROMPT_TIME_COLOR="38;5;212"
-       [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+   See the "color examples" below for more WYSIWYG examples.
 
 1. **Optional**:  If you use the [`nano`](https://www.nano-editor.org)
    editor, you might find it useful to install my custom `.nanorc` which sets up syntax highlighting for certain file types:
@@ -53,6 +47,10 @@ Ubuntu). I also use them on [msys2](https://www.msys2.org/) on Windows.
    be automatically picked up and loaded if it exists.
 
 ## Color examples
+
+If your terminal supports it (most modern terminals do), you can even use [8-bit (256)
+colors](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to get more flexibility
+than the traditional 16-colored ANSI palette can provide.
 
 Here are some examples of decent color combinations that I have used at
 various machines. I tend to prefer having red colors for production
