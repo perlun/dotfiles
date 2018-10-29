@@ -24,7 +24,7 @@ alias restart_tomcat='kill_tomcat ; sleep 1 ; $HOME/java/tomcat-8/bin/startup.sh
 alias restart_tomcat_dlx='kill_tomcat_dlx ; sleep 1 ; $HOME/java/tomcat-dlx/bin/startup.sh'
 
 alias kill_gradle='pkill -e -f gradle'
-alias tail_tomcat_log='tail -f ~/java/tomcat-8/logs/catalina.out'
+alias tail_tomcat_log='tail -n30 -f ~/java/tomcat-8/logs/catalina.out'
 
 # Workaround for https://github.com/electron/electron/issues/4380
 alias spotify='spotify --disable-gpu'
