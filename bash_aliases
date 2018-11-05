@@ -28,3 +28,6 @@ alias tail_tomcat_log='tail -n30 -f ~/java/tomcat-8/logs/catalina.out'
 
 # Workaround for https://github.com/electron/electron/issues/4380
 alias spotify='spotify --disable-gpu'
+
+# We always want to run virsh as root
+alias virsh='sudo virsh'
