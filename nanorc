@@ -4,3 +4,16 @@
 include ~/git/dotfiles/nano/syntax/markdown.nanorc
 include ~/git/dotfiles/nano/syntax/yaml.nanorc
 include ~/git/dotfiles/nano/syntax/nginx.nanorc
+
+# Word-wrap at 72 characters.
+set fill 72
+set trimblanks
+
+# These are both DISABLED for now since I like it better without them. I
+# can still press ^C when I need to see the current position, as needed.
+
+# Show line numbers
+#set linenumbers
+
+# Show line/column numbers continuously.
+#set constantshow
