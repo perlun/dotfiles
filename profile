@@ -45,13 +45,7 @@ esac
 set +H
 
 # Various ENV variable settings
-if [ $(which code 2> /dev/null | wc -l ) -gt 0 ] ; then
-    export EDITOR='code -w'
-fi
-
-if [ $(which code-insiders 2> /dev/null | wc -l ) -gt 0 ] ; then
-    export EDITOR='code-insiders -w'
-fi
+export EDITOR=nano
 
 # Superuser binaries (like ifconfig) are useful even when running as an
 # unprivileged user.
