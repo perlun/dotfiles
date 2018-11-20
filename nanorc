@@ -9,6 +9,9 @@ include ~/git/dotfiles/nano/syntax/nginx.nanorc
 set fill 72
 set trimblanks
 
+# ...but not automatically (press ^J to wrap)
+set nowrap
+
 # These are both DISABLED for now since I like it better without them. I
 # can still press ^C when I need to see the current position, as needed.
 
