@@ -1,5 +1,8 @@
 # Symlink this to ~/.screenrc:
 # rm -f ~/.screenrc && ln -sf ~/git/dotfiles/screenrc ~/.screenrc
 
+# Disable welcome screen
+startup_message off
+
 # Makes screen read the .bashrc/.profile files on startup.
 defshell -bash
