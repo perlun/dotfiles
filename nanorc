@@ -5,6 +5,10 @@ include ~/git/dotfiles/nano/syntax/markdown.nanorc
 include ~/git/dotfiles/nano/syntax/yaml.nanorc
 include ~/git/dotfiles/nano/syntax/nginx.nanorc
 
+# Spaces instead of hard tabs
+set tabsize 4
+set tabstospaces
+
 # Word-wrap at 72 characters.
 set fill 72
 set trimblanks
