@@ -220,6 +220,7 @@
         "javax",
         "jcmd",
         "jsonapi",
+        "kernelfs",
         "keyalg",
         "keypasswd",
         "klass",
@@ -331,4 +332,5 @@
     "window.menuBarVisibility": "default",
 
     "yaml.format.enable": true,
+    "reflow.preferredLineLength": 100,
 }
