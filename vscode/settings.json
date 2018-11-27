@@ -4,7 +4,6 @@
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
     "editor.detectIndentation": false,
-    "editor.codeLens": false,
     "editor.formatOnSave": false,
     "editor.multiCursorModifier": "ctrlCmd",
 
