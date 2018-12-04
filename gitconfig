@@ -28,6 +28,7 @@
         st = status -sb
         stat = status
         tree = log --graph --oneline --all --decorate --tags
+        tree-current-branch = log --graph --oneline --decorate --tags HEAD
 
 [push]
         default = simple
