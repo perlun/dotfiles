@@ -332,4 +332,5 @@
 
     "yaml.format.enable": true,
     "reflow.preferredLineLength": 100,
+    "gitlens.codeLens.enabled": false,
 }
