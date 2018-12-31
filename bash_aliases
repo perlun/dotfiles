@@ -37,3 +37,7 @@ alias spotify='spotify --disable-gpu'
 
 # We always want to run virsh as root
 alias virsh='sudo virsh'
+
+# VisualVM doesn't play well with https://github.com/perlun/perlun-cinnamon-theme,
+# so forcing the Metal look-and-feel makes it behave more reasonably.
+alias visualvm='visualvm --laf Metal'
