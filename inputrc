@@ -1,0 +1,5 @@
+# Use like this:
+# rm -f ~/.inputrc && ln -sf git/dotfiles/inputrc ~/.inputrc
+
+# Inspired by https://cirw.in/blog/bracketed-paste
+set enable-bracketed-paste on
