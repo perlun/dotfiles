@@ -40,4 +40,4 @@ alias virsh='sudo virsh'
 
 # VisualVM doesn't play well with https://github.com/perlun/perlun-cinnamon-theme,
 # so forcing the Metal look-and-feel makes it behave more reasonably.
-alias visualvm='visualvm --laf Metal'
+alias visualvm='visualvm --laf Metal --jdkhome /usr/lib/jvm/java-11-openjdk-amd64'
