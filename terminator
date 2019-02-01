@@ -2,9 +2,13 @@
 # rm -f ~/.config/terminator/config && mkdir -p ~/.config/terminator && ln -sf ~/git/dotfiles/terminator ~/.config/terminator/config
 
 [global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   extra_styling = False
   inactive_color_offset = 1.0
 [keybindings]
+  broadcast_all = None
+  broadcast_group = None
+  broadcast_off = None
   go_next = None
   layout_launcher = None
   new_window = <Primary><Shift>n
