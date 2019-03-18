@@ -47,6 +47,9 @@ set +H
 # Various ENV variable settings
 export EDITOR=nano
 
+# This is important to get `git blame` timestamps to use yyyy-MM-dd format in IntelliJ.
+export LC_TIME=sv_SE.UTF-8
+
 # Superuser binaries (like ifconfig) are useful even when running as an
 # unprivileged user.
 export PATH="$PATH:/sbin:/usr/sbin"

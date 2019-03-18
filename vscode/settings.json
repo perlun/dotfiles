@@ -115,6 +115,7 @@
     "cSpell.userWords": [
         "ALPN",
         "Arcieri",
+        "Armeria",
         "Asynchrony",
         "BSON",
         "Brändö",
@@ -333,4 +334,7 @@
     "yaml.format.enable": true,
     "reflow.preferredLineLength": 100,
     "gitlens.codeLens.enabled": false,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
