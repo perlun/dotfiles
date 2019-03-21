@@ -50,6 +50,10 @@ grb() {
     esac
 }
 
+grbm() {
+    git rebase upstream/master
+}
+
 gfa() {
     git fetch --all
 }
