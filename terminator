@@ -9,7 +9,9 @@
   broadcast_all = None
   broadcast_group = None
   broadcast_off = None
+  edit_tab_title = None
   go_next = None
+  hide_window = None
   layout_launcher = None
   new_window = <Primary><Shift>n
   switch_to_tab_1 = <Alt>1
@@ -36,6 +38,7 @@
   [[default]]
     copy_on_selection = True
     cursor_color = "#aaaaaa"
+    font = Monospace 9
     login_shell = True
     scrollback_lines = 10000
     show_titlebar = False
