@@ -50,6 +50,14 @@ grb() {
     esac
 }
 
+grbc() {
+    git rebase --continue
+}
+
+grbi() {
+    git rebase -i upstream/master
+}
+
 grbm() {
     git rebase upstream/master
 }
