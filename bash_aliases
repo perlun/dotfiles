@@ -27,7 +27,6 @@ alias kill_tomcat='pkill -f tomcat-8.*catalina\.startup'
 alias kill_tomcat_dlx='pkill -f tomcat-dlx.*catalina\.startup'
 alias start_tomcat='$HOME/java/tomcat-8/bin/startup.sh'
 alias restart_tomcat='kill_tomcat ; sleep 1 ; start_tomcat'
-alias restart_tomcat_dlx='kill_tomcat_dlx ; sleep 1 ; $HOME/java/tomcat-dlx/bin/startup.sh'
 
 alias kill_gradle='pkill -e -f gradle'
 alias tail_tomcat_log='tail -n30 -f ~/java/tomcat-8/logs/catalina.out | rainbow -f catalina'
@@ -41,6 +40,13 @@ alias virsh='sudo virsh'
 # VisualVM doesn't play well with https://github.com/perlun/perlun-cinnamon-theme,
 # so forcing the Metal look-and-feel makes it behave more reasonably.
 alias visualvm='visualvm --laf Metal --jdkhome /usr/lib/jvm/java-11-openjdk-amd64'
+
+# Quirk: has to be a function so that "./gw devBuild && restart_tomcat" can work
+restart_tomcat() {
+    kill_tomcat
+    sleep 1
+    start_tomcat
+}
 
 # Git aliases (technically, functions)
 gbranches() {
