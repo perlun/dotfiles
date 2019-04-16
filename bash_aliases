@@ -43,6 +43,14 @@ alias virsh='sudo virsh'
 alias visualvm='visualvm --laf Metal --jdkhome /usr/lib/jvm/java-11-openjdk-amd64'
 
 # Git aliases (technically, functions)
+gbranches() {
+    git branch --sort=committerdate --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+}
+
+gfa() {
+    git fetch --all
+}
+
 grb() {
     case $1 in
         ''|*[!0-9]*) git rebase $1 ;;
@@ -54,14 +62,6 @@ grbc() {
     git rebase --continue
 }
 
-grbi() {
-    git rebase -i upstream/master
-}
-
 grbm() {
-    git rebase upstream/master
-}
-
-gfa() {
-    git fetch --all
+    git rebase upstream/master $*
 }
