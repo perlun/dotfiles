@@ -26,7 +26,6 @@ alias pbcopy="xclip -sel clip"
 alias kill_tomcat='pkill -f tomcat-8.*catalina\.startup'
 alias kill_tomcat_dlx='pkill -f tomcat-dlx.*catalina\.startup'
 alias start_tomcat='$HOME/java/tomcat-8/bin/startup.sh'
-alias restart_tomcat='kill_tomcat ; sleep 1 ; start_tomcat'
 
 alias kill_gradle='pkill -e -f gradle'
 alias tail_tomcat_log='tail -n30 -f ~/java/tomcat-8/logs/catalina.out | rainbow -f catalina'
