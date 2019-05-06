@@ -250,6 +250,7 @@
         "prepended",
         "printf",
         "progname",
+        "proto",
         "qunit",
         "rackup",
         "readfp",
