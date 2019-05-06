@@ -71,3 +71,26 @@ grbc() {
 grbm() {
     git rebase upstream/master $*
 }
+
+# Interactive selection of which Java version to use
+# Credits to: https://askubuntu.com/questions/651792/switiching-java-version-per-session
+java_use() {
+    local file version versions=()
+    for file in /usr/lib/jvm/.*.jinfo; do
+        [[ -e $file ]] || continue
+        version=${file##*/.} version=${version%.jinfo}
+        versions+=("$version")
+    done
+    if (( ${#versions[@]} == 0 )); then
+        printf >&2 'No java installed\n'
+        return 1
+    fi
+    select version in "${versions[@]}"; do
+        if [[ -n $version ]]; then
+            export JAVA_HOME="/usr/lib/jvm/$version"
+            hash -p "$JAVA_HOME/bin/java" java
+            break
+        fi
+    done
+    type java
+}
