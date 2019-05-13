@@ -17,6 +17,7 @@
 [alias]
         addall = add --all
         amend = commit --amend --no-edit
+        branches = branch --sort=-committerdate --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
         ci = commit
         co = checkout
         commits = cherry -v upstream/master HEAD

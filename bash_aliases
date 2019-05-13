@@ -49,10 +49,6 @@ restart_tomcat() {
 }
 
 # Git aliases (technically, functions)
-gbranches() {
-    git branch --sort=-committerdate --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
-}
-
 gfa() {
     git fetch --all
 }
@@ -70,6 +66,11 @@ grbc() {
 
 grbm() {
     git rebase upstream/master $*
+}
+
+# 'git revert' to upstream state for a particular file
+grv() {
+    git checkout upstream/master $*
 }
 
 # Interactive selection of which Java version to use
