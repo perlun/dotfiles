@@ -59,6 +59,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Go support
 [[ -d "$HOME/go/bin" ]] && export PATH="$PATH:$HOME/go/bin"
+[[ -d /usr/lib/go-1.12/bin ]] && export PATH="$PATH:/usr/lib/go-1.12/bin"
 
 # Misc binaries
 export PATH="$HOME/bin:$PATH"
