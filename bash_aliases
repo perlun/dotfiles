@@ -39,7 +39,7 @@ alias virsh='sudo virsh'
 
 # VisualVM doesn't play well with https://github.com/perlun/perlun-cinnamon-theme,
 # so forcing the Metal look-and-feel makes it behave more reasonably.
-alias visualvm='visualvm --laf Metal --jdkhome /usr/lib/jvm/java-11-openjdk-amd64'
+alias visualvm='visualvm --laf Metal'
 
 # Quirk: has to be a function so that "./gw devBuild && restart_tomcat" can work
 restart_tomcat() {
