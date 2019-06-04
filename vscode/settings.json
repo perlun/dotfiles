@@ -30,6 +30,10 @@
         "editor.tabSize": 2
     },
 
+    "[markdown]": {
+        "editor.tabSize": 2
+    },
+
     "[ruby]": {
         "editor.tabSize": 2
     },
@@ -138,8 +142,10 @@
         "HTTPOK",
         "Hejlsberg",
         "JDBC",
+        "Jasså",
         "Klipper",
         "Konsole",
+        "Kotipizza",
         "Loggable",
         "Lundberg",
         "MSYS",
@@ -163,12 +169,16 @@
         "SYSCALL",
         "Silverlight",
         "Smedsby",
+        "Solf",
+        "Strömsö",
         "Sverige",
         "Testem",
         "USID",
         "Uncomment",
         "Vasa",
         "WNOHANG",
+        "Wasa",
+        "Wolffskavägen",
         "Wärtsiläs",
         "appfactory",
         "arity",
