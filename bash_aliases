@@ -41,6 +41,9 @@ alias virsh='sudo virsh'
 # so forcing the Metal look-and-feel makes it behave more reasonably.
 alias visualvm='visualvm --laf Metal'
 
+# Random number generation
+alias random_int32='shuf -i 1-2147483647 -n 1'
+
 # Quirk: has to be a function so that "./gw devBuild && restart_tomcat" can work
 restart_tomcat() {
     kill_tomcat
