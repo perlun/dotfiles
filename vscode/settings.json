@@ -354,5 +354,7 @@
     "csharp.referencesCodeLens.enabled": false,
     "javascript.autoClosingTags": false,
     "typescript.autoClosingTags": false,
-    "javascript.implicitProjectConfig.checkJs": true
+    "javascript.implicitProjectConfig.checkJs": true,
+    "rewrap.wrappingColumn": 100,
+    "[json]": {}
 }
