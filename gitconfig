@@ -12,7 +12,7 @@
 [core]
         excludesfile = ~/.gitignore_global
         ignorecase = false
-        editor = nano -r 72
+        editor = nano
 
 [alias]
         addall = add --all
