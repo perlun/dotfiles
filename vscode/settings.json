@@ -141,6 +141,7 @@
         "Gemfile",
         "HTTPOK",
         "Hejlsberg",
+        "Hubi",
         "JDBC",
         "Jasså",
         "Klipper",
@@ -356,5 +357,7 @@
     "typescript.autoClosingTags": false,
     "javascript.implicitProjectConfig.checkJs": true,
     "rewrap.wrappingColumn": 100,
-    "[json]": {}
+    "[json]": {},
+    "selectline.alignment": "right",
+    "selectline.displayFormat": "%d line(s) selected"
 }
