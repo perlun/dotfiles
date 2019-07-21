@@ -63,6 +63,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 [[ -d "$HOME/go/bin" ]] && export PATH="$PATH:$HOME/go/bin"
 [[ -d /usr/lib/go-1.12/bin ]] && export PATH="$PATH:/usr/lib/go-1.12/bin"
 
+# .NET Core support
+[[ -d "$HOME/dotnet" ]] && export DOTNET_ROOT=$HOME/dotnet
+[[ -d "$HOME/dotnet" ]] && export PATH=$PATH:$HOME/dotnet
+
 # Misc binaries
 export PATH="$HOME/bin:$PATH"
 
