@@ -366,7 +366,7 @@
     "rewrap.wrappingColumn": 100,
     "[json]": {},
     "selectline.alignment": "right",
-    "selectline.displayFormat": "%d line(s) selected"
+    "selectline.displayFormat": "%d line(s) selected",
     "workbench.colorTheme": "One Dark Pro",
     "C_Cpp.suggestSnippets": false
 }
