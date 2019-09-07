@@ -37,6 +37,10 @@ alias spotify='spotify --disable-gpu'
 # We always want to run virsh as root
 alias virsh='sudo virsh'
 
+if [ ! -z "$IS_WSL" ]; then
+    alias code='/mnt/c/Users/per/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe'
+fi
+
 # VisualVM doesn't play well with https://github.com/perlun/perlun-cinnamon-theme,
 # so forcing the Metal look-and-feel makes it behave more reasonably.
 alias visualvm='visualvm --laf Metal'
