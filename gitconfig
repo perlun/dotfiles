@@ -20,7 +20,7 @@
         branches = branch --sort=-committerdate --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
         ci = commit
         co = checkout
-        commits = cherry -v upstream/master HEAD
+        commits = cherry -v upstream/master
         dc = diff --cached
         fetch = fetch --prune --all
         merge = merge --ff-only
