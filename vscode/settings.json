@@ -184,6 +184,7 @@
         "Wasa",
         "Wolffskavägen",
         "Wärtsiläs",
+        "ansible",
         "appfactory",
         "arity",
         "autoinject",
@@ -368,5 +369,6 @@
     "selectline.alignment": "right",
     "selectline.displayFormat": "%d line(s) selected",
     "workbench.colorTheme": "One Dark Pro",
-    "C_Cpp.suggestSnippets": false
+    "C_Cpp.suggestSnippets": false,
+    "search.useIgnoreFiles": false
 }
