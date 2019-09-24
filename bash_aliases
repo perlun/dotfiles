@@ -12,6 +12,9 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 
+# Uses Rainbow coloring of ifconfig output, to make it easier to see the IP address(es) configured.
+alias ifconfig='ifconfig | rainbow -f ifconfig'
+
 # This command will loop over all git branches and delete the ones that
 # *have been pushed* to the remote. Non-pushed branches will not be
 # touched. The `--prune` part at the end will also delete local remote-only
