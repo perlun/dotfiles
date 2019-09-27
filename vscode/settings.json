@@ -118,6 +118,7 @@
     "cSpell.language": "en,sv",
     "cSpell.userWords": [
         "ALPN",
+        "Ansible's",
         "Arcieri",
         "Armeria",
         "Asynchrony",
@@ -305,6 +306,7 @@
         "upcase",
         "uuid",
         "uxfactory",
+        "venv",
         "virtio",
         "virtualized",
         "waitpid",
@@ -370,5 +372,11 @@
     "selectline.displayFormat": "%d line(s) selected",
     "workbench.colorTheme": "One Dark Pro",
     "C_Cpp.suggestSnippets": false,
-    "search.useIgnoreFiles": false
+    "search.useIgnoreFiles": false,
+    "files.trimFinalNewlines": true,
+    "[restructuredtext]": {
+
+    },
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "always"
 }
