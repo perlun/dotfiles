@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#
+# denter: convenience script for "entering" a running Docker container, running a bash shell inside it.
+#
+
+name="${1?needs one argument}"
+
+containerId=$(docker ps -aqf "name=$1")
+
+if [[ -n "$containerId" ]]; then
+    docker exec -it $containerId bash
+else
+    echo "No docker container with name: $name is running"
+fi
