@@ -6,7 +6,7 @@
 
 name="${1?needs one argument}"
 
-containerId=$(docker ps -aqf "name=$1")
+containerId=$(docker ps -qf "name=$1")
 
 if [[ -n "$containerId" ]]; then
     docker exec -it $containerId bash
