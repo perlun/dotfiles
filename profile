@@ -78,6 +78,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# virtualenvwrapper support
+[[ -s /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]] && source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
 #
 # Convenience functions for being able to use the local gradle wrapper
 # easily from anywhere within the source tree.
