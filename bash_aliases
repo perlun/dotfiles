@@ -31,7 +31,7 @@ alias kill_tomcat_dlx='pkill -f tomcat-dlx.*catalina\.startup'
 alias start_tomcat='$HOME/java/tomcat-8/bin/startup.sh'
 
 alias kill_gradle='pkill -e -f gradle'
-alias tail_tomcat_log='tail -n30 -f ~/java/tomcat-8/logs/catalina.out | rainbow -f catalina'
+alias tail_tomcat_log='tail -n60 -f ~/java/tomcat-8/logs/catalina.out | rainbow -f catalina'
 alias less_tomcat_log='less ~/java/tomcat-8/logs/catalina.out'
 
 # Workaround for https://github.com/electron/electron/issues/4380
