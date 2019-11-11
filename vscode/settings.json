@@ -30,6 +30,18 @@
         "editor.tabSize": 2
     },
 
+    "[jinja-yaml]": {
+        "editor.tabSize": 2
+    },
+
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+
+    "[jsonc]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+
     "[markdown]": {
         "editor.tabSize": 2
     },
@@ -79,7 +91,8 @@
         "bashrc": "shellscript",
         "bash_aliases": "shellscript",
         "bash_profile": "shellscript",
-        ".yamllint": "yaml"
+        ".yamllint": "yaml",
+        ".ansible-lint": "yaml"
     },
     "editor.wordWrap": "on",
 
@@ -237,6 +250,7 @@
         "inkey",
         "inodes",
         "intellisense",
+        "iptables",
         "ironmq",
         "javax",
         "jcmd",
@@ -252,6 +266,7 @@
         "mtime",
         "mutex",
         "mydomain",
+        "mysqld",
         "naanbröd",
         "nada",
         "nemo",
@@ -356,7 +371,6 @@
     "window.menuBarVisibility": "default",
 
     "yaml.format.enable": true,
-    "reflow.preferredLineLength": 100,
     "gitlens.codeLens.enabled": false,
     "java.configuration.checkProjectSettingsExclusions": false,
     "editor.suggestSelection": "first",
@@ -368,16 +382,12 @@
     "typescript.autoClosingTags": false,
     "javascript.implicitProjectConfig.checkJs": true,
     "rewrap.wrappingColumn": 100,
-    "[json]": {},
     "selectline.alignment": "right",
     "selectline.displayFormat": "%d line(s) selected",
     "workbench.colorTheme": "One Dark Pro",
     "C_Cpp.suggestSnippets": false,
     "search.useIgnoreFiles": false,
     "files.trimFinalNewlines": true,
-    "[restructuredtext]": {
-
-    },
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always"
 }
