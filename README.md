@@ -154,43 +154,6 @@ PROMPT_TIME_COLOR="38;5;212"
   end up looking for something similar for GNOME/GTK. "One clipboard to
   rule them all" is much more my melody than the GNOME/X11 default.
 
-## Sublime Text 3 settings
-
-```json
-{
-  "color_scheme": "Packages/Theme - Asphalt/Asphalt.tmTheme",
-  "ignored_packages":
-  [
-    "Vintage"
-  ],
-  "auto_complete": true,
-  "auto_complete_commit_on_tab": false,
-  "auto_match_enabled": false,
-  "bold_folder_labels": true,
-  "draw_white_space": "all",
-  "ensure_newline_at_eof_on_save": true,
-  "font_size": 14.0,
-  "highlight_line": true,
-  "highlight_modified_tabs": true,
-  "ignore_inodes": true,
-  "ignored_packages":
-  [
-    "Vintage"
-  ],
-  "line_padding_bottom": 0,
-  "line_padding_top": 0,
-  "open_files_in_new_window": false,
-  "rulers":
-  [
-    132
-  ],
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": true,
-  "use_tab_stops": true
-}
-```
-
 ### References
 
 - Bug #1672297 “gnome-shell uses lots of memory, and grows over time: https://bugs.launchpad.net/gnome-shell/+bug/1672297
