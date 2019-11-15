@@ -154,6 +154,10 @@ PROMPT_TIME_COLOR="38;5;212"
   end up looking for something similar for GNOME/GTK. "One clipboard to
   rule them all" is much more my melody than the GNOME/X11 default.
 
+### Cinnamon tweaks
+
+- Get rid of pre-defined Ctrl-Alt-Tab keybinding, to use it for "cycle trough windows of the same application". Use [this approach](https://github.com/linuxmint/Cinnamon/issues/2539) to remove the `switch-panels` setting under `org.cinnamon.desktop.keybindings.wm` in `dconf-editor`
+
 ### References
 
 - Bug #1672297 “gnome-shell uses lots of memory, and grows over time: https://bugs.launchpad.net/gnome-shell/+bug/1672297
