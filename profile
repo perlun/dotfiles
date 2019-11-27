@@ -67,6 +67,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 [[ -d "$HOME/dotnet" ]] && export DOTNET_ROOT=$HOME/dotnet
 [[ -d "$HOME/dotnet" ]] && export PATH=$PATH:$HOME/dotnet
 
+# Python support
+[[ -d "$HOME/.local/bin" ]] && export PATH=$PATH:$HOME/.local/bin
+
 # Misc binaries
 export PATH="$HOME/bin:$PATH"
 
