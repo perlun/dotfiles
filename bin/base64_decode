@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "base64"
+
+ARGV.each { |arg|
+  puts Base64.decode64 arg
+}
