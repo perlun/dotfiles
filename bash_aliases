@@ -82,3 +82,8 @@ grbm() {
 grv() {
     git checkout upstream/master $*
 }
+
+# Poor-man's replacement for https://github.com/jcsalterego/pngpaste
+pngpaste() {
+    xclip -selection clipboard -t image/png -o > $1
+}
