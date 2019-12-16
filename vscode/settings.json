@@ -92,7 +92,8 @@
         "bash_aliases": "shellscript",
         "bash_profile": "shellscript",
         ".yamllint": "yaml",
-        ".ansible-lint": "yaml"
+        ".ansible-lint": "yaml",
+        "scalability_test_hosts": "ini"
     },
     "editor.wordWrap": "on",
 
