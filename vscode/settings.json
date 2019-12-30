@@ -6,15 +6,23 @@
     "editor.detectIndentation": false,
     "editor.formatOnSave": false,
     "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "on",
 
     // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
     "editor.tabSize": 4,
     "editor.rulers": [72, 100, 132],
 
+    "editor.suggestSelection": "first",
+    "editor.renderWhitespace": "all",
+
+    // Makes sense for Java code, but we use IntellIJ for that. :-)
+    "explorer.compactFolders": false,
+
     // This is a pretty useless feature that we disable.
     "explorer.openEditors.visible": 0,
 
     "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
 
     "html.autoClosingTags": false,
 
@@ -70,8 +78,6 @@
         "tmp/**/*": true
     },
 
-    "files.insertFinalNewline": true,
-
     "window.zoomLevel": 1,
 
     "files.associations": {
@@ -95,7 +101,6 @@
         ".ansible-lint": "yaml",
         "scalability_test_hosts": "ini"
     },
-    "editor.wordWrap": "on",
 
     // Display the spell checker status on the status bar.
     "cSpell.showStatus": false,
@@ -334,13 +339,10 @@
         "waitpid",
         "workerd"
     ],
-    "search.useRipgrep": true,
-    "ruby.rubocop.executePath": "bin/",
-    "editor.renderWhitespace": "all",
-    "[java]": {
-    },
     "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.suggestSnippets": false,
     "git.ignoreMissingGitWarning": true,
+
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -351,10 +353,13 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
+
+    "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
-    "gitlens.historyExplorer.enabled": true,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.keymap": "chorded",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
 
     "python.pythonPath": "python2.7-dbg",
 
@@ -363,6 +368,7 @@
     },
 
     "ruby.lintDebounceTime": 500,
+    "ruby.rubocop.executePath": "bin/",
 
     "vsicons.dontShowNewVersionMessage": true,
 
@@ -377,12 +383,8 @@
     "window.menuBarVisibility": "default",
 
     "yaml.format.enable": true,
-    "gitlens.codeLens.enabled": false,
     "java.configuration.checkProjectSettingsExclusions": false,
-    "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
     "csharp.referencesCodeLens.enabled": false,
     "javascript.autoClosingTags": false,
     "typescript.autoClosingTags": false,
@@ -391,7 +393,6 @@
     "selectline.alignment": "right",
     "selectline.displayFormat": "%d line(s) selected",
     "workbench.colorTheme": "One Dark Pro",
-    "C_Cpp.suggestSnippets": false,
     "search.useIgnoreFiles": false,
     "files.trimFinalNewlines": true,
     "workbench.tree.indent": 20,
