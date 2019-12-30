@@ -24,6 +24,7 @@
         ci = commit
         co = checkout
         commits = cherry -v upstream/master
+        cp = cherry-pick
         dc = diff --cached
         fetch = fetch --prune --all
         merge = merge --ff-only
