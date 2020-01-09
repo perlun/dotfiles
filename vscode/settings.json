@@ -99,7 +99,7 @@
         "bash_profile": "shellscript",
         ".yamllint": "yaml",
         ".ansible-lint": "yaml",
-        "scalability_test_hosts": "ini"
+        "*_hosts": "ini"
     },
 
     // Display the spell checker status on the status bar.
