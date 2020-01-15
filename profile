@@ -71,7 +71,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 [[ -d "$HOME/.local/bin" ]] && export PATH=$PATH:$HOME/.local/bin
 
 # Misc binaries
-export PATH="$HOME/bin:$PATH"
+[[ -d "$HOME/bin" ]] && export PATH="$HOME/bin:$PATH"
+
+# Binaries and scripts from this repo
+[[ -d "$HOME/.dotfiles-bin" ]] && export PATH="$HOME/.dotfiles-bin:$PATH"
 
 # RVM setup.
 #
