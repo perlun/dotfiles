@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'date'
+require 'active_support/core_ext/date_time'
+
+time = ARGV.pop or abort "Syntax #{$PROGRAM_NAME} <unix-time-with-milliseconds>"
+
+puts DateTime.strptime(time, '%Q').to_formatted_s(:db)

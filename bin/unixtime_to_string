@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+time = ARGV.pop or abort "Syntax #{$PROGRAM_NAME} <unix-time-in-seconds>"
+
+puts Time.at(time.to_i).to_s
