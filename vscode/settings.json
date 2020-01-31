@@ -99,7 +99,8 @@
         "bash_profile": "shellscript",
         ".yamllint": "yaml",
         ".ansible-lint": "yaml",
-        "*_hosts": "ini"
+        "*_hosts": "ini",
+        "tomcat8": "shellscript"
     },
 
     // Display the spell checker status on the status bar.
@@ -393,7 +394,7 @@
     "javascript.autoClosingTags": false,
     "typescript.autoClosingTags": false,
     "javascript.implicitProjectConfig.checkJs": true,
-    "rewrap.wrappingColumn": 100,
+    "rewrap.wrappingColumn": 80,
     "selectline.alignment": "right",
     "selectline.displayFormat": "%d line(s) selected",
     "workbench.colorTheme": "One Dark Pro",
