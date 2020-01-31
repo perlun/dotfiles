@@ -51,6 +51,11 @@ alias visualvm='visualvm --laf Metal'
 # Random number generation
 alias random_int32='shuf -i 1-2147483647 -n 1'
 
+create_backup() {
+    DATE=$(date +%Y%m%d)
+    cp -a $1 $1.bak.${DATE}
+}
+
 # Quirk: has to be a function so that "./gw devBuild && restart_tomcat" can work
 restart_tomcat() {
     kill_tomcat
