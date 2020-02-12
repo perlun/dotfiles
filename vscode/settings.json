@@ -62,6 +62,10 @@
         "editor.tabSize": 2
     },
 
+    "[yaml]": {
+        "editor.tabSize": 2
+    },
+
     "files.exclude": {
         "client/tmp/**/*": true,
         "dist/**/*": true,
