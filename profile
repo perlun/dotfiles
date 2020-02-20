@@ -75,6 +75,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Python support
 [[ -d "$HOME/.local/bin" ]] && export PATH=$PATH:$HOME/.local/bin
 
+# Perlang support
+[[ -d "$HOME/.perlang/bin" ]] && export PATH=$PATH:$HOME/.perlang/bin
+
 # Misc binaries
 [[ -d "$HOME/bin" ]] && export PATH="$HOME/bin:$PATH"
 
