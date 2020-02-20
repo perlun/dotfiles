@@ -44,6 +44,11 @@ esac
 # Therefore, I prefer to disable history expansion.
 set +H
 
+# Avoid closing the shell by accident, if running in a local terminal
+if [[ -z "$SSH_CONNECTION" ]]; then
+    set -o ignoreeof
+fi
+
 # Various ENV variable settings
 export EDITOR=nano
 
