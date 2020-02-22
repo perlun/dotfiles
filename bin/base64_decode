@@ -1,7 +1,3 @@
-#!/usr/bin/env ruby
+//usr/bin/env perlang $0 "$@" ; exit
 
-require "base64"
-
-ARGV.each { |arg|
-  puts Base64.decode64 arg
-}
+print base64_decode(argv_pop());
