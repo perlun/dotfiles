@@ -40,6 +40,9 @@ alias spotify='spotify --disable-gpu'
 # We always want to run virsh as root
 alias virsh='sudo virsh'
 
+# cd back to the root of a git repository.
+alias cdr='cd $(git rev-parse --show-toplevel)'
+
 if [ ! -z "$IS_WSL" ]; then
     alias code='/mnt/c/Users/per/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe'
 fi
