@@ -15,6 +15,9 @@ if [ -n "$BASH_VERSION" ]; then
    fi
 fi
 
+# Enable seamless decompression of .gzip files
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
 # Branch/etc completion in git.
 # To get this working on macOS: brew install bash-completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
