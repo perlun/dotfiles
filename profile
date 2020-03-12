@@ -127,11 +127,11 @@ gwComplete() {
 #
 gw() {
     if [[ -x gradlew ]]; then
-        ./gradlew $@
+        ./gradlew "$@"
     else
         GW_PATH=$(find_up -name gradlew|head -n 1)
         if [[ $? -eq 0 ]] && [[ "$GW_PATH" != "" ]] && [[ -x "$GW_PATH" ]]; then
-            $GW_PATH $@
+            $GW_PATH "$@"
         else
             echo "ERROR: no executable gradlew found in any parent directory"
         fi
