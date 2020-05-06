@@ -404,9 +404,9 @@
     "rewrap.wrappingColumn": 80,
     "selectline.alignment": "right",
     "selectline.displayFormat": "%d line(s) selected",
-    "workbench.colorTheme": "One Dark Pro",
     "search.useIgnoreFiles": false,
     "files.trimFinalNewlines": true,
     "workbench.tree.indent": 20,
-    "workbench.tree.renderIndentGuides": "always"
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorTheme": "One Dark Pro"
 }

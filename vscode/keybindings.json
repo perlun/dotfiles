@@ -41,13 +41,8 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "cmd+\\",
-    "command": "rewrap.rewrapComment",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+q",
-    "command": "-rewrap.rewrapComment",
+    "command": "rewrap.rewrapComment",
     "when": "editorTextFocus"
   }
 ]
