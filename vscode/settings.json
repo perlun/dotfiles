@@ -38,6 +38,10 @@
         "editor.tabSize": 2
     },
 
+    "[html]": {
+        "editor.tabSize": 2
+    },
+
     "[jinja-yaml]": {
         "editor.tabSize": 2
     },
@@ -51,6 +55,10 @@
     },
 
     "[markdown]": {
+        "editor.tabSize": 2
+    },
+
+    "[mustache]": {
         "editor.tabSize": 2
     },
 
@@ -302,6 +310,7 @@
         "passthrough",
         "perlun",
         "pescetarian",
+        "pgroup",
         "pids",
         "pipenv",
         "plundberg",
@@ -320,6 +329,7 @@
         "rindex",
         "rspec",
         "rstrip",
+        "rsync",
         "rtrim",
         "rubocop",
         "sigchild",
@@ -412,5 +422,17 @@
     "files.trimFinalNewlines": true,
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "One Dark Pro",
+    "gitlens.hovers.enabled": false,
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "explorer",
+    "gitlens.views.lineHistory.location": "explorer",
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    "gitlens.remotes": [
+        {
+            "domain": "git.hibox.fi",
+            "type": "GitLab"
+        }
+    ]
 }
