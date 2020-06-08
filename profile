@@ -39,6 +39,7 @@ fi
 
 # Various ENV variable settings
 export EDITOR=nano
+export LESS=-R
 
 # This is important to get `git blame` timestamps to use yyyy-MM-dd format in IntelliJ.
 if cat /etc/locale.gen | grep -q '^sv_SE.UTF-8' ; then
