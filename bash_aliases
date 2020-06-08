@@ -6,6 +6,7 @@
 # Color is nice, and it also makes it easier to distinguish different types
 # of files from each other.
 alias ls='ls --color=auto'
+alias jq='jq -C'
 
 # Makes grep color the search term when grepping - very helpful.
 alias egrep='egrep --color=auto'
