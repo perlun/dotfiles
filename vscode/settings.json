@@ -223,6 +223,7 @@
         "Wasa",
         "Wolffskavägen",
         "Wärtsiläs",
+        "Zabbix",
         "adoptopenjdk",
         "ansible",
         "appfactory",
@@ -434,5 +435,6 @@
             "domain": "git.hibox.fi",
             "type": "GitLab"
         }
-    ]
+    ],
+    "go.useLanguageServer": true
 }
