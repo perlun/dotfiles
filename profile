@@ -65,7 +65,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 [[ -d "$HOME/.local/bin" ]] && export PATH=$PATH:$HOME/.local/bin
 
 # Perlang support
-[[ -d "$HOME/.perlang/bin" ]] && export PATH=$PATH:$HOME/.perlang/bin
+[[ -d "$HOME/.perlang/nightly/bin" ]] && export PATH=$PATH:$HOME/.perlang/nightly/bin
 
 # Misc binaries
 [[ -d "$HOME/bin" ]] && export PATH="$HOME/bin:$PATH"
