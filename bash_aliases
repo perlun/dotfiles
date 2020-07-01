@@ -87,7 +87,11 @@ grbc() {
 }
 
 grbm() {
-    git rebase upstream/master $*
+    if [[ $(git remote | grep -q upstream) ]]; then
+        git rebase upstream/master $*
+    else
+        git rebase origin/master $*
+    fi
 }
 
 # 'git revert' to upstream state for a particular file
