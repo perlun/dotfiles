@@ -443,5 +443,7 @@
             "type": "GitLab"
         }
     ],
-    "go.useLanguageServer": true
+    "go.useLanguageServer": true,
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.shell.linux": "/bin/bash"
 }
