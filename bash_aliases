@@ -87,7 +87,7 @@ grbc() {
 }
 
 grbm() {
-    if [[ $(git remote | grep -q upstream) ]]; then
+    if git remote | grep -q upstream; then
         git rebase upstream/master $*
     else
         git rebase origin/master $*
