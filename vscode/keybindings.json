@@ -1,48 +1,36 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-  { "key": "cmd+shift+s",  "command": "editor.action.sortLinesAscending",
-                 "when": "editorTextFocus" },
-  { "key": "shift+ctrl+up", "command": "editor.action.insertCursorAbove",
-                          "when": "editorTextFocus" },
-  { "key": "shift+ctrl+down", "command": "editor.action.insertCursorBelow",
-                             "when": "editorTextFocus" },
-  {
-    "key": "cmd+ctrl+n",
-    "command": "extension.advancedNewFile"
-  },
-  {
-    "key": "cmd+enter",
-    "command": "editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+.",
-    "command": "-editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+\\",
-    "command": "extension.reflowMarkdown",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+q",
-    "command": "-extension.reflowMarkdown",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+k cmd+d",
-    "command": "editor.action.formatDocument",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+f",
-    "command": "-editor.action.formatDocument",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+q",
-    "command": "rewrap.rewrapComment",
-    "when": "editorTextFocus"
-  }
+    {
+        "key": "ctrl+l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-cursorUndo",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "down",
+        "command": "search.focus.nextInputBox",
+        "when": "inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-search.focus.nextInputBox",
+        "when": "inputBoxFocus && searchViewletVisible"
+    }
 ]
