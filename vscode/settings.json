@@ -407,6 +407,7 @@
 
     "ruby.lintDebounceTime": 500,
     "ruby.rubocop.executePath": "bin/",
+    "ruby.useLanguageServer": true,
 
     "vsicons.dontShowNewVersionMessage": true,
 
