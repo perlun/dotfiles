@@ -57,6 +57,7 @@ alias visualvm='visualvm --laf Metal'
 
 # Random number generation
 alias random_int32='shuf -i 1-2147483647 -n 1'
+alias random_int16='shuf -i 1-65535 -n 1'
 
 create_backup() {
     DATE=$(date +%Y%m%d)
