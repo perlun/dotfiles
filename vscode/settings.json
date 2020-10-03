@@ -51,7 +51,7 @@
     },
 
     "[jsonc]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
 
     "[markdown]": {
@@ -365,6 +365,7 @@
         "tetris",
         "textblock",
         "textblocks",
+        "tillbedjare",
         "timestamps",
         "transpiler",
         "trello",
@@ -437,7 +438,7 @@
     "rewrap.wrappingColumn": 80,
     "selectline.alignment": "right",
     "selectline.displayFormat": "%d line(s) selected",
-    "search.useIgnoreFiles": false,
+    "search.useIgnoreFiles": true,
     "files.trimFinalNewlines": true,
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
