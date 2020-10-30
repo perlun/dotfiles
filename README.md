@@ -1,16 +1,16 @@
 README
 ======
 
-This is a collection of my personal dotfiles. Feel free to use them in any
-way you like. The `git-prompt.sh` is under the somewhat
+This is a collection of my personal dotfiles. Feel free to use them in any way
+you like. The `git-prompt.sh` is under the somewhat
 [viral](http://en.wikipedia.org/wiki/GNU_General_Public_License#.22Viral.22_nature)
-GNU GPL license, but the rest of this stuff can be used freely under the
-terms of the [MIT license](LICENSE). You are not obliged to contribute your
-changes back to me if you don't like, but you are certainly welcome to
-submit PR:s if you find things you can improve on here.
+GNU GPL license, but the rest of this stuff can be used freely under the terms
+of the [MIT license](LICENSE). You are not obliged to contribute your changes
+back to me if you don't like, but you are certainly welcome to submit PR:s if
+you find things you can improve on here.
 
-These dotfiles have served me well on both macOS and Linux (Debian and
-Ubuntu). I also use them on [msys2](https://www.msys2.org/) on Windows.
+These dotfiles have served me well on both macOS and Linux (Debian and Ubuntu).
+I also use them on [msys2](https://www.msys2.org/) on Windows.
 
 ## How to use
 
@@ -48,15 +48,15 @@ Ubuntu). I also use them on [msys2](https://www.msys2.org/) on Windows.
 
 ## Color examples
 
-If your terminal supports it (most modern terminals do), you can even use [8-bit (256)
-colors](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to get more flexibility
-than the traditional 16-colored ANSI palette can provide.
+If your terminal supports it (most modern terminals do), you can even use [8-bit
+(256) colors](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to get more
+flexibility than the traditional 16-colored ANSI palette can provide.
 
-Here are some examples of decent color combinations that I have used at
-various machines. I tend to prefer having red colors for production
-environments, for example, so that I get a clear visual indication of where
-I am working at the moment. Also, I find it preferable to use different
-colors for my local machine vs remote servers, to avoid mistakes.
+Here are some examples of decent color combinations that I have used at various
+machines. I tend to prefer having red colors for production environments, for
+example, so that I get a clear visual indication of where I am working at the
+moment. Also, I find it preferable to use different colors for my local machine
+vs remote servers, to avoid mistakes.
 
 The examples include the full `~/.bash_profile` contents, to make them easy to copy-paste.
 
@@ -94,18 +94,9 @@ PROMPT_TIME_COLOR="38;5;212"
 
 ## Recommended tools (GNU/Linux)
 
-- Debian Testing or Unstable, to get good, recent versions of the software
-  I need for work and play.
-- ~`sudo apt-get install gnome` as the desktop environment of choice. Well
-  polished, pretty much on-par in terms of usability with Windows 10 or
-  macOS.~ Because of excessive memory usage (`gnome-shell` was up to 6 GiB at
-  some point), I ended up scrapping this and went with `sudo apt-get install cinnamon`
-  instead. It seems to use less Javascript for its UI which I consider a very good
-  thing... See the references at the end of this README.md for some interesting
-  reading about memory leaks that have been present in Gnome historically.
-- ~`sudo apt-get install gnome-tweaks` - this one has nice stuff like "use
-  Caps Lock for switching keyboard layouts".~ Using a similar thing in
-  Cinnamon instead.
+- Debian `testing` or `unstable`, to get good, recent versions of the software I
+  need for work and play. At the moment, I'm actually using `stable` (`buster`)
+  since it was released recently enough.
 - [pg_hba.ctl](pg_hba.ctl) settings, to make URLs like
   `postgres://localhost/foo_database` work for any local user. **Caveat**:
   not secure for customer/multi-user environments.
@@ -115,7 +106,9 @@ PROMPT_TIME_COLOR="38;5;212"
 - [CopyQ](https://hluk.github.io/CopyQ/) as clipboard manager. Very useful
   when copying an image and some text at the same time, e.g. when articulating
   a Slack message.
-- Show date in GNOME panel, next to time: `gsettings set org.gnome.desktop.interface clock-show-date true`
+- [My personal Cinnamon theme](https://github.com/perlun/perlun-cinnamon-theme)
+  is nothing incredibly spectacular, but I like it and use it on all my Cinnamon
+  desktops (at work, on the laptop, on my home desktop etc.). It's a modified version of the (dark) Adapta Nokto theme.
 
 ## Recommended tools (macOS)
 
@@ -136,7 +129,7 @@ PROMPT_TIME_COLOR="38;5;212"
 - [Parallels](http://www.parallels.com): A great virtualization app, to be
   able to run Windows 10, Debian, Visual Studio, etc.
 
-## Stuff I don't use so much any more
+## Stuff I don't use any more
 
 - [SourceTree](http://www.sourcetreeapp.com/): Graphical `git` and `hg`
   (Mercurial) client for Windows and macOS. Developed by Atlassian, the
@@ -153,6 +146,18 @@ PROMPT_TIME_COLOR="38;5;212"
   different semantics in this area.) Klipper is KDE-centric but I might
   end up looking for something similar for GNOME/GTK. "One clipboard to
   rule them all" is much more my melody than the GNOME/X11 default.
+- _`sudo apt-get install gnome-tweaks` - this one has nice stuff like "use Caps
+  Lock for switching keyboard layouts"._ No longer personally using this, but
+  using a similar thing in Cinnamon instead.
+- Show date in GNOME panel, next to time: `gsettings set org.gnome.desktop.interface clock-show-date true`
+- _`sudo apt-get install gnome` as the desktop environment of choice. Well
+  polished, pretty much on-par in terms of usability with Windows 10 or macOS._
+  Because of excessive memory usage (`gnome-shell` was up to 6 GiB at some
+  point), I ended up scrapping this and went with `sudo apt-get install
+  cinnamon` instead. It seems to use less Javascript for its UI which I consider
+  a very good thing... See the references at the end of this README.md for some
+  interesting reading about memory leaks that have been present in Gnome
+  historically.
 
 ### Cinnamon tweaks
 
