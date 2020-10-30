@@ -98,7 +98,7 @@ PROMPT_TIME_COLOR="38;5;212"
   I need for work and play.
 - ~`sudo apt-get install gnome` as the desktop environment of choice. Well
   polished, pretty much on-par in terms of usability with Windows 10 or
-  macOS.~ Because of excessive memory usage (`gnome-shell` was up to 6 GiB at 
+  macOS.~ Because of excessive memory usage (`gnome-shell` was up to 6 GiB at
   some point), I ended up scrapping this and went with `sudo apt-get install cinnamon`
   instead. It seems to use less Javascript for its UI which I consider a very good
   thing... See the references at the end of this README.md for some interesting
@@ -113,7 +113,7 @@ PROMPT_TIME_COLOR="38;5;212"
   nice [Spectacle](http://spectacleapp.com/)-like tiling features for
   X11.
 - [CopyQ](https://hluk.github.io/CopyQ/) as clipboard manager. Very useful
-  when copying an image and som text at the same time, e.g. when articulating
+  when copying an image and some text at the same time, e.g. when articulating
   a Slack message.
 - Show date in GNOME panel, next to time: `gsettings set org.gnome.desktop.interface clock-show-date true`
 
