@@ -1,6 +1,6 @@
-# vscode README
+# vscode
 
-This folder contains my VS Code settings. I set this mechanism up before [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) existed. One of the things I like about it is that it gives me full control, where I stored this in a Git repo where I can easily see history, etc., whereas the VS Code-provided Settings Sync seems more "vendor-cloud-oriented" in a negative way.
+This folder contains my VS Code settings. I set this mechanism up before [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) existed. One of the things I like about it is that it gives me full control, since I store this in a Git repo where I can easily see history, etc., whereas the VS Code-provided Settings Sync seems more "vendor-cloud-oriented" in a negative way.
 
 I might give it a try sometime, but as of yet, I haven't been willing to put the effort into it.
 

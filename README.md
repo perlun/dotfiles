@@ -106,9 +106,8 @@ PROMPT_TIME_COLOR="38;5;212"
 - [CopyQ](https://hluk.github.io/CopyQ/) as clipboard manager. Very useful
   when copying an image and some text at the same time, e.g. when articulating
   a Slack message.
-- [My personal Cinnamon theme](https://github.com/perlun/perlun-cinnamon-theme)
-  is nothing incredibly spectacular, but I like it and use it on all my Cinnamon
-  desktops (at work, on the laptop, on my home desktop etc.). It's a modified version of the (dark) Adapta Nokto theme.
+- Cinnamon is the desktop environment I prefer: `sudo apt-get install cinnamon`.
+  See my dedicated [cinnamon](cinnamon) page for more details on my setup.
 
 ## Recommended tools (macOS)
 
