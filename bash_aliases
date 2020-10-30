@@ -28,10 +28,6 @@ alias prune_branches='git branch -l | grep -v "*" | grep -v upstream-master | xa
 alias idea='~/apps/idea-IU-182.3911.36/bin/idea.sh'
 alias pbcopy="xclip -sel clip"
 
-# Workaround for Java app that doesn't shutdown cleanly.
-# Delay needed to avoid "Address already in use" errors.
-alias kill_tomcat='pkill -f tomcat-8.*catalina\.startup'
-alias kill_tomcat_dlx='pkill -f tomcat-dlx.*catalina\.startup'
 alias start_tomcat='$HOME/java/tomcat-8/bin/startup.sh'
 
 alias kill_gradle='pkill -e -f gradle'
@@ -62,6 +58,18 @@ alias random_int16='shuf -i 1-65535 -n 1'
 create_backup() {
     DATE=$(date +%Y%m%d)
     cp -a $1 $1.bak.${DATE}
+}
+
+kill_tomcat() {
+    CATALINA_BASE=$HOME/java/tomcat-8
+    $CATALINA_BASE/bin/shutdown.sh 3
+
+    if [ -e $CATALINA_BASE/bin/catalina.pid ]; then
+        kill -9 `cat $CATALINA_BASE/bin/catalina.pid`
+        rm $CATALINA_BASE/bin/catalina.pid
+    fi
+
+    echo "Tomcat stopped"
 }
 
 # Quirk: has to be a function so that "./gw devBuild && restart_tomcat" can work
