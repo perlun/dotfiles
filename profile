@@ -76,7 +76,7 @@ export PATH="$PATH:/sbin:/usr/sbin"
 # RVM setup.
 #
 # Add RVM to PATH for scripting. NOTE! Make sure this is the last PATH variable change, otherwise RVM will not function correctly.
-export PATH="$PATH:$HOME/.rvm/bin"
+[[ -d "$HOME/.rvm/bin" ]] && export PATH="$PATH:$HOME/.rvm/bin"
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
