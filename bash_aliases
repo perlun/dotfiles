@@ -55,6 +55,11 @@ alias visualvm='visualvm --laf Metal'
 alias random_int32='shuf -i 1-2147483647 -n 1'
 alias random_int16='shuf -i 1-65535 -n 1'
 
+# Workaround for bug in Xorg. Sometimes, the "use Caps Lock for switching
+# keyboard map" doesn't work and sets the Caps Lock state instead. This is used
+# as an emergency break, to get rid of Caps Lock in case that happens.
+alias CAPSOFF='setcapslock off'
+
 create_backup() {
     DATE=$(date +%Y%m%d)
     cp -a $1 $1.bak.${DATE}
