@@ -62,9 +62,7 @@ alias CAPSOFF='setcapslock off'
 
 # Convenience alias to be able to get the Tomcat PID for use in e.g.
 # 'jstack $(tomcat_pid)'
-if [ -x /usr/bin/pgrep ]; then
-    alias tomcat_pid='pgrep -f "org.apache.catalina.startup.Bootstrap"'
-fi
+[ -x /usr/bin/pgrep ] && alias tomcat_pid='pgrep -f "org.apache.catalina.startup.Bootstrap"'
 
 create_backup() {
     DATE=$(date +%Y%m%d)

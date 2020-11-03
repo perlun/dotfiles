@@ -22,6 +22,10 @@ fi
 # To get this working on macOS: brew install bash-completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
+# Bash completion for the Fastly CLI, if installed:
+# https://github.com/fastly/cli
+[ -x /usr/local/bin/fastly ] && eval "$(fastly --completion-script-bash)"
+
 # Set a custom prompt
 . $HOME/git/dotfiles/prompt.sh
 
