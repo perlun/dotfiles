@@ -60,6 +60,12 @@ alias random_int16='shuf -i 1-65535 -n 1'
 # as an emergency break, to get rid of Caps Lock in case that happens.
 alias CAPSOFF='setcapslock off'
 
+# Convenience alias to be able to get the Tomcat PID for use in e.g.
+# 'jstack $(tomcat_pid)'
+if [ -x /usr/bin/pgrep ]; then
+    alias tomcat_pid='pgrep -f "org.apache.catalina.startup.Bootstrap"'
+fi
+
 create_backup() {
     DATE=$(date +%Y%m%d)
     cp -a $1 $1.bak.${DATE}
