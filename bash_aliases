@@ -43,9 +43,8 @@ alias virsh='sudo virsh'
 # cd back to the root of a git repository.
 alias cdr='cd $(git rev-parse --show-toplevel)'
 
-if [ ! -z "$IS_WSL" ]; then
-    alias code='/mnt/c/Users/per/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe'
-fi
+# Convenience alias to make ack exclude .gitignore'd files
+alias gack="git ls-files -oc --exclude-standard | ack -x"
 
 # VisualVM doesn't play well with https://github.com/perlun/perlun-cinnamon-theme,
 # so forcing the Metal look-and-feel makes it behave more reasonably.
@@ -63,6 +62,9 @@ alias CAPSOFF='setcapslock off'
 # Convenience alias to be able to get the Tomcat PID for use in e.g.
 # 'jstack $(tomcat_pid)'
 [ -x /usr/bin/pgrep ] && alias tomcat_pid='pgrep -f "org.apache.catalina.startup.Bootstrap"'
+
+# Make it possible to do things like 'code .' on WSL
+[ ! -z "$IS_WSL" ] && alias code='/mnt/c/Users/per/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe'
 
 create_backup() {
     DATE=$(date +%Y%m%d)
