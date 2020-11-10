@@ -7,41 +7,47 @@
 #         email = perlun@gmail.com
 
 [user]
-	name = Per Lundberg
+    name = Per Lundberg
 
 [core]
-        excludesfile = ~/.gitignore_global
-        ignorecase = false
-        editor = nano
+	autocrlf = false
+    excludesfile = ~/.gitignore_global
+    ignorecase = false
+    editor = nano
+    pager = diff-so-fancy | less --tabs=4 -RFX
 
 [diff]
-        noprefix = true
+    noprefix = true
 
 [alias]
-        addall = add --all
-        amend = commit --amend --no-edit
-        branches = branch --sort=-committerdate --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
-        ci = commit
-        co = checkout
-        commits = cherry -v upstream/master
-        cp = cherry-pick
-        dc = diff --cached
-        fetch = fetch --prune --all
-        merge = merge --ff-only
-        pull = pull -r
-        push-branch = push -u origin HEAD
-        st = status --short
-        st = status -sb
-        stat = status
-        tree = log --graph --oneline --all --decorate --tags
-        tree-current-branch = log --graph --oneline --decorate --tags HEAD
+    addall = add --all
+    amend = commit --amend --no-edit
+    branches = branch --sort=-committerdate --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+    ci = commit
+    co = checkout
+    commits = cherry -v upstream/master
+    cp = cherry-pick
+    dc = diff --cached
+    fetch = fetch --prune --all
+    merge = merge --ff-only
+    pull = pull -r
+    push-branch = push -u origin HEAD
+    st = status --short
+    st = status -sb
+    stat = status
+    tree = log --graph --oneline --all --decorate --tags
+    tree-current-branch = log --graph --oneline --decorate --tags HEAD
 
 [push]
-        default = simple
+    # push the current branch back to the branch whose changes are usually
+    # integrated into the current branch (which is called @{upstream}). This
+    # mode only makes sense if you are pushing to the same repository you would
+    # normally pull from (i.e. central workflow).
+    default = upstream
 
 [filter "media"]
-        clean = git-media-clean %f
-        smudge = git-media-smudge %f
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
 
 [mergetool]
-        keepBackup = true
+    keepBackup = true
