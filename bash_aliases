@@ -123,3 +123,32 @@ grv() {
 pngpaste() {
     xclip -selection clipboard -t image/png -o > $1
 }
+
+# Poor-man's replacement for SDKMAN: https://sdkman.io/
+if [[ -d /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 ]]; then
+    java8() {
+        sudo update-alternatives --set java /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/bin/java
+        sudo update-alternatives --set javac /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/bin/javac
+    }
+fi
+
+if [[ -d /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64 ]]; then
+    java11() {
+        sudo update-alternatives --set java /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64/bin/java
+        sudo update-alternatives --set javac /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64/bin/javac
+    }
+fi
+
+if [[ -d /usr/lib/jvm/adoptopenjdk-14-hotspot-amd64 ]]; then
+    java14() {
+        sudo update-alternatives --set java /usr/lib/jvm/adoptopenjdk-14-hotspot-amd64/bin/java
+        sudo update-alternatives --set javac /usr/lib/jvm/adoptopenjdk-14-hotspot-amd64/bin/javac
+    }
+fi
+
+if [[ -d /usr/lib/jvm/adoptopenjdk-15-hotspot-amd64 ]]; then
+    java15() {
+        sudo update-alternatives --set java /usr/lib/jvm/adoptopenjdk-15-hotspot-amd64/bin/java
+        sudo update-alternatives --set javac /usr/lib/jvm/adoptopenjdk-15-hotspot-amd64/bin/javac
+    }
+fi
