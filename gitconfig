@@ -33,7 +33,6 @@
     pull = pull -r
     push-branch = push -u origin HEAD
     st = status --short
-    st = status -sb
     stat = status
     tree = log --graph --oneline --all --decorate --tags
     tree-current-branch = log --graph --oneline --decorate --tags HEAD
