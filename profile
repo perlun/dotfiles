@@ -88,6 +88,12 @@ export PATH="$PATH:/sbin:/usr/sbin"
 # virtualenvwrapper support
 [[ -s /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]] && source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
+# Bash completion for Ansible, Gradle etc. Install using the following
+# repositories:
+#
+# https://github.com/gradle/gradle-completion
+[[ -f "$HOME/.bash_completion.d/gradle-completion.bash" ]] && source $HOME/.bash_completion.d/gradle-completion.bash
+
 #
 # Convenience functions for being able to use the local gradle wrapper
 # easily from anywhere within the source tree.
