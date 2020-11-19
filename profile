@@ -109,15 +109,6 @@ find_up() {
 }
 
 #
-# Bash completion for the gradle wrapper
-#
-gwComplete() {
-    local tasks=$(grep "^task " build.gradle | awk '{ print $2 }' | tr -d '(' | xargs)
-    local cur=${COMP_WORDS[COMP_CWORD]}
-    COMPREPLY=( $(compgen -W "${tasks}" -- ${cur}) )
-}
-
-#
 # Run the gradle wrapper, either from the current directory if present or
 # in the closest parent folder.
 #
@@ -135,6 +126,6 @@ gw() {
 }
 
 #
-# Associate the gwComplete function as the completion function for gw
+# Enable Gradle completion for the gw alias
 #
-complete -F gwComplete gw
+complete -F _gradle gw
