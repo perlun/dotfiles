@@ -32,5 +32,15 @@
         "key": "ctrl+down",
         "command": "-search.focus.nextInputBox",
         "when": "inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
     }
 ]
