@@ -31,6 +31,13 @@
     excludesfile = ~/.gitignore_global
     ignorecase = false
     editor = nano
+
+    # Note: this causes "diff-so-fancy: not found" if diff-so-fancy is not
+    # installed, and it's not trivially installable using apt-get. For such
+    # machines, override the config below with one of the following:
+    #
+    # git config --global core.pager ''         # disables paging
+    # git config --global core.pager 'less'     # reverts to the default git behavior.
     pager = diff-so-fancy | less --tabs=4 -RFX
 
 [diff]
