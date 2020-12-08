@@ -124,6 +124,16 @@ pngpaste() {
     xclip -selection clipboard -t image/png -o > $1
 }
 
+prompt_save() {
+    export PS2=$PS1
+    export PS1='$ '
+}
+
+prompt_restore() {
+    export PS1=$PS2
+    export -n PS2
+}
+
 # Poor-man's replacement for SDKMAN: https://sdkman.io/
 if [[ -d /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 ]]; then
     java8() {
