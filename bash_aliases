@@ -53,6 +53,7 @@ alias visualvm='visualvm --laf Metal'
 # Random number generation
 alias random_int32='shuf -i 1-2147483647 -n 1'
 alias random_int16='shuf -i 1-65535 -n 1'
+alias random_int8='shuf -i 1-255 -n 1'
 
 # Workaround for bug in Xorg. Sometimes, the "use Caps Lock for switching
 # keyboard map" doesn't work and sets the Caps Lock state instead. This is used
