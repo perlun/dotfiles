@@ -42,6 +42,7 @@
 
 [diff]
     noprefix = true
+    colorMoved = default
 
 [diff-so-fancy]
     markEmptyLines = false
