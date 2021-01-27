@@ -135,6 +135,14 @@ prompt_restore() {
     export -n PS2
 }
 
+docker_container_id() {
+    docker ps -qf name=$1
+}
+
+tomcat_container_id() {
+    docker_container_id tomcat
+}
+
 # Poor-man's replacement for SDKMAN: https://sdkman.io/
 if [[ -d /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 ]]; then
     java8() {
