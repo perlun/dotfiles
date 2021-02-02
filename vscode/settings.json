@@ -509,6 +509,6 @@
         }
     ],
     "go.useLanguageServer": true,
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "onWindowChange",
     "terminal.integrated.shell.linux": "/bin/bash"
 }
