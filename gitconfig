@@ -79,3 +79,6 @@
 
 [mergetool]
     keepBackup = true
+
+[init]
+    defaultBranch = master
