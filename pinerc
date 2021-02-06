@@ -20,17 +20,17 @@
 personal-name=Per Lundberg
 
 # Sets domain part of From: and local addresses in outgoing mail.
-user-domain=gmail.com
+user-domain=mailbox.org
 
 # List of SMTP servers for sending mail. If blank: Unix Alpine uses sendmail.
-smtp-server=smtp.gmail.com:587/tls/user=perlun@gmail.com
+smtp-server=smtp.mailbox.org/user=perlun@mailbox.org/tls
 
 # NNTP server for posting news. Also sets news-collections for news reading.
 nntp-server=
 
 # Path of (local or remote) INBOX, e.g. ={mail.somewhere.edu}inbox
 # Normal Unix default is the local INBOX (usually /usr/spool/mail/$USER).
-inbox-path={imap.gmail.com:993/ssl/user=perlun@gmail.com}INBOX
+inbox-path={imap.mailbox.org:993/ssl/user=perlun@mailbox.org}INBOX
 
 # List of folder pairs; the first indicates a folder to archive, and the
 # second indicates the folder read messages in the first should
@@ -44,17 +44,17 @@ pruned-folders=
 # Over-rides default path for sent-mail folder, e.g. =old-mail (using first
 # folder collection dir) or ={host2}sent-mail or ="" (to suppress saving).
 # Default: sent-mail (Unix) or SENTMAIL.MTX (PC) in default folder collection.
-default-fcc=""
+default-fcc="{imap.mailbox.org:993/ssl/user=perlun@mailbox.org}Sent"
 
 # Over-rides default path for saved-msg folder, e.g. =saved-messages (using 1st
 # folder collection dir) or ={host2}saved-mail or ="" (to suppress saving).
 # Default: saved-messages (Unix) or SAVEMAIL.MTX (PC) in default collection.
-default-saved-msg-folder=[Gmail]/All Mail
+default-saved-msg-folder=Archive/2021
 
 # Over-rides default path for postponed messages folder, e.g. =pm (which uses
 # first folder collection dir) or ={host4}pm (using home dir on host4).
 # Default: postponed-msgs (Unix) or POSTPOND.MTX (PC) in default fldr coltn.
-postponed-folder=
+postponed-folder=Drafts
 
 # If set, specifies where already-read messages will be moved upon quitting.
 read-message-folder=
@@ -75,7 +75,10 @@ signature-file=
 # List of features; see Alpine's Setup/options menu for the current set.
 # e.g. feature-list= select-without-confirm, signature-at-bottom
 # Default condition for all of the features is no-.
-feature-list=signature-at-bottom
+feature-list=signature-at-bottom,
+	include-text-in-reply,
+	expunge-without-confirm,
+	quit-without-confirm
 
 # Alpine executes these keys upon startup (e.g. to view msg 13: i,j,1,3,CR,v)
 initial-keystroke-list=
@@ -84,7 +87,7 @@ initial-keystroke-list=
 default-composer-hdrs=
 
 # Add these customized headers (and possible default values) when composing
-customized-hdrs=From: Per Lundberg <perlun@gmail.com>
+customized-hdrs=From: Per Lundberg <per.lundberg@mailbox.org>
 
 # When viewing messages, include this list of headers
 viewer-hdrs=
@@ -216,7 +219,8 @@ display-filters=
 sending-filters=
 
 # A list of alternate addresses the user is known by
-alt-addresses=perlun@gmail.com
+alt-addresses=per.lundberg@mailbox.org,
+	perlun@mailbox.org
 
 # A list of keywords for use in categorizing messages
 keywords=
@@ -355,7 +359,7 @@ incoming-folders=
 # List of directories where saved-message folders may be. First one is
 # the default for Saves. Example: Main {host1}mail/[], Desktop mail\[]
 # Syntax: optnl-label {optnl-imap-hostname}optnl-directory-path[]
-folder-collections=perlun@gmail.com {imap.gmail.com:993/ssl/user=perlun@gmail.com}[]
+folder-collections=perlun@mailbox.org {imap.mailbox.org:993/ssl/user=perlun@mailbox.org}[]
 
 # List, only needed if nntp-server not set, or news is on a different host
 # than used for NNTP posting. Examples: News *[] or News *{host3/nntp}[]
@@ -373,7 +377,7 @@ address-book=
 global-address-book=
 
 # Set by Alpine; controls beginning-of-month sent-mail pruning.
-last-time-prune-questioned=118.7
+last-time-prune-questioned=121.2
 
 # Set by Alpine; controls display of "new version" message.
 last-version-used=6.21
