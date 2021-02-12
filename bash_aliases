@@ -91,6 +91,10 @@ restart_tomcat() {
     start_tomcat
 }
 
+rotate_tomcat_log() {
+    mv ~/java/tomcat-8/logs/catalina.out ~/java/tomcat-8/logs/catalina-$(date +%s).out
+}
+
 # Git aliases (technically, functions)
 gfa() {
     git fetch --all
@@ -155,6 +159,7 @@ if [[ -d /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64 ]]; then
     java11() {
         sudo update-alternatives --set java /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64/bin/java
         sudo update-alternatives --set javac /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64/bin/javac
+        sudo update-alternatives --set jshell /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64/bin/jshell
     }
 fi
 
@@ -162,6 +167,7 @@ if [[ -d /usr/lib/jvm/adoptopenjdk-14-hotspot-amd64 ]]; then
     java14() {
         sudo update-alternatives --set java /usr/lib/jvm/adoptopenjdk-14-hotspot-amd64/bin/java
         sudo update-alternatives --set javac /usr/lib/jvm/adoptopenjdk-14-hotspot-amd64/bin/javac
+        sudo update-alternatives --set jshell /usr/lib/jvm/adoptopenjdk-14-hotspot-amd64/bin/jshell
     }
 fi
 
@@ -169,5 +175,6 @@ if [[ -d /usr/lib/jvm/adoptopenjdk-15-hotspot-amd64 ]]; then
     java15() {
         sudo update-alternatives --set java /usr/lib/jvm/adoptopenjdk-15-hotspot-amd64/bin/java
         sudo update-alternatives --set javac /usr/lib/jvm/adoptopenjdk-15-hotspot-amd64/bin/javac
+        sudo update-alternatives --set jshell /usr/lib/jvm/adoptopenjdk-15-hotspot-amd64/bin/jshell
     }
 fi
