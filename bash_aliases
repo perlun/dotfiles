@@ -74,7 +74,7 @@ create_backup() {
 
 kill_tomcat() {
     CATALINA_BASE=$HOME/java/tomcat-8
-    $CATALINA_BASE/bin/shutdown.sh 3
+    $CATALINA_BASE/bin/shutdown.sh 10
 
     if [ -e $CATALINA_BASE/bin/catalina.pid ]; then
         kill -9 `cat $CATALINA_BASE/bin/catalina.pid`
