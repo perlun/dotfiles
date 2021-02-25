@@ -28,11 +28,11 @@ alias prune_branches='git branch -l | grep -v "*" | grep -v upstream-master | xa
 alias idea='~/apps/idea-IU-182.3911.36/bin/idea.sh'
 alias pbcopy="xclip -sel clip"
 
-alias start_tomcat='$HOME/java/tomcat-8/bin/startup.sh'
+alias start_tomcat='$HOME/java/tomcat/bin/startup.sh'
 
 alias kill_gradle='pkill -e -f gradle'
-alias tail_tomcat_log='tail -n60 -f ~/java/tomcat-8/logs/catalina.out | rainbow -f catalina'
-alias less_tomcat_log='less ~/java/tomcat-8/logs/catalina.out'
+alias tail_tomcat_log='tail -n60 -f ~/java/tomcat/logs/catalina.out | rainbow -f catalina'
+alias less_tomcat_log='less ~/java/tomcat/logs/catalina.out'
 
 # Workaround for https://github.com/electron/electron/issues/4380
 alias spotify='spotify --disable-gpu'
@@ -73,7 +73,7 @@ create_backup() {
 }
 
 kill_tomcat() {
-    CATALINA_BASE=$HOME/java/tomcat-8
+    CATALINA_BASE=$HOME/java/tomcat
     $CATALINA_BASE/bin/shutdown.sh 10
 
     if [ -e $CATALINA_BASE/bin/catalina.pid ]; then
@@ -92,7 +92,7 @@ restart_tomcat() {
 }
 
 rotate_tomcat_log() {
-    mv ~/java/tomcat-8/logs/catalina.out ~/java/tomcat-8/logs/catalina-$(date +%s).out
+    mv ~/java/tomcat/logs/catalina.out ~/java/tomcat/logs/catalina-$(date +%s).out
 }
 
 # Git aliases (technically, functions)
