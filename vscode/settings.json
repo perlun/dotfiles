@@ -90,8 +90,6 @@
         "tmp/**/*": true
     },
 
-    "window.zoomLevel": 1,
-
     "files.associations": {
         ".ember-cli": "jsonc",
         ".env.*": "dotenv",
@@ -241,6 +239,7 @@
         "Strömsö",
         "Sverige",
         "Testem",
+        "Trac",
         "USID",
         "Uncomment",
         "Vasa",
@@ -518,5 +517,13 @@
     ],
     "go.useLanguageServer": true,
     "files.autoSave": "onWindowChange",
-    "terminal.integrated.shell.linux": "/bin/bash"
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "window.zoomLevel": 1,
+    "cSpell.enabled": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
 }
