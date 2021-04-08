@@ -6,16 +6,8 @@
   extra_styling = False
   inactive_color_offset = 1.0
 [keybindings]
-  broadcast_all = None
-  broadcast_group = None
-  broadcast_off = None
-  edit_tab_title = None
   go_next = None
-  hide_window = None
-  layout_launcher = None
-  new_window = <Primary><Shift>n
   switch_to_tab_1 = <Alt>1
-  switch_to_tab_10 = <Alt>0
   switch_to_tab_2 = <Alt>2
   switch_to_tab_3 = <Alt>3
   switch_to_tab_4 = <Alt>4
@@ -24,6 +16,23 @@
   switch_to_tab_7 = <Alt>7
   switch_to_tab_8 = <Alt>8
   switch_to_tab_9 = <Alt>9
+  switch_to_tab_10 = <Alt>0
+  hide_window = None
+  new_window = <Primary><Shift>n
+  broadcast_off = None
+  broadcast_group = None
+  broadcast_all = None
+  edit_tab_title = None
+  layout_launcher = None
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    font = Monospace 9
+    show_titlebar = False
+    scrollback_lines = 10000
+    login_shell = True
+    bold_is_bright = True
+    copy_on_selection = True
 [layouts]
   [[default]]
     [[[child1]]]
@@ -34,11 +43,3 @@
       parent = ""
       type = Window
 [plugins]
-[profiles]
-  [[default]]
-    copy_on_selection = True
-    cursor_color = "#aaaaaa"
-    font = Monospace 9
-    login_shell = True
-    scrollback_lines = 10000
-    show_titlebar = False
