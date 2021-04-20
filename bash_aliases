@@ -147,6 +147,16 @@ tomcat_container_id() {
     docker_container_id tomcat
 }
 
+# Converts 40:b0:76:a3:36:54 to 40-B0-76-A3-36-54 format
+mac_to_dashes() {
+    echo $1 | sed s/:/-/g | tr a-f A-F
+}
+
+# Converts 40-B0-76-A3-36-54 to 40:b0:76:a3:36:54 format
+mac_to_colons() {
+    echo $1 | sed s/-/:/g | tr A-F a-f
+}
+
 # Poor-man's replacement for SDKMAN: https://sdkman.io/
 if [[ -d /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 ]]; then
     java8() {
