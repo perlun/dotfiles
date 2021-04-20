@@ -525,5 +525,6 @@
             "viewType": "jupyter.notebook.ipynb",
             "filenamePattern": "*.ipynb"
         }
-    ]
+    ],
+    "python.linting.pycodestyleEnabled": true
 }
