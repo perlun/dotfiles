@@ -67,6 +67,11 @@ alias CAPSOFF='setcapslock off'
 # Make it possible to do things like 'code .' on WSL
 [ ! -z "$IS_WSL" ] && alias code='/mnt/c/Users/per/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe'
 
+# Like the 'pbcopy' alias above, but copies the given .png file to the clipboard
+pbcopy_from_png() {
+    copyq write image/png - < $1 && copyq select 0
+}
+
 create_backup() {
     DATE=$(date +%Y%m%d)
     cp -a $1 $1.bak.${DATE}
