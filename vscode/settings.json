@@ -110,7 +110,8 @@
         ".yamllint": "yaml",
         ".ansible-lint": "yaml",
         "*_hosts": "ini",
-        "tomcat8": "shellscript"
+        "tomcat8": "shellscript",
+        "*.partial": "mustache"
     },
 
     // Display the spell checker status on the status bar.
@@ -188,7 +189,10 @@
         "Hiddekel",
         "Hubi",
         "ICMP",
+        "Interruptible",
+        "Interruptibly",
         "JDBC",
+        "JDWP",
         "Jasså",
         "Jebusites",
         "Jephunneh",
@@ -200,6 +204,7 @@
         "Kreatel",
         "LDAP",
         "LDFLAGS",
+        "LDIF",
         "Loggable",
         "Lundberg",
         "MSYS",
@@ -210,6 +215,7 @@
         "Moren",
         "NOPASSWD",
         "NOTIME",
+        "Nanos",
         "Noas",
         "Noindex",
         "Nokto",
@@ -344,7 +350,6 @@
         "lagiskheten",
         "lakto",
         "ldapadd",
-        "ldif",
         "leveldb",
         "libgnomekbd",
         "libldap",
@@ -393,6 +398,7 @@
         "precompile",
         "prepended",
         "printf",
+        "prio",
         "progname",
         "promxy",
         "proto",
@@ -532,7 +538,6 @@
     "go.useLanguageServer": true,
     "files.autoSave": "onWindowChange",
     "terminal.integrated.shell.linux": "/bin/bash",
-    "window.zoomLevel": 1,
     "cSpell.enabled": true,
     "workbench.editorAssociations": [
         {
@@ -540,5 +545,12 @@
             "filenamePattern": "*.ipynb"
         }
     ],
-    "python.linting.pycodestyleEnabled": true
+    "python.linting.pycodestyleEnabled": true,
+    "window.zoomLevel": 1,
+    "oneDarkPro.vivid": false,
+    "python.languageServer": "Pylance",
+    "yaml.customTags": [
+        "!encrypted/pkcs1-oaep scalar",
+        "!vault scalar"
+    ]
 }
