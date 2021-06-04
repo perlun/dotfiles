@@ -7,6 +7,15 @@ Here are some details about my Cinnamon setup:
   desktops (at work, on the laptop, on my home desktop etc.). It's a modified
   version of the (dark) Adapta Nokto theme.
 
+## appSwitcher.js bug fix
+
+Until [this GitHub issue](https://github.com/linuxmint/cinnamon/issues/4330) is resolved, use the [appSwitcher-js-patch.diff](appSwitcher-js-patch.diff) to change the semantics to the desired one. Apply the patch like this:
+
+```shell
+# -d / is required to apply a patch with absolute paths, sudo is required to patch root-owned files.
+$ sudo patch -p0 -d / < appSwitcher-js-patch.diff
+```
+
 ## Personal `dconf` settings
 
 (`dconf dump /` or `gsettings list-recursively`  gives you all your settings, or `gsettings list-recursively org.cinnamon.desktop.keybindings.wm` to list a particular scheme. Run this on two machines and `diff -u <file1> <file2>` to get a rough idea of what settings you have tweaked.)
