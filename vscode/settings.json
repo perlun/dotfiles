@@ -317,6 +317,7 @@
         "genrsa",
         "getpgid",
         "getpid",
+        "gitk",
         "gnugp",
         "goeth",
         "graphql",
@@ -381,6 +382,7 @@
         "noprompt",
         "nvidia",
         "obiblisk",
+        "oninput",
         "openssl",
         "ostruct",
         "pacman",
@@ -552,5 +554,6 @@
     "yaml.customTags": [
         "!encrypted/pkcs1-oaep scalar",
         "!vault scalar"
-    ]
+    ],
+    "workbench.editor.untitled.hint": "hidden"
 }
