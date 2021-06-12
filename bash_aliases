@@ -117,8 +117,12 @@ grbc() {
 }
 
 grbm() {
-    if git remote | grep -q upstream; then
+    local _branches=$(git branches --remote)
+
+    if printf '%s' "$_branches" | grep -q upstream/master; then
         git rebase upstream/master $*
+    elif printf '%s' "$_branches" | grep -q upstream/main; then
+        git rebase upstream/main $*
     else
         git rebase origin/master $*
     fi
