@@ -55,6 +55,11 @@ alias random_int32='shuf -i 1-2147483647 -n 1'
 alias random_int16='shuf -i 1-65535 -n 1'
 alias random_int8='shuf -i 1-255 -n 1'
 
+# Redshift adjusts the color temperature of your screen, making it use a better
+# color temperature when working late nights. https://packages.debian.org/redshift
+alias redshift_enable='redshift -O 4500K'
+alias redshift_disable='redshift -x'
+
 # Workaround for bug in Xorg. Sometimes, the "use Caps Lock for switching
 # keyboard map" doesn't work and sets the Caps Lock state instead. This is used
 # as an emergency break, to get rid of Caps Lock in case that happens.
