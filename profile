@@ -67,6 +67,7 @@ export PATH="$PATH:/sbin:/usr/sbin"
 
 # Python support
 [[ -d "$HOME/.local/bin" ]] && export PATH=$PATH:$HOME/.local/bin
+[[ -d "$HOME/.poetry/bin" ]] && export PATH=$PATH:$HOME/.poetry/bin
 
 # Perlang support
 [[ -d "$HOME/.perlang/nightly/bin" ]] && export PATH=$PATH:$HOME/.perlang/nightly/bin
