@@ -150,6 +150,7 @@
     "cSpell.language": "en,sv",
     "cSpell.userWords": [
         "ALPN",
+        "AXFR",
         "Allsm",
         "Allsmäktiges",
         "Amalekites",
@@ -160,6 +161,7 @@
         "Armeria",
         "Asynchrony",
         "BSON",
+        "Bahnhof",
         "Brändö",
         "CFLAGS",
         "CHLD",
@@ -246,6 +248,7 @@
         "Strongs",
         "Strömsö",
         "Sverige",
+        "TTFB",
         "Testem",
         "Trac",
         "USID",
@@ -555,5 +558,6 @@
         "!encrypted/pkcs1-oaep scalar",
         "!vault scalar"
     ],
-    "workbench.editor.untitled.hint": "hidden"
+    "workbench.editor.untitled.hint": "hidden",
+    "redhat.telemetry.enabled": false
 }
