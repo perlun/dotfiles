@@ -171,6 +171,20 @@ mac_to_colons() {
     echo $1 | sed s/-/:/g | tr A-F a-f
 }
 
+dark_mode() {
+    gsettings set org.cinnamon.desktop.wm.preferences theme 'perlun-cinnamon-theme'
+    gsettings set org.cinnamon.desktop.interface gtk-theme 'perlun-cinnamon-theme'
+    gsettings set org.cinnamon.desktop.interface icon-theme 'perlun-cinnamon-theme'
+    gsettings set org.cinnamon.theme name 'perlun-cinnamon-theme'
+}
+
+light_mode() {
+    gsettings set org.cinnamon.desktop.wm.preferences theme 'Adwaita'
+    gsettings set org.cinnamon.desktop.interface gtk-theme 'Adwaita'
+    gsettings set org.cinnamon.desktop.interface icon-theme 'Adwaita'
+    gsettings set org.cinnamon.theme name 'Adwaita'
+}
+
 # Poor-man's replacement for SDKMAN: https://sdkman.io/
 if [[ -d /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64 ]]; then
     java8() {
