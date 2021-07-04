@@ -513,6 +513,12 @@
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "default",
 
+    // All of these play together in making a better light/dark mode switching
+    // experience
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Quiet Light",
+    "workbench.preferredDarkColorTheme": "One Dark Pro",
+
     "yaml.format.enable": true,
     "java.configuration.checkProjectSettingsExclusions": false,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -527,7 +533,6 @@
     "files.trimFinalNewlines": true,
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorTheme": "One Dark Pro",
     "gitlens.hovers.enabled": false,
     "gitlens.views.repositories.location": "scm",
     "gitlens.views.fileHistory.location": "explorer",
@@ -559,5 +564,6 @@
         "!vault scalar"
     ],
     "workbench.editor.untitled.hint": "hidden",
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "workbench.colorTheme": "Quiet Light"
 }
