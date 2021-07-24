@@ -160,7 +160,7 @@ PROMPT_TIME_COLOR="38;5;212"
 
 ### Cinnamon tweaks
 
-- Get rid of pre-defined Ctrl-Alt-Tab keybinding, to use it for "cycle trough windows of the same application". Use [this approach](https://github.com/linuxmint/Cinnamon/issues/2539) to remove the `switch-panels` setting under `org.cinnamon.desktop.keybindings.wm` in `dconf-editor`
+- Get rid of pre-defined Ctrl-Alt-Tab keybinding, to use it for "cycle trough windows of the same application". Use [this approach](https://github.com/linuxmint/Cinnamon/issues/2539#issuecomment-435401309) to remove the `switch-panels` setting under `org.cinnamon.desktop.keybindings.wm` in `dconf-editor`
 
 ### References
 
