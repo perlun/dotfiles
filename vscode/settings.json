@@ -561,6 +561,5 @@
         "!vault scalar"
     ],
     "workbench.editor.untitled.hint": "hidden",
-    "redhat.telemetry.enabled": false,
-    "workbench.colorTheme": "Quiet Light"
+    "redhat.telemetry.enabled": false
 }
