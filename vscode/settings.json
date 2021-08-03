@@ -549,12 +549,9 @@
     "files.autoSave": "onWindowChange",
     "terminal.integrated.shell.linux": "/bin/bash",
     "cSpell.enabled": true,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "python.linting.pycodestyleEnabled": true,
     "window.zoomLevel": 1,
     "oneDarkPro.vivid": false,
