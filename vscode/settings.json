@@ -561,5 +561,8 @@
         "!vault scalar"
     ],
     "workbench.editor.untitled.hint": "hidden",
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "python.defaultInterpreterPath": "python2.7-dbg",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "One Dark Pro"
 }
