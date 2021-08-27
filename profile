@@ -29,13 +29,6 @@ fi
 # Set a custom prompt
 . $HOME/git/dotfiles/prompt.sh
 
-# History expansion is enabled by default. It causes problems when your git commit messages contains exclamation marks, like this:
-#
-#     git commit foo.txt -m "I had to change this! Really?"
-#
-# Therefore, I prefer to disable history expansion.
-set +H
-
 # Avoid closing the shell by accident, if running in a local terminal
 if [[ -z "$SSH_CONNECTION" ]]; then
     set -o ignoreeof
@@ -130,3 +123,29 @@ gw() {
 # Enable Gradle completion for the gw alias
 #
 complete -F _gradle gw
+
+# History expansion is enabled by default. It causes problems when your git commit messages contains exclamation marks, like this:
+#
+#     git commit foo.txt -m "I had to change this! Really?"
+#
+# Therefore, I prefer to disable history expansion.
+set +H
+
+if [ -x /usr/bin/hstr ]; then
+    # HSTR configuration - this is the output from hstr --show-configuration
+    alias hh=hstr                    # hh to be alias for hstr
+    export HSTR_CONFIG=hicolor       # get more colors
+    shopt -s histappend              # append new history items to .bash_history
+    export HISTCONTROL=ignorespace   # leading space hides commands from history
+    export HISTFILESIZE=10000        # increase history file size (default is 500)
+    export HISTSIZE=${HISTFILESIZE}  # increase history size (default is 500)
+
+    # ensure synchronization between bash memory and history file
+    export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
+
+    # if this is interactive shell, then bind hstr to Ctrl-r (for Vi mode check doc)
+    if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hstr -- \C-j"'; fi
+
+    # if this is interactive shell, then bind 'kill last command' to Ctrl-x k
+    if [[ $- =~ .*i.* ]]; then bind '"\C-xk": "\C-a hstr -k \C-j"'; fi
+fi
