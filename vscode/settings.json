@@ -111,7 +111,8 @@
         ".ansible-lint": "yaml",
         "*_hosts": "ini",
         "tomcat8": "shellscript",
-        "*.partial": "mustache"
+        "*.partial": "mustache",
+        ".profile_secrets": "shellscript"
     },
 
     // Display the spell checker status on the status bar.
