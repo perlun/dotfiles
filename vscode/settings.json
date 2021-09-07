@@ -1,7 +1,12 @@
 // Place your settings in this file to overwrite the default settings for Visual Studio Code
 {
-    // Controls if the editor should automatically close brackets after opening them
+    // Controls if the editor should automatically close brackets after opening
+    // them. I generally dislike all forms of "auto-close" features, since they
+    // very seldom play well together with the way I expect my editor to work.
+    // There are exceptions, but most such implementations are simply too
+    // low-quality for my high expectations of software. :-)
     "editor.autoClosingBrackets": "never",
+    "editor.autoSurround": "never",
     "editor.autoClosingQuotes": "never",
     "editor.detectIndentation": false,
     "editor.formatOnSave": false,
@@ -387,6 +392,7 @@
         "nvidia",
         "obiblisk",
         "oninput",
+        "openjdk",
         "openssl",
         "ostruct",
         "pacman",
