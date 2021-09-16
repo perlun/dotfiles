@@ -60,6 +60,9 @@ alias random_int8='shuf -i 1-255 -n 1'
 alias redshift_enable='redshift -O 4500K'
 alias redshift_disable='redshift -x'
 
+# Useful if I forgot to start my time tracking when I get back to my desk.
+alias show_logins='grep "unlocked login keyring" /var/log/auth.log'
+
 # Workaround for bug in Xorg. Sometimes, the "use Caps Lock for switching
 # keyboard map" doesn't work and sets the Caps Lock state instead. This is used
 # as an emergency break, to get rid of Caps Lock in case that happens.
