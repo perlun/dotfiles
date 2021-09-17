@@ -134,7 +134,7 @@ set +H
 if [ -x /usr/bin/hstr ]; then
     # HSTR configuration - this is the output from hstr --show-configuration
     alias hh=hstr                    # hh to be alias for hstr
-    export HSTR_CONFIG=hicolor       # get more colors
+    export HSTR_CONFIG=raw-history-view,hicolor # show most recent entries first, get more colors
     shopt -s histappend              # append new history items to .bash_history
     export HISTCONTROL=ignorespace   # leading space hides commands from history
     export HISTFILESIZE=10000        # increase history file size (default is 500)
