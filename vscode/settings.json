@@ -562,7 +562,6 @@
         "*.ipynb": "jupyter.notebook.ipynb"
     },
     "python.linting.pycodestyleEnabled": true,
-    "window.zoomLevel": 1,
     "oneDarkPro.vivid": false,
     "python.languageServer": "Pylance",
     "yaml.customTags": [
@@ -573,5 +572,7 @@
     "redhat.telemetry.enabled": false,
     "python.defaultInterpreterPath": "python2.7-dbg",
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "One Dark Pro",
+    "security.workspace.trust.enabled": false,
+    "window.zoomLevel": 1
 }
