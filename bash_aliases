@@ -136,9 +136,21 @@ grbm() {
     fi
 }
 
-# 'git revert' to upstream state for a particular file
-grv() {
-    git checkout upstream/master $*
+# 'git checkout master' for a particular file
+gcm() {
+    local _branches=$(git branches --remote)
+
+    if printf '%s' "$_branches" | grep -q upstream/master; then
+        git checkout upstream/master $*
+    elif printf '%s' "$_branches" | grep -q upstream/main; then
+        git checkout upstream/main $*
+    else
+        git checkout origin/master $*
+    fi
+}
+
+grm() {
+    git rm $*
 }
 
 # Poor-man's replacement for https://github.com/jcsalterego/pngpaste
