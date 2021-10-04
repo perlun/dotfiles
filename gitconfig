@@ -59,9 +59,9 @@
     dc = diff --cached
     show-amend = diff HEAD@{1}
     fetch = fetch --prune --all
-    merge = merge --ff-only
     pull = pull -r
     push-branch = push -u origin HEAD
+    reflog-with-date = reflog --date=iso
     st = status --short
     stat = status
     tree = log --graph --oneline --all --decorate --tags
