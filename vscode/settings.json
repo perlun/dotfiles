@@ -44,7 +44,8 @@
     },
 
     "[html]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
 
     "[jinja-yaml]": {
@@ -164,8 +165,8 @@
         "Amalekites",
         "Amorites",
         "Anak",
-        "Ansible's",
         "ansible",
+        "Ansible's",
         "appfactory",
         "Arcieri",
         "arity",
@@ -242,6 +243,7 @@
         "favicon",
         "favourite",
         "fieldops",
+        "fileno",
         "Finalizer",
         "findutils",
         "Fixnum",
@@ -327,6 +329,7 @@
         "mixins",
         "Mixlib",
         "mkdir",
+        "mmap",
         "modifyvm",
         "Moren",
         "moveth",
