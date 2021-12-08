@@ -57,6 +57,7 @@
     commits = cherry -v upstream/master
     cp = cherry-pick
     dc = diff --cached
+    show-fuller = show --format=fuller
     show-amend = diff HEAD@{1}
     fetch = fetch --prune --all
     pull = pull -r
