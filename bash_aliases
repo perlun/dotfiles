@@ -172,6 +172,14 @@ docker_container_id() {
     docker ps -qf name=$1
 }
 
+docker_mysql_port() {
+    docker port $1 3306 | grep -v ::: | awk -F : '{ print $2 }'
+}
+
+docker_postgres_port() {
+    docker port $1 5432 | grep -v ::: | awk -F : '{ print $2 }'
+}
+
 tomcat_container_id() {
     docker_container_id tomcat
 }
