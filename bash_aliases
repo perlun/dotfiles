@@ -127,10 +127,12 @@ grbc() {
 grbm() {
     local _branches=$(git branches --remote)
 
-    if printf '%s' "$_branches" | grep -q upstream/master; then
-        git rebase upstream/master $*
-    elif printf '%s' "$_branches" | grep -q upstream/main; then
+    if printf '%s' "$_branches" | grep -q 'upstream/main '; then
         git rebase upstream/main $*
+    elif printf '%s' "$_branches" | grep -q 'upstream/master '; then
+        git rebase upstream/master $*
+    elif printf '%s' "$_branches" | grep -q 'origin/main '; then
+        git rebase origin/main $*
     else
         git rebase origin/master $*
     fi
@@ -140,10 +142,12 @@ grbm() {
 gcm() {
     local _branches=$(git branches --remote)
 
-    if printf '%s' "$_branches" | grep -q upstream/master; then
-        git checkout upstream/master $*
-    elif printf '%s' "$_branches" | grep -q upstream/main; then
+    if printf '%s' "$_branches" | grep -q 'upstream/main '; then
         git checkout upstream/main $*
+    elif printf '%s' "$_branches" | grep -q 'upstream/master '; then
+        git checkout upstream/master $*
+    elif printf '%s' "$_branches" | grep -q 'origin/main '; then
+        git checkout origin/main $*
     else
         git checkout origin/master $*
     fi
