@@ -140,9 +140,6 @@ if [ -x /usr/bin/hstr ]; then
     export HISTFILESIZE=10000        # increase history file size (default is 500)
     export HISTSIZE=${HISTFILESIZE}  # increase history size (default is 500)
 
-    # ensure synchronization between bash memory and history file
-    export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
-
     # if this is interactive shell, then bind hstr to Ctrl-r (for Vi mode check doc)
     if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hstr -- \C-j"'; fi
 
