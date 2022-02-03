@@ -37,9 +37,6 @@ alias less_tomcat_log='less ~/java/tomcat/logs/catalina.out'
 # Workaround for https://github.com/electron/electron/issues/4380
 alias spotify='spotify --disable-gpu'
 
-# We always want to run virsh as root
-alias virsh='sudo virsh'
-
 # cd back to the root of a git repository.
 alias cdr='cd $(git rev-parse --show-toplevel)'
 
