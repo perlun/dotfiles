@@ -577,5 +577,6 @@
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.colorTheme": "One Dark Pro",
     "security.workspace.trust.enabled": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "editor.comments.insertSpace": false
 }
