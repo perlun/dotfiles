@@ -65,6 +65,10 @@ alias show_logins='grep "unlocked login keyring" /var/log/auth.log'
 # as an emergency break, to get rid of Caps Lock in case that happens.
 alias CAPSOFF='setcapslock off'
 
+# Destroy all running LXD instances forcefully. (note: processes will not
+# shutdown gracefully with this approach. Use with care!)
+alias lxd_destroy_all='for e in $(lxc list -c n -f csv) ; do lxc rm -f $e ; done'
+
 # Convenience alias to be able to get the Tomcat PID for use in e.g.
 # 'jstack $(tomcat_pid)'
 [ -x /usr/bin/pgrep ] && alias tomcat_pid='pgrep -f "org.apache.catalina.startup.Bootstrap"'
