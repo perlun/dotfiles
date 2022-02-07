@@ -39,7 +39,9 @@ export EDITOR=nano
 export LESS=-R
 
 # This is important to get `git blame` timestamps to use yyyy-MM-dd format in IntelliJ.
-if cat /etc/locale.gen | grep -q '^sv_SE.UTF-8' ; then
+# We must be careful though, since this file does not exist on e.g. NetBSD (so `cat`
+# will fail with an error message)
+if [ -f /etc/locale.gen ] && cat /etc/locale.gen | grep -q '^sv_SE.UTF-8' ; then
     export LC_TIME=sv_SE.UTF-8
 fi
 
