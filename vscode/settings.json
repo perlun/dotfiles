@@ -156,6 +156,7 @@
 
     "cSpell.language": "en,sv",
     "cSpell.userWords": [
+        "Adoptium",
         "adoptopenjdk",
         "agapao",
         "agentd",
@@ -444,6 +445,7 @@
         "syslog",
         "systemctl",
         "tada",
+        "Temurin",
         "Testem",
         "tetris",
         "textblock",
