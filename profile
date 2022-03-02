@@ -54,7 +54,7 @@ export PATH="$PATH:/sbin:/usr/sbin"
 
 # Go support
 [[ -d "$HOME/go/bin" ]] && export PATH="$PATH:$HOME/go/bin"
-[[ -d /usr/lib/go-1.12/bin ]] && export PATH="$PATH:/usr/lib/go-1.12/bin"
+[[ -d /usr/lib/go-1.17/bin ]] && export PATH="$PATH:/usr/lib/go-1.17/bin"
 
 # .NET Core support
 [[ -d "$HOME/dotnet" ]] && export DOTNET_ROOT=$HOME/dotnet
