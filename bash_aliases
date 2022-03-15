@@ -73,6 +73,9 @@ alias lxd_destroy_all='for e in $(lxc list -c n -f csv) ; do lxc rm -f $e ; done
 # should be used)
 alias vagrant_recreate_lxd='vagrant destroy -f && vagrant up --provider lxd'
 
+# Output a date in debian/changelog format
+alias rfc5322_date='LANG=C date -R'
+
 # Convenience alias to be able to get the Tomcat PID for use in e.g.
 # 'jstack $(tomcat_pid)'
 [ -x /usr/bin/pgrep ] && alias tomcat_pid='pgrep -f "org.apache.catalina.startup.Bootstrap"'
