@@ -32,5 +32,15 @@
         "key": "ctrl+down",
         "command": "-search.focus.nextInputBox",
         "when": "inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "alt+j",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
     }
 ]
