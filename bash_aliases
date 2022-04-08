@@ -54,8 +54,8 @@ alias random_int8='shuf -i 1-255 -n 1'
 
 # Redshift adjusts the color temperature of your screen, making it use a better
 # color temperature when working late nights. https://packages.debian.org/redshift
-alias redshift_enable='redshift -O 4500K'
-alias redshift_disable='redshift -x'
+alias redshift_enable='redshift -m randr -P -O 4500K'
+alias redshift_disable='redshift -m randr -x'
 
 # Useful if I forgot to start my time tracking when I get back to my desk.
 alias show_logins='grep "unlocked login keyring" /var/log/auth.log'
