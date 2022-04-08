@@ -581,5 +581,7 @@
     "workbench.colorTheme": "One Dark Pro",
     "security.workspace.trust.enabled": false,
     "window.zoomLevel": 1,
-    "editor.comments.insertSpace": false
+    "editor.comments.insertSpace": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.preview.scrollEditorWithPreview": false
 }
