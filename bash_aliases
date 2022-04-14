@@ -31,7 +31,9 @@ alias pbcopy="xclip -sel clip"
 alias start_tomcat='$HOME/java/tomcat/bin/startup.sh'
 
 alias kill_gradle='pkill -e -f gradle'
+
 alias tail_tomcat_log='tail -n60 -f ~/java/tomcat/logs/catalina.out | rainbow -f catalina'
+alias cat_tomcat_log='cat ~/java/tomcat/logs/catalina.out'
 alias less_tomcat_log='less ~/java/tomcat/logs/catalina.out'
 
 # Workaround for https://github.com/electron/electron/issues/4380
@@ -75,6 +77,10 @@ alias vagrant_recreate_lxd='vagrant destroy -f && vagrant up --provider lxd'
 
 # Output a date in debian/changelog format
 alias rfc5322_date='LANG=C date -R'
+
+# Debian packaging-related aliases
+alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
+complete -F _quilt_completion -o filenames dquilt
 
 # Convenience alias to be able to get the Tomcat PID for use in e.g.
 # 'jstack $(tomcat_pid)'
