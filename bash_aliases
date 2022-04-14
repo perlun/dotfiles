@@ -100,15 +100,7 @@ create_backup() {
 }
 
 kill_tomcat() {
-    CATALINA_BASE=$HOME/java/tomcat
-    $CATALINA_BASE/bin/shutdown.sh 10
-
-    if [ -e $CATALINA_BASE/bin/catalina.pid ]; then
-        kill -9 `cat $CATALINA_BASE/bin/catalina.pid`
-        rm $CATALINA_BASE/bin/catalina.pid
-    fi
-
-    echo "Tomcat stopped"
+    $HOME/java/tomcat/bin/shutdown.sh
 }
 
 # Quirk: has to be a function so that "./gw devBuild && restart_tomcat" can work
