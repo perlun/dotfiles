@@ -79,3 +79,17 @@ gsettings set org.cinnamon.settings-daemon.peripherals.touchpad motion-threshold
 # ...and turn the horrible, horrible tap-to-click thing off.
 gsettings set org.cinnamon.settings-daemon.peripherals.touchpad tap-to-click false
 ```
+
+## Disabling `middle-click-close` on Cinnamon task bar
+
+This can be very annoying on a laptop, since it's very easy to click by mistake. Use the instructions from [this Reddit thread](https://www.reddit.com/r/linuxmint/comments/bm0zex/help_how_do_i_disable_middleclicktoclose/emvtrhw/?newUser=true) to fix it:
+
+1. Right click on an open application (e.g. Firefox) in the panel (aka dock or taskbar). Don't click on the panel itself or one of the square launchers, it has to be one of the long icons with text
+
+2. Click "Preferences"
+
+3. Click "Configure". A popup window will appear titled "Window list"
+
+4. Under "Behavior" there's an option "Middle click to close window". Toggle it off.
+
+On this machine, the particular configuration seems to be tracked in `~/.cinnamon/configs/window-list@cinnamon.org/4.json`
