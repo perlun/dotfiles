@@ -151,3 +151,6 @@ if [ -x /usr/bin/hstr ]; then
     # if this is interactive shell, then bind 'kill last command' to Ctrl-x k
     if [[ $- =~ .*i.* ]]; then bind '"\C-xk": "\C-a hstr -k \C-j"'; fi
 fi
+
+# Enable direnv if it is available
+[[ -x /usr/bin/direnv ]] && eval "$(direnv hook bash)"
