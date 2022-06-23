@@ -182,6 +182,10 @@ docker_container_id() {
     docker ps -qf name=$1
 }
 
+docker_container_ip() {
+    docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $1
+}
+
 docker_mysql_port() {
     docker port $1 3306 | grep -v ::: | awk -F : '{ print $2 }'
 }
