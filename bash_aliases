@@ -45,6 +45,9 @@ alias cdr='cd $(git rev-parse --show-toplevel)'
 # Convenience alias to make ack exclude .gitignore'd files
 alias gack="git ls-files -oc --exclude-standard | ack -x"
 
+# Works with timescale/timescaledb:2.5.0-pg13-oss
+alias psql_docker='psql -h localhost -U postgres'
+
 # VisualVM doesn't play well with https://github.com/perlun/perlun-cinnamon-theme,
 # so forcing the Metal look-and-feel makes it behave more reasonably.
 alias visualvm='visualvm --laf Metal'
