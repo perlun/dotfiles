@@ -92,6 +92,9 @@ complete -F _quilt_completion -o filenames dquilt
 # Make it possible to do things like 'code .' on WSL
 [ ! -z "$IS_WSL" ] && alias code='/mnt/c/Users/per/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe'
 
+# Exif photo renaming, courtesy of exiftool
+alias exif_rename="exiftool -fileOrder DateTimeOriginal -recurse -extension jpg -ignoreMinorErrors '-FileName<CreateDate' -d \"IMG_%Y%m%d_%H%M%S%%-c.%%e\""
+
 # Like the 'pbcopy' alias above, but copies the given .png file to the clipboard
 pbcopy_from_png() {
     copyq write image/png - < $1 && copyq select 0
