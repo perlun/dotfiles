@@ -108,12 +108,19 @@ PROMPT_TIME_COLOR="38;5;212"
   a Slack message.
 - Cinnamon is the desktop environment I prefer: `sudo apt-get install cinnamon`.
   See my dedicated [cinnamon](cinnamon) page for more details on my setup.
-
-## Recommended tools (macOS)
-
 - [Visual Studio Code](https://code.visualstudio.com/): Provides a great
   IDE-like experience for C#, JavaScript and other languages. The Ruby
   experience is also decent.
+- Firefox: Because Debian only provides an LTS version (which is often quite
+  old) and I'm not a big fan of Flatpak/Snap packages, I run this from
+  `.tar.bz2` downloaded at https://www.mozilla.org/en-US/firefox/linux/, using a
+  `.desktop` file as described [on this web
+  page](https://wiki.debian.org/Firefox#From_Mozilla_binaries) in the Debian
+  Wiki. You may have to manually run `xdg-desktop-menu install
+  userapp-firefox.desktop` to get Cinnamon to use the file in question.
+
+## Recommended tools (macOS)
+
 - [Spectacle](http://spectacleapp.com/): This one is nice since it will
   give you shortcuts for moving a window to use the "left half" or "right
   half" of the screen, and similar. I use this all the time to be able to
