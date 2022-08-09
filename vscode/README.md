@@ -7,6 +7,7 @@ I might give it a try sometime, but as of yet, I haven't been willing to put the
 Symlink `settings.json` and `keybindings.json` to the correct folder:
 
 - On Linux:
+  - `mkdir -p ~/.config/Code/User`
   - `ln -sf ~/git/dotfiles/vscode/settings.json ~/.config/Code/User`
   - `ln -sf ~/git/dotfiles/vscode/keybindings.json ~/.config/Code/User`
 
