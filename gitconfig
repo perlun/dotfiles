@@ -32,9 +32,10 @@
     ignorecase = false
     editor = nano
 
-    # Note: this causes "diff-so-fancy: not found" if diff-so-fancy is not
-    # installed, and it's not trivially installable using apt-get. For such
-    # machines, override the config below with one of the following:
+    # Note: this causes "diff-so-fancy: not found" errors if diff-so-fancy is
+    # not installed. Install on Debian or Ubuntu using
+    # https://launchpad.net/~aos1/+archive/ubuntu/diff-so-fancy, or override the
+    # config below with one of the following:
     #
     # git config --global core.pager ''         # disables paging
     # git config --global core.pager 'less'     # reverts to the default git behavior.
