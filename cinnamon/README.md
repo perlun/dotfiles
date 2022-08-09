@@ -89,6 +89,23 @@ gsettings set org.cinnamon.settings-daemon.peripherals.touchpad motion-threshold
 gsettings set org.cinnamon.settings-daemon.peripherals.touchpad tap-to-click false
 ```
 
+## Customize applets
+
+This is unfortunately not easily doable via automation (e.g. because the applet configuration versions seem to be embedded in the configuration), but when completed, the list of `enabled-applets` should look pretty much like below.
+
+- A spacer is added to the left and right of the menu
+- The "grouped window list" is replaced by "window list", one for each monitor
+- `sysmonitor@orcus` is added as a right-hand applet
+
+```shell
+$ gsettings get org.cinnamon enabled-applets
+['panel1:left:3:panel-launchers@cinnamon.org:36', 'panel1:right:16:removable-drives@cinnamon.org:37', 'panel1:right:17:user@cinnamon.org:38', 'panel1:right:18:calendar@cinnamon.org:39', 'panel1:left:4:IcingTaskManager@json:40', 'panel2:right:7:removable-drives@cinnamon.org:56', 'panel2:right:8:user@cinnamon.org:57', 'panel2:right:9:calendar@cinnamon.org:58', 'panel2:left:4:IcingTaskManager@json:59', 'panel2:right:6:keyboard@cinnamon.org:61', 'panel2:left:1:menu@cinnamon.org:62', 'panel2:right:5:notifications@cinnamon.org:64', 'panel2:right:3:systray@cinnamon.org:65', 'panel1:left:1:menu@cinnamon.org:66', 'panel2:right:4:sound@cinnamon.org:67', 'panel2:left:3:panel-launchers@cinnamon.org:68', 'panel2:left:5:window-list@cinnamon.org:70', 'panel1:left:5:window-list@cinnamon.org:71', 'panel1:left:0:spacer@cinnamon.org:72', 'panel1:left:2:spacer@cinnamon.org:73', 'panel2:left:0:spacer@cinnamon.org:74', 'panel2:left:2:spacer@cinnamon.org:75', 'panel2:right:0:sysmonitor@orcus:76']
+```
+
+## Menu tweaks
+
+- I typically enable the "Use a custom icon and label" option in the Cinnamon Menu settings, setting it to `/usr/share/icons/gnome/scalable/places/debian-swirl.svg`, which gives a more Debian-flavoured feeling.
+
 ## Disabling `middle-click-close` on Cinnamon task bar
 
 This can be very annoying on a laptop, since it's very easy to click by mistake. Use the instructions from [this Reddit thread](https://www.reddit.com/r/linuxmint/comments/bm0zex/help_how_do_i_disable_middleclicktoclose/emvtrhw/?newUser=true) to fix it:
