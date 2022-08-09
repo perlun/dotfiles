@@ -7,13 +7,22 @@ Here are some details about my Cinnamon setup:
   desktops (at work, on the laptop, on my home desktop etc.). It's a modified
   version of the (dark) Adapta Nokto theme.
 
+  Apply it like this:
+  ```shell
+  $ gsettings set org.cinnamon.desktop.interface gtk-theme perlun-cinnamon-theme
+  $ gsettings set org.cinnamon.desktop.interface icon-theme perlun-cinnamon-theme
+  $ gsettings set org.cinnamon.desktop.wm.preferences theme perlun-cinnamon-theme
+  $ gsettings set org.cinnamon.theme name perlun-cinnamon-theme
+  ```
+
 ## appSwitcher.js bug fix
 
 Until [this GitHub issue](https://github.com/linuxmint/cinnamon/issues/4330) is resolved, use the [appSwitcher-js-patch.diff](appSwitcher-js-patch.diff) to change the semantics to the desired one. Apply the patch like this:
 
 ```shell
+$ cd /usr/share/cinnamon/js/ui
 # -d / is required to apply a patch with absolute paths, sudo is required to patch root-owned files.
-$ sudo patch -p0 -d / < appSwitcher-js-patch.diff
+$ sudo patch -p0 -d / < ~/git/dotfiles/cinnamon/appSwitcher-js-patch.diff
 ```
 
 ## Personal `dconf` settings
