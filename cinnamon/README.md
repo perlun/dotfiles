@@ -102,6 +102,10 @@ $ gsettings get org.cinnamon enabled-applets
 ['panel1:left:3:panel-launchers@cinnamon.org:36', 'panel1:right:16:removable-drives@cinnamon.org:37', 'panel1:right:17:user@cinnamon.org:38', 'panel1:right:18:calendar@cinnamon.org:39', 'panel1:left:4:IcingTaskManager@json:40', 'panel2:right:7:removable-drives@cinnamon.org:56', 'panel2:right:8:user@cinnamon.org:57', 'panel2:right:9:calendar@cinnamon.org:58', 'panel2:left:4:IcingTaskManager@json:59', 'panel2:right:6:keyboard@cinnamon.org:61', 'panel2:left:1:menu@cinnamon.org:62', 'panel2:right:5:notifications@cinnamon.org:64', 'panel2:right:3:systray@cinnamon.org:65', 'panel1:left:1:menu@cinnamon.org:66', 'panel2:right:4:sound@cinnamon.org:67', 'panel2:left:3:panel-launchers@cinnamon.org:68', 'panel2:left:5:window-list@cinnamon.org:70', 'panel1:left:5:window-list@cinnamon.org:71', 'panel1:left:0:spacer@cinnamon.org:72', 'panel1:left:2:spacer@cinnamon.org:73', 'panel2:left:0:spacer@cinnamon.org:74', 'panel2:left:2:spacer@cinnamon.org:75', 'panel2:right:0:sysmonitor@orcus:76']
 ```
 
+## Startup Applications
+
+- Set up `quicktile -d &` (after installing [QuickTile](https://github.com/ssokolow/quicktile)) as a Startup Application to make it be loaded on login.
+
 ## Menu tweaks
 
 - I typically enable the "Use a custom icon and label" option in the Cinnamon Menu settings, setting it to `/usr/share/icons/gnome/scalable/places/debian-swirl.svg`, which gives a more Debian-flavoured feeling.
