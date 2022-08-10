@@ -87,6 +87,11 @@ export PATH="$PATH:/sbin:/usr/sbin"
 # Bash completion for Ansible, Gradle etc. Install using the following
 # repositories:
 #
+# https://github.com/perlun/ansible-completion
+[[ -f "$HOME/.bash_completion.d/ansible-completion.bash" ]] && source $HOME/.bash_completion.d/ansible-completion.bash
+[[ -f "$HOME/.bash_completion.d/ansible-playbook-completion.bash" ]] && source $HOME/.bash_completion.d/ansible-playbook-completion.bash
+[[ -f "$HOME/.bash_completion.d/vagrant-completion.bash" ]] && source $HOME/.bash_completion.d/vagrant-completion.bash
+
 # https://github.com/gradle/gradle-completion
 [[ -f "$HOME/.bash_completion.d/gradle-completion.bash" ]] && source $HOME/.bash_completion.d/gradle-completion.bash
 
