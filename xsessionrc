@@ -4,3 +4,6 @@
 # This is important to get `git blame` timestamps to use yyyy-MM-dd format in IntelliJ.
 export LC_TIME=sv_SE.UTF-8
 
+# Load local profile variables as well, making them accessible to the
+# desktop environment and processes launched from it.
+[ -f $HOME/.profile_secrets ] && . $HOME/.profile_secrets
