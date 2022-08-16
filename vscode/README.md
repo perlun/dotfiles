@@ -14,6 +14,8 @@ Symlink `settings.json` and `keybindings.json` to the correct folder:
 ## Installing my favorite extensions
 
 ```shell
+code --install-extension eamodio.gitlens
+code --install-extension ms-vscode-remote.remote-ssh
 code --install-extension redhat.vscode-yaml
 code --install-extension samuelcolvin.jinjahtml
 code --install-extension stkb.rewrap
