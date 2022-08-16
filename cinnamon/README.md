@@ -52,6 +52,9 @@ gsettings set org.cinnamon.desktop.wm.preferences workspace-names "['Work', 'Com
 gsettings set org.cinnamon.muffin desktop-effects false
 gsettings set org.cinnamon desktop-effects-workspace false
 
+# Mouse-based edge tiling isn't really useful; it can easily conflict with QuickTile-based tiling.
+gsettings set org.cinnamon.muffin edge-tiling false
+
 # Removes some default key bindings, to free up these for application usage.
 gsettings set org.cinnamon.desktop.keybindings.wm begin-move "@as []"
 gsettings set org.cinnamon.desktop.keybindings.wm begin-resize "@as []"
