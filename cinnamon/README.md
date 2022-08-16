@@ -46,6 +46,12 @@ gsettings set org.cinnamon.desktop.interface clock-show-date true
 # Sets workspace names (this one needs a cinnamon restart to take effect)
 gsettings set org.cinnamon.desktop.wm.preferences workspace-names "['Work', 'Communication', 'Private']"
 
+# Animations when switching workspaces are just annoying. Window animations
+# might also look a bit "cool" but I think I prefer when things feel more
+# "instant" => disable all effects for now.
+gsettings set org.cinnamon.muffin desktop-effects false
+gsettings set org.cinnamon desktop-effects-workspace false
+
 # Removes some default key bindings, to free up these for application usage.
 gsettings set org.cinnamon.desktop.keybindings.wm begin-move "@as []"
 gsettings set org.cinnamon.desktop.keybindings.wm begin-resize "@as []"
