@@ -98,6 +98,18 @@ gsettings set org.cinnamon.settings-daemon.peripherals.touchpad motion-threshold
 gsettings set org.cinnamon.settings-daemon.peripherals.touchpad tap-to-click false
 ```
 
+## Customize font settings
+
+The defaults in Cinnamon are a bit too small for me on the 1440p (96 DPI) screens I regularly use. The following overrides work better for me:
+
+```
+gsettings set org.cinnamon.desktop.interface font-name 'DejaVu Sans 10'
+gsettings org.cinnamon.desktop.wm.preferences titlebar-font 'Open Sans 11'
+org.gnome.desktop.interface document-font-name 'Sans 10'
+```
+
+Note that the above might require the `open-sans` package to be installed (`apt-get install fonts-open-sans`). Sans Regular might work equally well if you don't want the extra package.
+
 ## Customize applets
 
 This is unfortunately not easily doable via automation (e.g. because the applet configuration versions seem to be embedded in the configuration), but when completed, the list of `enabled-applets` should look pretty much like below.
