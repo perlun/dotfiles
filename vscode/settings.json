@@ -572,7 +572,7 @@
     },
     "python.linting.pycodestyleEnabled": true,
     "oneDarkPro.vivid": false,
-    "python.languageServer": "Pylance",
+    "python.languageServer": "Jedi",
     "yaml.customTags": [
         "!encrypted/pkcs1-oaep scalar",
         "!vault scalar"
