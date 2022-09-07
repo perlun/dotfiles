@@ -64,8 +64,10 @@ export PATH="$PATH:/sbin:/usr/sbin"
 [[ -d "$HOME/.local/bin" ]] && export PATH=$PATH:$HOME/.local/bin
 [[ -d "$HOME/.poetry/bin" ]] && export PATH=$PATH:$HOME/.poetry/bin
 
-# Perlang support
+# Perlang support. Nightlies takes precedence over release builds, presuming
+# that a user running Perlang nightly knows what they are doing.
 [[ -d "$HOME/.perlang/nightly/bin" ]] && export PATH=$PATH:$HOME/.perlang/nightly/bin
+[[ -d "$HOME/.perlang/release/bin" ]] && export PATH=$PATH:$HOME/.perlang/release/bin
 
 # Misc binaries
 [[ -d "$HOME/bin" ]] && export PATH="$HOME/bin:$PATH"
@@ -98,6 +100,9 @@ export PATH="$PATH:/sbin:/usr/sbin"
 # asdf: Manage multiple runtime versions with a single CLI tool
 [[ -f $HOME/.asdf/asdf.sh ]] && . $HOME/.asdf/asdf.sh
 [[ -f $HOME/.asdf/completions/asdf.bash ]] && . $HOME/.asdf/completions/asdf.bash
+
+# Enable direnv if it is available
+[[ -x /usr/bin/direnv ]] && eval "$(direnv hook bash)"
 
 #
 # Convenience functions for being able to use the local gradle wrapper
@@ -160,6 +165,3 @@ if [ -x /usr/bin/hstr ]; then
     # if this is interactive shell, then bind 'kill last command' to Ctrl-x k
     if [[ $- =~ .*i.* ]]; then bind '"\C-xk": "\C-a hstr -k \C-j"'; fi
 fi
-
-# Enable direnv if it is available
-[[ -x /usr/bin/direnv ]] && eval "$(direnv hook bash)"
