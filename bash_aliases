@@ -52,9 +52,12 @@ alias psql_docker='psql -h localhost -U postgres'
 # so forcing the Metal look-and-feel makes it behave more reasonably.
 alias visualvm='visualvm --laf Metal'
 
-# Random number generation
-alias random_int32='shuf -i 1-2147483647 -n 1'
-alias random_int16='shuf -i 1-65535 -n 1'
+# Random number generation. The idea with providing the lower boundaries is to
+# generate random numbers of a certain "quality" in the sense that (almost) all
+# numbers generated have an equal number of digits.
+alias random_int32='shuf -i 1000000000-2147483647 -n 1'
+alias random_int16='shuf -i 10000-65535 -n 1'
+alias random_int20='shuf -i 100000-1048576 -n 1'
 alias random_int8='shuf -i 1-255 -n 1'
 
 # Redshift adjusts the color temperature of your screen, making it use a better
