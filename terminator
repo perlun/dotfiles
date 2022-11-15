@@ -6,6 +6,9 @@
   extra_styling = False
   inactive_color_offset = 1.0
 [keybindings]
+  zoom_in = <Primary>KP_Add
+  zoom_out = <Primary>KP_Subtract
+  zoom_normal = <Primary>KP_0
   go_next = None
   switch_to_tab_1 = <Alt>1
   switch_to_tab_2 = <Alt>2
