@@ -25,7 +25,6 @@ fi
 # branches which have been deleted at the remote.
 alias prune_branches='git branch -l | grep -v "*" | grep -v upstream-master | xargs git branch -d 2>&1 | grep -v "If you are sure" ; git fetch --all --prune'
 
-alias idea='~/apps/idea-IU-182.3911.36/bin/idea.sh'
 alias pbcopy="xclip -sel clip"
 
 alias start_tomcat='$HOME/java/tomcat/bin/startup.sh'
