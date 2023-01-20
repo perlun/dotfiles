@@ -104,8 +104,9 @@ The defaults in Cinnamon are a bit too small for me on the 1440p (96 DPI) screen
 
 ```
 gsettings set org.cinnamon.desktop.interface font-name 'DejaVu Sans 10'
-gsettings org.cinnamon.desktop.wm.preferences titlebar-font 'Open Sans 11'
-org.gnome.desktop.interface document-font-name 'Sans 10'
+gsettings set org.cinnamon.desktop.wm.preferences titlebar-font 'Open Sans 11'
+gsettings set org.gnome.desktop.interface document-font-name 'Sans 10'
+gsettings set org.gnome.desktop.interface monospace-font-name 'DejaVu Sans Mono 11'
 ```
 
 Note that the above might require the `open-sans` package to be installed (`apt-get install fonts-open-sans`). Sans Regular might work equally well if you don't want the extra package.
