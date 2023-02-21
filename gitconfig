@@ -43,7 +43,7 @@
 
 [diff]
     noprefix = true
-    colorMoved = default
+    colorMoved = dimmed-zebra
 
 [diff-so-fancy]
     markEmptyLines = false
