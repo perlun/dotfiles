@@ -104,6 +104,9 @@ export PATH="$PATH:/sbin:/usr/sbin"
 # Enable direnv if it is available
 [[ -x /usr/bin/direnv ]] && eval "$(direnv hook bash)"
 
+# Enable completion for hcloud if it's installed (https://github.com/hetznercloud/cli)
+[[ -x /usr/local/bin/hcloud ]] && source <(hcloud completion bash)
+
 #
 # Convenience functions for being able to use the local gradle wrapper
 # easily from anywhere within the source tree.
