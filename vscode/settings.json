@@ -72,6 +72,10 @@
         "editor.tabSize": 2
     },
 
+    "[toml]": {
+        "editor.tabSize": 2
+    },
+
     "[xml]": {
         "editor.tabSize": 2
     },
