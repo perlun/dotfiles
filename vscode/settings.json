@@ -122,7 +122,8 @@
         "*_hosts": "ini",
         "tomcat8": "shellscript",
         "*.partial": "mustache",
-        ".profile_secrets": "shellscript"
+        ".profile_secrets": "shellscript",
+        "*.j2": "jinja-nginx"
     },
 
     // Display the spell checker status on the status bar.
@@ -589,9 +590,10 @@
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.colorTheme": "One Dark Pro",
     "security.workspace.trust.enabled": false,
-    "window.zoomLevel": 1,
     "editor.comments.insertSpace": false,
+    "markdown.preview.doubleClickToSwitchToEditor": false,
     "markdown.preview.scrollPreviewWithEditor": false,
     "markdown.preview.scrollEditorWithPreview": false,
-    "editor.fontFamily": "DejaVu Sans Mono"
+    "editor.fontFamily": "DejaVu Sans Mono",
+    "window.zoomLevel": 1
 }
