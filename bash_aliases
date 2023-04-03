@@ -265,3 +265,11 @@ if [[ -d /usr/lib/jvm/temurin-19-jdk-amd64 ]]; then
         sudo update-alternatives --set jshell /usr/lib/jvm/temurin-19-jdk-amd64/bin/jshell
     }
 fi
+
+if [[ -d /usr/lib/jvm/temurin-20-jdk-amd64 ]]; then
+    java20() {
+        sudo update-alternatives --set java /usr/lib/jvm/temurin-20-jdk-amd64/bin/java
+        sudo update-alternatives --set javac /usr/lib/jvm/temurin-20-jdk-amd64/bin/javac
+        sudo update-alternatives --set jshell /usr/lib/jvm/temurin-20-jdk-amd64/bin/jshell
+    }
+fi
