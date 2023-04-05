@@ -72,6 +72,13 @@
         "editor.tabSize": 2
     },
 
+    // Rationale: Postgres COPY data is tab-delimited and can contain a TAB
+    // character for an empty "last field" for a row. Trimming trailing white
+    // space for such files will break them from being importable by Postgres.
+    "[sql]": {
+        "files.trimTrailingWhitespace": false
+    },
+
     "[toml]": {
         "editor.tabSize": 2
     },
