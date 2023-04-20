@@ -97,6 +97,9 @@ export PATH="$PATH:/sbin:/usr/sbin"
 # https://github.com/gradle/gradle-completion
 [[ -f "$HOME/.bash_completion.d/gradle-completion.bash" ]] && source $HOME/.bash_completion.d/gradle-completion.bash
 
+# 1Password CLI shell completion
+[[ -x /usr/bin/op ]] && source <(op completion bash)
+
 # asdf: Manage multiple runtime versions with a single CLI tool
 [[ -f $HOME/.asdf/asdf.sh ]] && . $HOME/.asdf/asdf.sh
 [[ -f $HOME/.asdf/completions/asdf.bash ]] && . $HOME/.asdf/completions/asdf.bash
