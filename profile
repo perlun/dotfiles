@@ -64,6 +64,11 @@ export PATH="$PATH:/sbin:/usr/sbin"
 [[ -d "$HOME/.local/bin" ]] && export PATH=$PATH:$HOME/.local/bin
 [[ -d "$HOME/.poetry/bin" ]] && export PATH=$PATH:$HOME/.poetry/bin
 
+[[ -x "$HOME/.pyenv/bin/pyenv" ]] && \
+    export PYENV_ROOT="$HOME/.pyenv" && \
+    export PATH="$PYENV_ROOT/bin:$PATH" && \
+    eval "$(pyenv init -)"
+
 # Perlang support. Nightlies takes precedence over release builds, presuming
 # that a user running Perlang nightly knows what they are doing.
 [[ -d "$HOME/.perlang/nightly/bin" ]] && export PATH=$PATH:$HOME/.perlang/nightly/bin
