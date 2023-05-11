@@ -78,6 +78,11 @@ gsettings set org.cinnamon.desktop.keybindings.wm switch-to-workspace-3 "['<Prim
 
 # This one uses Alt-F2 by default, which is more useful for applications.
 gsettings set org.cinnamon.desktop.keybindings.wm panel-run-dialog "['<Alt>Scroll_Lock']"
+
+# Ctrl-Shift-U has been known to be bound to "Unicode composition" on
+# certain versions of Gnome and Cinnamon. This causes problems with
+# the default IntelliJ keymap on Linux.
+gsettings set org.freedesktop.ibus.panel.emoji unicode-hotkey "@as []"
 ```
 
 Some optional ones as well:
@@ -102,7 +107,7 @@ gsettings set org.cinnamon.settings-daemon.peripherals.touchpad tap-to-click fal
 
 The defaults in Cinnamon are a bit too small for me on the 1440p (96 DPI) screens I regularly use. The following overrides work better for me:
 
-```
+```shell
 gsettings set org.cinnamon.desktop.interface font-name 'DejaVu Sans 10'
 gsettings set org.cinnamon.desktop.wm.preferences titlebar-font 'Open Sans 11'
 gsettings set org.gnome.desktop.interface document-font-name 'Sans 10'
