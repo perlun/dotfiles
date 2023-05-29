@@ -142,13 +142,13 @@ grbm() {
     local _branches=$(git branches --remote)
 
     if printf '%s' "$_branches" | grep -q 'upstream/main '; then
-        git rebase upstream/main $*
+        git rebase --autosquash upstream/main $*
     elif printf '%s' "$_branches" | grep -q 'upstream/master '; then
-        git rebase upstream/master $*
+        git rebase --autosquash upstream/master $*
     elif printf '%s' "$_branches" | grep -q 'origin/main '; then
-        git rebase origin/main $*
+        git rebase --autosquash origin/main $*
     else
-        git rebase origin/master $*
+        git rebase --autosquash origin/master $*
     fi
 }
 
