@@ -61,6 +61,8 @@
     commits = cherry -v upstream/master
     cp = cherry-pick
     dc = diff --cached
+    log-10 = log HEAD~10..HEAD --oneline
+    log-n = !sh -c 'git log HEAD~$1..HEAD --oneline' -
     show-fuller = show --format=fuller
     show-amend = diff HEAD@{1}
     fetch = fetch --prune --all
