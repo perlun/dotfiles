@@ -15,6 +15,12 @@ Here are some details about my Cinnamon setup:
   $ gsettings set org.cinnamon.theme name perlun-cinnamon-theme
   ```
 
+  If you like me sometimes work outdoors, where the sunlight makes a dark-mode
+  theme impractical, use these bash functions to easily be able to flip between
+  dark mode and light mode for all "aware" applications:
+
+  https://github.com/perlun/dotfiles/blob/2b47804d2f2ed029cffce4e606fd46522fffb3af/bash_aliases#L223-L235
+
 ## appSwitcher.js bug fix
 
 Until [this GitHub issue](https://github.com/linuxmint/cinnamon/issues/4330) is resolved, use the [appSwitcher-js-patch.diff](appSwitcher-js-patch.diff) to change the semantics to the desired one. Apply the patch like this:
