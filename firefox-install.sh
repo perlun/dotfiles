@@ -11,14 +11,21 @@ set -e -o pipefail
 
 # Download the binaries
 # TODO: Add verification, using some form of gpg/etc signature
-wget -O ~/.local/firefox_latest.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
+wget -c -O ~/.local/firefox_latest.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
 
 # Remove any existing installation and unpack it, removing the tarball
 # afterwards
-rm -rf ~/.local/apps/firefox
+sudo rm -rf ~/.local/apps/firefox
 mkdir -p ~/.local/apps/firefox
 (cd ~/.local/apps && tar xvf ~/.local/firefox_latest.tar.bz2)
 rm ~/.local/firefox_latest.tar.bz2
+
+# Ensure the firefox directory is root-owned. This is necessary for
+# communication with the 1Password desktop app to work
+# (https://1password.community/discussion/comment/596424/#Comment_596424). The
+# downside is that this breaks the Firefox auto-updater, so this script need to
+# be re-executed whenever a Firefox update is published.
+sudo chown -R root:root ~/.local/apps/firefox
 
 # Create a menu entry and add it using `xdg-desktop-menu`
 cat <<EOF > ~/.local/share/applications/userapp-firefox.desktop
@@ -44,4 +51,4 @@ xdg-desktop-menu install ~/.local/share/applications/userapp-firefox.desktop
 # Create a symlink in ~/bin, which I typically add to the PATH. This makes it
 # easy to run things like `firefox google.com` from the commandline.
 mkdir -p ~/bin
-ln -s ~/.local/apps/firefox/firefox ~/bin/firefox
+ln -sf ~/.local/apps/firefox/firefox ~/bin/firefox
