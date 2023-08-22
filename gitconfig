@@ -88,11 +88,6 @@
     # the current branch.
     autoSetupRemote = true
 
-[rebase]
-    # Enable the --autosquash flag by default, which is useful for automatically
-    # applying fixup commits to previous commits.
-    autoSquash = true
-
 [filter "media"]
     clean = git-media-clean %f
     smudge = git-media-smudge %f
