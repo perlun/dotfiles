@@ -164,6 +164,15 @@ PROMPT_TIME_COLOR="38;5;212"
 
 - Get rid of pre-defined Ctrl-Alt-Tab keybinding, to use it for "cycle trough windows of the same application". Use [this approach](https://github.com/linuxmint/Cinnamon/issues/2539#issuecomment-435401309) to remove the `switch-panels` setting under `org.cinnamon.desktop.keybindings.wm` in `dconf-editor`
 
+### Getting rid of annoying GPG (GnuPG) modal dialog for entering password
+
+```shell
+$ sudo update-alternatives --config pinentry
+```
+
+Make sure to select `pinentry-curses` when prompted. The `pinentry-gnome3` is
+what causes the annoying modal dialog.
+
 ### References
 
 - Bug #1672297 “gnome-shell uses lots of memory, and grows over time: https://bugs.launchpad.net/gnome-shell/+bug/1672297
