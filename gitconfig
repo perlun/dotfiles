@@ -69,7 +69,6 @@
     show-amend = diff HEAD@{1}
     fetch = fetch --prune --all
     pull = pull -r
-    push-branch = push -u origin HEAD
     reflog-with-date = reflog --date=iso
     st = status --short
     stat = status
