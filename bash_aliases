@@ -273,3 +273,12 @@ if [[ -d /usr/lib/jvm/temurin-20-jdk-amd64 ]]; then
         sudo update-alternatives --set jshell /usr/lib/jvm/temurin-20-jdk-amd64/bin/jshell
     }
 fi
+
+# Temporary until JDK 21 Temurin packages are available
+if [[ -d /usr/lib/jvm/temurin-20-jdk-amd64 ]]; then
+    java21() {
+        sudo update-alternatives --set java /usr/local/jvm/jdk-21+35/bin/java
+        sudo update-alternatives --set javac /usr/local/jvm/jdk-21+35/bin/javac
+        sudo update-alternatives --set jshell /usr/local/jvm/jdk-21+35/bin/jshell
+    }
+fi
