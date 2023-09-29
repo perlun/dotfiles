@@ -8,9 +8,16 @@
 
 [user]
     name = Per Lundberg
+    signingkey = ~/.ssh/id_ed25519
 
 [branch]
     autosetuprebase = always
+
+[commit]
+    # Automatically sign my commits with the key defined in user.signingkey.
+    # Note that gpg.format must be overridden to use SSH keys instead of pure
+    # GPG keys.
+    gpgsign = true
 
 [color "diff-highlight"]
     oldNormal = red bold
@@ -51,6 +58,10 @@
 [diff-so-fancy]
     markEmptyLines = false
     changeHunkIndicators = false
+
+# Sign the commits with my SSH key
+[gpg]
+    format = ssh
 
 [alias]
     amend = commit --amend --no-edit
