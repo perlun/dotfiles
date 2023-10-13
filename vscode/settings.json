@@ -602,5 +602,6 @@
     "markdown.preview.scrollPreviewWithEditor": false,
     "markdown.preview.scrollEditorWithPreview": false,
     "editor.fontFamily": "DejaVu Sans Mono",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "workbench.editor.empty.hint": "hidden"
 }
