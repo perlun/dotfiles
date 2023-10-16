@@ -258,14 +258,6 @@ if [[ -d /usr/lib/jvm/temurin-17-jdk-amd64 ]]; then
     }
 fi
 
-if [[ -d /usr/lib/jvm/temurin-19-jdk-amd64 ]]; then
-    java19() {
-        sudo update-alternatives --set java /usr/lib/jvm/temurin-19-jdk-amd64/bin/java
-        sudo update-alternatives --set javac /usr/lib/jvm/temurin-19-jdk-amd64/bin/javac
-        sudo update-alternatives --set jshell /usr/lib/jvm/temurin-19-jdk-amd64/bin/jshell
-    }
-fi
-
 if [[ -d /usr/lib/jvm/temurin-20-jdk-amd64 ]]; then
     java20() {
         sudo update-alternatives --set java /usr/lib/jvm/temurin-20-jdk-amd64/bin/java
@@ -274,11 +266,10 @@ if [[ -d /usr/lib/jvm/temurin-20-jdk-amd64 ]]; then
     }
 fi
 
-# Temporary until JDK 21 Temurin packages are available
-if [[ -d /usr/lib/jvm/temurin-20-jdk-amd64 ]]; then
+if [[ -d /usr/lib/jvm/temurin-21-jdk-amd64 ]]; then
     java21() {
-        sudo update-alternatives --set java /usr/local/jvm/jdk-21+35/bin/java
-        sudo update-alternatives --set javac /usr/local/jvm/jdk-21+35/bin/javac
-        sudo update-alternatives --set jshell /usr/local/jvm/jdk-21+35/bin/jshell
+        sudo update-alternatives --set java /usr/lib/jvm/temurin-21-jdk-amd64/bin/java
+        sudo update-alternatives --set javac /usr/lib/jvm/temurin-21-jdk-amd64/bin/javac
+        sudo update-alternatives --set jshell /usr/lib/jvm/temurin-21-jdk-amd64/bin/jshell
     }
 fi
