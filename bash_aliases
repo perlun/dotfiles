@@ -3,6 +3,11 @@
 # Symlink this to ~/.bash_aliases:
 # rm -f ~/.bash_aliases && ln -sf ~/git/dotfiles/bash_aliases ~/.bash_aliases
 
+# 1Password uses the LANG-based locale settings, which makes it use US date
+# formats (MM/DD/YYYY) on my system. Override this to use Swedish date format
+# instead (YYYY-MM-DD).
+alias 1password='LANG=sv_SE.UTF-8 1password'
+
 # Color is nice, and it also makes it easier to distinguish different types
 # of files from each other.
 alias ls='ls --color=auto'
