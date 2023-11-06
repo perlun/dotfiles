@@ -10,6 +10,9 @@
     name = Per Lundberg
     signingkey = ~/.ssh/id_ed25519
 
+[advice]
+    addEmptyPathSpec = false
+
 [branch]
     autosetuprebase = always
 
