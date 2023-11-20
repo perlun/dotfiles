@@ -239,6 +239,10 @@ light_mode() {
     gsettings set org.cinnamon.theme name 'Adwaita'
 }
 
+unixtime_to_string() {
+    date -d @$1
+}
+
 # Poor-man's replacement for SDKMAN: https://sdkman.io/
 if [[ -d /usr/lib/jvm/temurin-8-jdk-amd64 ]]; then
     java8() {
