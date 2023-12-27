@@ -29,11 +29,11 @@
   layout_launcher = None
 [profiles]
   [[default]]
-    cursor_color = "#aaaaaa"
-    font = Monospace 9
+    font = DejaVu Sans Mono 11
     show_titlebar = False
     scrollback_lines = 10000
     login_shell = True
+    use_system_font = False
     bold_is_bright = True
     copy_on_selection = True
 [layouts]
