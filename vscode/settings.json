@@ -534,8 +534,6 @@
     "ruby.useLanguageServer": true,
 
     "vsicons.dontShowNewVersionMessage": true,
-
-    "workbench.activityBar.visible": true,
     "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.sideBar.location": "left",
@@ -591,7 +589,6 @@
         "!encrypted/pkcs1-oaep scalar",
         "!vault scalar"
     ],
-    "workbench.editor.untitled.hint": "hidden",
     "redhat.telemetry.enabled": false,
     "python.defaultInterpreterPath": "python2.7-dbg",
     "security.workspace.trust.untrustedFiles": "open",
