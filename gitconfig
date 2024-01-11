@@ -79,6 +79,7 @@
     log-n = !sh -c 'git log HEAD~$1..HEAD --oneline' --
     log-5 = log HEAD~5..HEAD --oneline
     log-10 = log HEAD~10..HEAD --oneline
+    log-20 = log HEAD~20..HEAD --oneline
     show-fuller = show --format=fuller
     show-amend = diff HEAD@{1}
     fetch = fetch --prune --all
