@@ -110,7 +110,10 @@ export PATH="$PATH:/sbin:/usr/sbin"
 [[ -f $HOME/.asdf/completions/asdf.bash ]] && . $HOME/.asdf/completions/asdf.bash
 
 # Enable direnv if it is available
-[[ -x /usr/bin/direnv ]] && eval "$(direnv hook bash)"
+[[ -x /usr/bin/direnv ]] && {
+    export DIRENV_WARN_TIMEOUT=60s
+    eval "$(direnv hook bash)"
+}
 
 # Enable completion for hcloud if it's installed (https://github.com/hetznercloud/cli)
 [[ -x /usr/local/bin/hcloud ]] && source <(hcloud completion bash)
