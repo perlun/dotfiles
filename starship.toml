@@ -1,0 +1,55 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[battery]
+charging_symbol = ''
+discharging_symbol = '⚡️ $percentage '
+format = '[$symbol]($style)'
+
+[buf]
+disabled = true
+
+# Disable trunction of arbitrary directories (the default is 3). The
+# fish_style_pwd_dir_length is also interesting, but having paths like
+# `/opt/foo/bar/baz` be converted to `/o/foo/bar/baz` doesn't feel so good to
+# me.
+[directory]
+truncation_length = 0
+
+# Enabled by default. Short and sweet, but less consistent when enabled.
+truncate_to_repo = false
+
+[dotnet]
+disabled = true
+
+[git_status]
+stashed = ''
+untracked = ''
+
+[golang]
+disabled = true
+
+[gradle]
+disabled = true
+
+[java]
+disabled = true
+
+[nodejs]
+disabled = true
+
+# Shows NPM package.json details. Disabled since I consider the information
+# unimportant.
+[package]
+disabled = true
+
+[php]
+disabled = true
+
+[python]
+disabled = true
+
+# The 'time' module displays the current time in the prompt... but on the second
+# line, which feels kind of ugly. TODO: Tweak it using https://starship.rs/config/#prompt
+#[time]
+#disabled = false

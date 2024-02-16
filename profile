@@ -26,9 +26,6 @@ fi
 # https://github.com/fastly/cli
 [ -x /usr/local/bin/fastly ] && eval "$(fastly --completion-script-bash)"
 
-# Set a custom prompt
-. $HOME/git/dotfiles/prompt.sh
-
 # Avoid closing the shell by accident, if running in a local terminal
 if [[ -z "$SSH_CONNECTION" ]]; then
     set -o ignoreeof
