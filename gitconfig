@@ -44,8 +44,8 @@
 
     # Note: this causes "diff-so-fancy: not found" errors if diff-so-fancy is
     # not installed. Install on Debian or Ubuntu using
-    # https://launchpad.net/~aos1/+archive/ubuntu/diff-so-fancy, or override the
-    # config below with one of the following:
+    # https://gist.github.com/gmolveau/8fcdb5e953bd6c9dad18ecd39b9718a4, or
+    # override the config below with one of the following:
     #
     # git config --global core.pager ''         # disables paging
     # git config --global core.pager 'less'     # reverts to the default git behavior.
