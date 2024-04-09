@@ -88,7 +88,8 @@
     },
 
     "[yaml]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "redhat.vscode-yaml"
     },
 
     "files.exclude": {
@@ -130,7 +131,8 @@
         "tomcat8": "shellscript",
         "*.partial": "mustache",
         ".profile_secrets": "shellscript",
-        "*.j2": "jinja-nginx"
+        "*.j2": "jinja-nginx",
+        ".prettierrc": "yaml"
     },
 
     // Display the spell checker status on the status bar.
@@ -338,6 +340,7 @@
         "Loggable",
         "loveth",
         "lpass",
+        "Lundatech",
         "Lundberg",
         "lxdbr",
         "mariadb",
@@ -602,5 +605,7 @@
     "markdown.preview.scrollEditorWithPreview": false,
     "editor.fontFamily": "DejaVu Sans Mono",
     "window.zoomLevel": 1,
-    "workbench.editor.empty.hint": "hidden"
+    "workbench.editor.empty.hint": "hidden",
+    "editor.stickyScroll.scrollWithEditor": false,
+    "editor.stickyScroll.enabled": false
 }
