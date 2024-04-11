@@ -19,6 +19,9 @@ truncation_length = 0
 # Enabled by default. Short and sweet, but less consistent when enabled.
 truncate_to_repo = false
 
+[c]
+disabled = true
+
 [cmake]
 disabled = true
 
