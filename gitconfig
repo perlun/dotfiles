@@ -52,9 +52,7 @@
     pager = diff-so-fancy | less --tabs=4 -RFX
 
 [diff]
-    # Disabled since it breaks `git format-patch`. More context:
-    # https://stackoverflow.com/a/57340649/227779
-    #noprefix = true
+    noprefix = true
 
     colorMoved = dimmed-zebra
 
