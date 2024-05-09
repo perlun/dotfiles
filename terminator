@@ -29,7 +29,7 @@
   layout_launcher = None
 [profiles]
   [[default]]
-    font = DejaVuSansM Nerd Font Mono 11
+    font = DejaVuSansM Nerd Font Propo 11
     show_titlebar = False
     scrollback_lines = 10000
     login_shell = True
