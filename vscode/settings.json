@@ -607,5 +607,6 @@
     "window.zoomLevel": 1,
     "workbench.editor.empty.hint": "hidden",
     "editor.stickyScroll.scrollWithEditor": false,
-    "editor.stickyScroll.enabled": false
+    "editor.stickyScroll.enabled": false,
+    "github.copilot.editor.enableAutoCompletions": true
 }
