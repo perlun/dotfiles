@@ -46,6 +46,12 @@ alias spotify='spotify --disable-gpu'
 # cd back to the root of a git repository.
 alias cdr='cd $(git rev-parse --show-toplevel)'
 
+# git alias for when you want to use a different editor for writing the
+# commit message. This is particularly useful when you do 'git commit
+# -v', to see the diff when you are writing the commit message - VS Code
+# will perform syntax highlighting when displaying this diff.
+alias vscode_commit='GIT_EDITOR="code --new-window --wait" git commit'
+
 # Convenience alias to make ack exclude .gitignore'd files
 alias gack="git ls-files -oc --exclude-standard | ack -x"
 
