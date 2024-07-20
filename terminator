@@ -36,6 +36,16 @@
     use_system_font = False
     bold_is_bright = True
     copy_on_selection = True
+  [[default light]]
+    background_color = "#fdf6e3"
+    font = DejaVuSansM Nerd Font Propo 11
+    foreground_color = "#657b83"
+    show_titlebar = False
+    scrollback_lines = 10000
+    login_shell = True
+    use_system_font = False
+    bold_is_bright = True
+    copy_on_selection = True
 [layouts]
   [[default]]
     [[[child1]]]
