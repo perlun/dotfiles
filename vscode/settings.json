@@ -608,5 +608,6 @@
     "workbench.editor.empty.hint": "hidden",
     "editor.stickyScroll.scrollWithEditor": false,
     "editor.stickyScroll.enabled": false,
-    "github.copilot.editor.enableAutoCompletions": true
+    "github.copilot.editor.enableAutoCompletions": true,
+    "cmake.showOptionsMovedNotification": false
 }
