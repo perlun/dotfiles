@@ -27,6 +27,8 @@
   broadcast_all = None
   edit_tab_title = None
   layout_launcher = None
+  next_profile = <Primary><Shift><Super>Up
+  previous_profile = <Primary><Shift><Super>Down
 [profiles]
   [[default]]
     font = DejaVuSansM Nerd Font Propo 11
