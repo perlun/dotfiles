@@ -31,7 +31,7 @@
   previous_profile = <Primary><Shift><Super>Down
 [profiles]
   [[default]]
-    font = DejaVuSansM Nerd Font Propo 11
+    font = DejaVu Sans Mono 11
     show_titlebar = False
     scrollback_lines = 10000
     login_shell = True
