@@ -2,6 +2,8 @@
 # rm -f ~/.nanorc && ln -sf git/dotfiles/nanorc ~/.nanorc
 
 include ~/git/dotfiles/nano/syntax/markdown.nanorc
+
+include ~/git/dotfiles/nano/syntax/patch.nanorc
 include ~/git/dotfiles/nano/syntax/yaml.nanorc
 include ~/git/dotfiles/nano/syntax/nginx.nanorc
 

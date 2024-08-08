@@ -1,8 +1,12 @@
-syntax "patch" "\.(patch|diff)$"
+#
+# Based on https://github.com/nanorc/nanorc, but edited colors to match
+# the defaults as provided by diff-so-fancy: https://github.com/so-fancy/diff-so-fancy
+#
+syntax "patch" "(\.(patch|diff))|(COMMIT_EDITMSG)$"
+color cyan "^#.*"
 color brightgreen "^\+.*"
 color green "^\+\+\+.*"
-color brightblue "^ .*"
 color brightred "^-.*"
 color red "^---.*"
-color brightyellow "^@@.*"
+color brightmagenta "^@@.*"
 color magenta "^diff.*"
