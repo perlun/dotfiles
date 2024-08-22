@@ -53,9 +53,10 @@ export PATH="$PATH:/sbin:/usr/sbin"
 [[ -d "$HOME/go/bin" ]] && export PATH="$PATH:$HOME/go/bin"
 [[ -d /usr/lib/go-1.17/bin ]] && export PATH="$PATH:/usr/lib/go-1.17/bin"
 
-# .NET Core support
-[[ -d "$HOME/dotnet" ]] && export DOTNET_ROOT=$HOME/dotnet
-[[ -d "$HOME/dotnet" ]] && export PATH=$PATH:$HOME/dotnet
+# .NET Preview is not yet available as .deb packages: https://github.com/dotnet/core/issues/5445, so
+# we manually install it in this directory as needed. Note that this must go *before* the existing
+# PATH, so that /usr/bin/dotnet can be overridden.
+[[ -d "$HOME/.dotnet/preview-cli/" ]] && export PATH=$HOME/.dotnet/preview-cli/:$PATH
 
 # Python support
 [[ -d "$HOME/.local/bin" ]] && export PATH=$PATH:$HOME/.local/bin
