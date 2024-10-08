@@ -40,9 +40,6 @@ alias tail_tomcat_log='tail -n60 -f ~/java/tomcat/logs/catalina.out | rainbow -f
 alias cat_tomcat_log='cat ~/java/tomcat/logs/catalina.out'
 alias less_tomcat_log='less ~/java/tomcat/logs/catalina.out'
 
-# Workaround for https://github.com/electron/electron/issues/4380
-alias spotify='spotify --disable-gpu'
-
 # cd back to the root of a git repository.
 alias cdr='cd $(git rev-parse --show-toplevel)'
 
