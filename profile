@@ -35,6 +35,9 @@ fi
 export EDITOR=nano
 export LESS=-R
 
+# Needed because of azure-cli defaults: https://github.com/Azure/azure-cli/issues/21136
+export BROWSER=firefox
+
 # This is important to get `git blame` timestamps to use yyyy-MM-dd format in IntelliJ.
 # We must be careful though, since this file does not exist on e.g. NetBSD (so `cat`
 # will fail with an error message)
