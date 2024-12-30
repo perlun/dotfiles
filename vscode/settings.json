@@ -609,5 +609,11 @@
     "editor.stickyScroll.scrollWithEditor": false,
     "editor.stickyScroll.enabled": false,
     "github.copilot.editor.enableAutoCompletions": true,
-    "cmake.showOptionsMovedNotification": false
+    "cmake.showOptionsMovedNotification": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }
