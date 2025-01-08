@@ -551,7 +551,10 @@
     // All of these play together in making a better light/dark mode switching
     // experience
     "window.autoDetectColorScheme": true,
-    "workbench.preferredLightColorTheme": "Quiet Light",
+
+    // Workaround for Electron bug: https://github.com/electron/electron/issues/43416
+    "workbench.preferredLightColorTheme": "One Dark Pro",
+
     "workbench.preferredDarkColorTheme": "One Dark Pro",
 
     "yaml.format.enable": true,
