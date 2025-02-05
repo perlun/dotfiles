@@ -89,6 +89,7 @@
     tree = log --graph --oneline --all --decorate --tags
     tree-current-branch = log --graph --oneline --decorate --tags HEAD
     undo-amend = reset --soft HEAD@{1}
+    wip = !sh -c 'git commit -m \"WIP: $(git rev-parse --abbrev-ref HEAD)\"'
 
 [log]
     follow = true
