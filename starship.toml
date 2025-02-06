@@ -30,7 +30,6 @@ disabled = true
 
 [git_status]
 stashed = ''
-untracked = ''
 
 [golang]
 disabled = true
