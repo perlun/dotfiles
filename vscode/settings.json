@@ -618,5 +618,6 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false
-    }
+    },
+    "git.openRepositoryInParentFolders": "never"
 }
