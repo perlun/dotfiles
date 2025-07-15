@@ -34,6 +34,7 @@
     font = DejaVu Sans Mono 11
     show_titlebar = False
     scrollback_lines = 10000
+    disable_mousewheel_zoom = True
     login_shell = True
     use_system_font = False
     bold_is_bright = True
