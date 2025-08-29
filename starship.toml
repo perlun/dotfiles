@@ -54,6 +54,9 @@ disabled = true
 [python]
 disabled = true
 
+[ruby]
+disabled = true
+
 # The 'time' module displays the current time in the prompt... but on the second
 # line, which feels kind of ugly. TODO: Tweak it using https://starship.rs/config/#prompt
 #[time]
