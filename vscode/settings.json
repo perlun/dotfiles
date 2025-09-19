@@ -617,7 +617,9 @@
         "*": true,
         "plaintext": false,
         "markdown": false,
-        "scminput": false
+        "scminput": false,
+        "xml": false
     },
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.nextEditSuggestions.enabled": true
 }
