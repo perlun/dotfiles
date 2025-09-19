@@ -56,6 +56,7 @@
     noprefix = true
 
     colorMoved = dimmed-zebra
+    wsErrorHighlight = all
 
 [diff-so-fancy]
     markEmptyLines = false
