@@ -26,3 +26,7 @@ set nowrap
 
 # Show line/column numbers continuously.
 #set constantshow
+
+# Use this spelling checker instead of the internal one.  This option
+# does not have a default value.
+set speller "aspell -x -c"
