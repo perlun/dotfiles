@@ -541,7 +541,6 @@
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "vscode-icons",
-    "workbench.sideBar.location": "left",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.visible": true,
 
@@ -622,5 +621,19 @@
     },
     "git.openRepositoryInParentFolders": "never",
     "github.copilot.nextEditSuggestions.enabled": true,
-    "docker.extension.enableComposeLanguageServer": false
+    "docker.extension.enableComposeLanguageServer": false,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
 }
