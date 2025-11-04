@@ -33,6 +33,7 @@ fi
 
 # Various ENV variable settings
 export EDITOR=nano
+export KUBECTL_EXTERNAL_DIFF='colordiff -u'
 export LESS=-R
 
 # Needed because of azure-cli defaults: https://github.com/Azure/azure-cli/issues/21136
