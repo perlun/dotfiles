@@ -635,5 +635,8 @@
     },
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "vs-kubernetes": {
+        "disable-linters": ["resource-limits"],
     }
 }
