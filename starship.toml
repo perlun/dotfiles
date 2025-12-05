@@ -28,6 +28,10 @@ disabled = true
 [dotnet]
 disabled = true
 
+[hostname]
+style = 'bold green'
+format = '[@$hostname]($style):'
+
 [git_status]
 stashed = ''
 
@@ -61,3 +65,7 @@ disabled = true
 # line, which feels kind of ugly. TODO: Tweak it using https://starship.rs/config/#prompt
 #[time]
 #disabled = false
+
+[username]
+style_user = 'bold green'
+format = '[$user]($style)'
