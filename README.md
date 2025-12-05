@@ -37,8 +37,7 @@ I also use them on [msys2](https://www.msys2.org/) on Windows.
 ## Recommended tools (GNU/Linux)
 
 - Debian `testing` or `unstable`, to get good, recent versions of the software I
-  need for work and play. At the moment, I'm actually using `stable` (`buster`)
-  since it was released recently enough.
+  need for work and play. At the moment, I'm using `stable` (`bookworm`).
 - [pg_hba.ctl](pg_hba.ctl) settings, to make URLs like
   `postgres://localhost/foo_database` work for any local user. **Caveat**:
   not secure for customer/multi-user environments.
