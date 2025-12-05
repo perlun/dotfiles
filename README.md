@@ -53,10 +53,8 @@ I also use them on [msys2](https://www.msys2.org/) on Windows.
   IDE-like experience for C#, JavaScript and other languages. The Ruby
   experience is also decent.
 - Firefox: Because Debian only provides an LTS version (which is often quite
-  old) and I'm not a big fan of Flatpak/Snap packages, I run this from upstream
-  `.tar.bz2` downloaded & installed using [this script](firefox-install.sh).
-  This provides some of the benefits of the Snap package (auto-updating) but
-  without the potential overhead involved with sandboxing the Firefox processes.
+  old) and I'm not a big fan of Flatpak/Snap packages, I run Firefox from
+  [Mozilla-provided `.deb` packages](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions)
 
 ## Recommended tools (macOS)
 
