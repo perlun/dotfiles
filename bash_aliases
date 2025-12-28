@@ -80,6 +80,10 @@ alias show_logins='grep "unlocked login keyring" /var/log/auth.log'
 # as an emergency break, to get rid of Caps Lock in case that happens.
 alias CAPSOFF='setcapslock off'
 
+# Convert account statements from my bank from PDF to HTML format, for
+# easier searching using CLI tools like 'grep'.
+alias convert_kontoutdrag='for e in {1..12}; do pdftohtml -c -noframes Kontoutdrag_1-$e.pdf html/Kontoutdrag_1-$e.html ; done'
+
 # Destroy all running LXD instances forcefully. (note: processes will not
 # shutdown gracefully with this approach. Use with care!)
 alias lxd_destroy_all='for e in $(lxc list -c n -f csv) ; do lxc rm -f $e ; done'
