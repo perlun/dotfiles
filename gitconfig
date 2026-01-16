@@ -95,6 +95,9 @@
 [log]
     follow = true
 
+[pull]
+    rebase = true
+
 [push]
     # push the current branch back to the branch whose changes are usually
     # integrated into the current branch (which is called @{upstream}). This
