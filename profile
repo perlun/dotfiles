@@ -78,6 +78,18 @@ export PATH="$PATH:/sbin:/usr/sbin"
 # Misc binaries
 [[ -d "$HOME/bin" ]] && export PATH="$HOME/bin:$PATH"
 
+# We prefer the GNU versions of these command line tools, when available, for the following reasons:
+#
+# - They are less picky in terms of order of arguments. On BSD/macOS,`chown . -R` doesn't work for example. The GNU versions are
+#   more forgiving and relaxed in this regard.
+# - They are simpler to use. Sometimes the BSD versions require more parameters. You are require to write `find .`, but GNU find
+#   will default to the current working directory if no parameter is provided.
+#
+# Simply put: if you are used to the GNU userland, going to a BSD userland is a pain. The setting below makes it less so.
+
+[[ -x /opt/homebrew/bin/brew ]] &&
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Binaries and scripts from this repo
 [[ -d "$HOME/.dotfiles-bin" ]] && export PATH="$HOME/.dotfiles-bin:$PATH"
 
