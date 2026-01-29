@@ -18,13 +18,19 @@ fi
 # Enable seamless decompression of .gzip files
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-# Branch/etc completion in git.
+# Branch/etc completion in git, make etc
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+
 # To get this working on macOS: brew install bash-completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # Bash completion for the Fastly CLI, if installed:
 # https://github.com/fastly/cli
 [ -x /usr/local/bin/fastly ] && eval "$(fastly --completion-script-bash)"
+
+# TODO: Unify the bash completion by moving the section further down in this file here. We need to
+# verify that it works afterwards, though.
 
 # Avoid closing the shell by accident, if running in a local terminal
 if [[ -z "$SSH_CONNECTION" ]]; then

@@ -17,10 +17,8 @@ if [ -f ~/.bash_secrets ]; then
     . ~/.bash_secrets
 fi
 
-[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
-    . /usr/share/bash-completion/bash_completion
-
-
+# TODO: Move to bashrc, where all other bash completion is handled, and rvm initialization gets
+# loaded
 [[ -d "$HOME/.nvm" ]] && export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
