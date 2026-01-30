@@ -44,6 +44,11 @@ disabled = true
 [java]
 disabled = true
 
+[kubernetes]
+disabled = false
+detect_files = ['manifest-settings.yaml']
+#format = '[⛵ ($cluster in )$context \($namespace\)](cyan) '
+
 [nodejs]
 disabled = true
 
