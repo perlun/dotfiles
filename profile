@@ -23,7 +23,7 @@ fi
     . /usr/share/bash-completion/bash_completion
 
 # To get this working on macOS: brew install bash-completion
-[[ $PS1 && -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && \
+[[ $PS1 && -x /opt/homebrew/bin/brew && -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && \
     . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
 # Bash completion for the Fastly CLI, if installed:
