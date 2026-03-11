@@ -85,6 +85,7 @@
     short-id = rev-parse --short
     fetch = fetch --prune --all
     pull = pull -r
+    pullpush = !sh -c 'git pull -r && git push' --
     reflog-with-date = reflog --date=iso
     st = status --short
     stat = status
