@@ -638,6 +638,5 @@
     },
     "vs-kubernetes": {
         "disable-linters": ["resource-limits"],
-    },
-    "workbench.sideBar.location": "right"
+    }
 }
