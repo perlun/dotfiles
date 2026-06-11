@@ -13,6 +13,7 @@
 [advice]
     addEmptyPathSpec = false
     skippedCherryPicks = false
+    forceDeleteBranch = false
 
 [branch]
     autosetuprebase = always
