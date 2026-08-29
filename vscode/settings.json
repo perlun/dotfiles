@@ -640,5 +640,15 @@
     },
     "vs-kubernetes": {
         "disable-linters": ["resource-limits"],
-    }
+    },
+    "html.autoCreateQuotes": false,
+    "html.format.wrapLineLength": 80,
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ]
 }
